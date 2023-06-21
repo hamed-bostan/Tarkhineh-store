@@ -167,3 +167,10 @@
   background-color: $primaryColor;
   color: $whiteColor;
 }
+
+// Query
+@mixin query($width) {
+  @media (min-width: $width) {
+    @content;
+  }
+}
