@@ -1,6 +1,6 @@
 @import "./variables";
 
-// Desktop version
+// Desktop version | Branch page
 @mixin primaryButtonDesktop {
   display: flex;
   justify-content: center;
@@ -19,7 +19,7 @@
   line-height: 180%;
 }
 
-// Mobile version
+// Mobile version. Branch page
 @mixin primaryButtonMobile {
   display: flex;
   justify-content: center;
@@ -38,7 +38,7 @@
   line-height: 180%;
 }
 
-// Desktop version
+// Desktop version | Branch page
 @mixin primaryButtonOutlinedDesktop {
   display: flex;
   justify-content: center;
@@ -58,7 +58,7 @@
   line-height: 180%;
 }
 
-// Mobile version
+// Mobile version | Branch page
 @mixin primaryButtonOutlinedMobile {
   display: flex;
   justify-content: center;
@@ -78,7 +78,7 @@
   line-height: 180%;
 }
 
-// Discount
+// Discount | Menu page
 @mixin discount {
   width: 32px;
   height: 16px;
@@ -92,7 +92,7 @@
   color: $redColor;
 }
 
-// Desktop version
+// Desktop version | Menu page
 @mixin greyButtonDesktop {
   display: flex;
   justify-content: center;
@@ -111,7 +111,7 @@
   line-height: 180%;
 }
 
-// Mobile version
+// Mobile version | Menu page
 @mixin greyButtonMobile {
   display: flex;
   justify-content: center;
