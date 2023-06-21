@@ -44,6 +44,14 @@
     line-height: 180%;
     //
 
+    .navbar_links_wrapper_show {
+      display: block;
+    }
+
+    .navbar_links_wrapper_not_show {
+      display: none;
+    }
+
     .navbar_link_item {
       border-bottom: 1px solid #cbcbcb;
       margin-top: 0.7rem;

@@ -38,9 +38,19 @@ const Navbar = () => {
       </div>
       {/* End of Header section */}
       {/* Link section*/}
-      <div className="navbar_links_container">
+      <div className="navbar_links_container ">
         {navbarItems.map((link) => {
-          return <p className="navbar_link_item">{link.text}</p>;
+          return (
+            <div
+              className={`${
+                isOpen
+                  ? "navbar_links_wrapper_show"
+                  : "navbar_links_wrapper_not_show"
+              }`}
+            >
+              <p className="navbar_link_item">{link.text}</p>
+            </div>
+          );
         })}
       </div>
       {/* End of Link section */}
