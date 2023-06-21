@@ -1,4 +1,4 @@
-// Iranian Food
+// Iranian Foods
 export const iranianFoodInformation = [
   {
     id: 1,
@@ -8,7 +8,7 @@ export const iranianFoodInformation = [
     highPrice: "۱۸۰٬۰۰۰",
     discount: "%۳۵",
     discountedPrice: "۱۴۵٬۰۰۰ تومان",
-    score: "some score",
+    star: "some star",
   },
   {
     id: 2,
@@ -18,7 +18,7 @@ export const iranianFoodInformation = [
     highPrice: "",
     discount: "",
     discountedPrice: "۹۵٬۰۰۰ تومان",
-    score: "some score",
+    star: "some star",
   },
   {
     id: 3,
@@ -28,7 +28,7 @@ export const iranianFoodInformation = [
     highPrice: "۱۶۵٬۰۰۰",
     discount: "%۱۰",
     discountedPrice: "۱۴۲٬۵۰۰  تومان",
-    score: "some score",
+    star: "some star",
   },
   {
     id: 4,
@@ -38,7 +38,7 @@ export const iranianFoodInformation = [
     highPrice: "۲۰۵٬۰۰۰",
     discount: "%۳۰",
     discountedPrice: "۱۸۰٬۰۰۰ تومان",
-    score: "some score",
+    star: "some star",
   },
   {
     id: 5,
@@ -48,7 +48,7 @@ export const iranianFoodInformation = [
     highPrice: "",
     discount: "",
     discountedPrice: "۸۰٬۰۰۰ تومان",
-    score: "some score",
+    star: "some star",
   },
   {
     id: 6,
@@ -58,7 +58,7 @@ export const iranianFoodInformation = [
     highPrice: "۲۱۰٬۰۰۰",
     discount: "%۵",
     discountedPrice: "۲۰۳٬۰۰۰ تومان",
-    score: "some score",
+    star: "some star",
   },
   {
     id: 7,
@@ -68,7 +68,8 @@ export const iranianFoodInformation = [
     highPrice: "۱۷۰٬۰۰۰",
     discount: "%۲۲",
     discountedPrice: "۱۴۸٬۰۰۰ تومان",
-    score: "some score",
+    star: "some star",
+    score: "(۷۵ امتیاز)",
   },
   {
     id: 8,
@@ -78,7 +79,8 @@ export const iranianFoodInformation = [
     highPrice: "۱۵۰٬۰۰۰",
     discount: "%۱۸",
     discountedPrice: "۱۳۶٬۰۰۰ تومان",
-    score: "some score",
+    star: "some star",
+    score: "(۳۲ امتیاز)",
   },
   {
     id: 9,
@@ -88,7 +90,8 @@ export const iranianFoodInformation = [
     highPrice: "۲۲۰٬۰۰۰",
     discount: "%۸",
     discountedPrice: "۲۰۹٬۰۰۰ تومان",
-    score: "some score",
+    star: "some star",
+    score: "(۵۲ امتیاز)",
   },
   {
     id: 10,
@@ -98,7 +101,7 @@ export const iranianFoodInformation = [
     highPrice: "",
     discount: "",
     discountedPrice: "۱۹۵٬۰۰۰ تومان",
-    score: "some score",
+    star: "some star",
   },
   {
     id: 11,
@@ -108,7 +111,7 @@ export const iranianFoodInformation = [
     highPrice: "۳۰۰٬۰۰۰",
     discount: "%۱۰",
     discountedPrice: "۲۷۰٬۰۰۰ تومان",
-    score: "some score",
+    star: "some star",
   },
   {
     id: 12,
@@ -118,11 +121,11 @@ export const iranianFoodInformation = [
     highPrice: "۱۳۵٬۰۰۰",
     discount: "%۲۰",
     discountedPrice: "۱۰۵٬۰۰۰ تومان",
-    score: "some score",
+    star: "some star",
   },
 ];
 
-// Not Iranian Food
+// Not Iranian Foods
 export const notIranianFoodInformation = [
   {
     id: 1,
@@ -132,7 +135,7 @@ export const notIranianFoodInformation = [
     highPrice: "۱۷۵٬۰۰۰",
     discount: "%۲۰",
     discountedPrice: "۱۴۰٬۰۰۰ تومان",
-    score: "some score",
+    star: "some star",
   },
   {
     id: 2,
@@ -143,7 +146,7 @@ export const notIranianFoodInformation = [
     highPrice: "۱۷۰٬۰۰۰",
     discount: "%۱۲",
     discountedPrice: "۱۶۰٬۰۰۰  تومان",
-    score: "some score",
+    star: "some star",
   },
   {
     id: 3,
@@ -154,7 +157,8 @@ export const notIranianFoodInformation = [
     highPrice: "۱۸۰٬۰۰۰",
     discount: "%۴۵",
     discountedPrice: "۹۵٬۰۰۰ تومان",
-    score: "some score",
+    star: "some star",
+    score: "(۴۳ امتیاز)",
   },
   {
     id: 4,
@@ -165,7 +169,8 @@ export const notIranianFoodInformation = [
     highPrice: "",
     discount: "",
     discountedPrice: "۱۵۰٬۰۰۰ تومان",
-    score: "some score",
+    star: "some star",
+    score: "(۴۸ امتیاز)",
   },
   {
     id: 5,
@@ -176,7 +181,8 @@ export const notIranianFoodInformation = [
     highPrice: "۱۰۰٬۰۰۰",
     discount: "%۱۵",
     discountedPrice: "۸۵٬۰۰۰ تومان",
-    score: "some score",
+    star: "some star",
+    score: "(۷۰ امتیاز)",
   },
   {
     id: 6,
@@ -186,7 +192,8 @@ export const notIranianFoodInformation = [
     highPrice: "۱۲۵٬۰۰۰",
     discount: "%۸",
     discountedPrice: "۱۱۰٬۰۰۰ تومان",
-    score: "some score",
+    star: "some star",
+    score: "(۷۵ امتیاز)",
   },
   {
     id: 7,
@@ -197,7 +204,8 @@ export const notIranianFoodInformation = [
     highPrice: "۱۹۰٬۰۰۰",
     discount: "%۱۷",
     discountedPrice: "۱۷۷٬۰۰۰ تومان",
-    score: "some score",
+    star: "some star",
+    score: "(۶۲ امتیاز)",
   },
   {
     id: 8,
@@ -207,7 +215,7 @@ export const notIranianFoodInformation = [
     highPrice: "۲۰۰٬۰۰۰",
     discount: "%۱۵",
     discountedPrice: "۱۸۰٬۰۰۰ تومان",
-    score: "some score",
+    star: "some star",
   },
 ];
 
@@ -222,7 +230,7 @@ export const pizzaInformation = [
     highPrice: "۱۹۵٬۰۰۰",
     discount: "%۱۲",
     discountedPrice: "۱۸۸٬۰۰۰ تومان",
-    score: "some score",
+    star: "some star",
   },
   {
     id: 2,
@@ -233,7 +241,7 @@ export const pizzaInformation = [
     highPrice: "",
     discount: "",
     discountedPrice: "۱۵۰٬۰۰۰ تومان",
-    score: "some score",
+    star: "some star",
   },
   {
     id: 3,
@@ -244,7 +252,7 @@ export const pizzaInformation = [
     highPrice: "۲۱۰٬۰۰۰",
     discount: "%۲۱",
     discountedPrice: "۱۸۵٬۰۰۰ تومان",
-    score: "some score",
+    star: "some star",
   },
   {
     id: 4,
@@ -255,7 +263,8 @@ export const pizzaInformation = [
     highPrice: "۲۱۵٬۰۰۰",
     discount: "%۲۵",
     discountedPrice: "۱۷۵٬۰۰۰ تومان",
-    score: "some score",
+    star: "some star",
+    score: "(۳۳ امتیاز)",
   },
   {
     id: 5,
@@ -266,7 +275,8 @@ export const pizzaInformation = [
     highPrice: "",
     discount: "",
     discountedPrice: "۱۰۰٬۰۰۰ تومان",
-    score: "some score",
+    star: "some star",
+    score: "(۵۱ امتیاز)",
   },
   {
     id: 6,
@@ -276,7 +286,7 @@ export const pizzaInformation = [
     highPrice: "۲۸۰٬۰۰۰",
     discount: "%۱۰",
     discountedPrice: "۲۵۲٬۰۰۰ تومان",
-    score: "some score",
+    star: "some star",
   },
   {
     id: 7,
@@ -286,7 +296,7 @@ export const pizzaInformation = [
     highPrice: "۱۶۵٬۰۰۰",
     discount: "%۱۳",
     discountedPrice: "۱۴۷٬۰۰۰ تومان",
-    score: "some score",
+    star: "some star",
   },
   {
     id: 8,
@@ -297,7 +307,7 @@ export const pizzaInformation = [
     highPrice: "۱۲۵٬۰۰۰",
     discount: "%۱۶",
     discountedPrice: "۱۰۵٬۰۰۰  تومان",
-    score: "some score",
+    star: "some star",
   },
 ];
 
@@ -312,7 +322,7 @@ export const sandwichesInformation = [
     highPrice: "۲۳۰٬۰۰۰",
     discount: "%۱۸",
     discountedPrice: "۲۰۵٬۰۰۰ تومان",
-    score: "some score",
+    star: "some star",
   },
   {
     id: 2,
@@ -322,7 +332,7 @@ export const sandwichesInformation = [
     highPrice: "۲۰۵٬۰۰۰",
     discount: "%۳۵",
     discountedPrice: "۱۶۵٬۰۰۰ تومان",
-    score: "some score",
+    star: "some star",
   },
   {
     id: 3,
@@ -332,7 +342,7 @@ export const sandwichesInformation = [
     highPrice: "",
     discount: "",
     discountedPrice: "۱۴۵٬۰۰۰ تومان",
-    score: "some score",
+    star: "some star",
   },
   {
     id: 4,
@@ -343,7 +353,8 @@ export const sandwichesInformation = [
     highPrice: "۲۱۰٬۰۰۰",
     discount: "%۱۵",
     discountedPrice: "۱۹۰٬۰۰۰ تومان",
-    score: "some score",
+    star: "some star",
+    score: "(۲۰ امتیاز)",
   },
 ];
 
