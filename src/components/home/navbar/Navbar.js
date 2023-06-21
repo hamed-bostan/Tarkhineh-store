@@ -9,9 +9,11 @@ const Navbar = () => {
   return (
     <div className="navbar_container">
       <div className="navbar_wrapper">
+        {/* Header section */}
         <div className="navbar_header">
           <div className="navbar_right_side_container">
             <img
+              onClick={() => setIsOpen(!isOpen)}
               className="navbar_icon"
               src="assets/images/icons/menu.png"
               alt=""
@@ -19,7 +21,6 @@ const Navbar = () => {
           </div>
           <div className="navbar_center_container">
             <img
-              onClick={() => setIsOpen(!isOpen)}
               className="navbar_logo"
               src="assets/images/icons/Logo.png"
               alt=""
@@ -38,11 +39,24 @@ const Navbar = () => {
             />
           </div>
         </div>
+        {/* End of Header section */}
+        {/* Link section*/}
         <div className="navbar_links_container">
           {navbarItems.map((link) => {
-            return <span className="navbar_link_item">{link.text}</span>;
+            return (
+              <div
+                className={`${
+                  isOpen
+                    ? "navbar_links_wrapper_show"
+                    : "navbar_links_wrapper_not_show"
+                }`}
+              >
+                <p className="navbar_link_item">{link.text}</p>
+              </div>
+            );
           })}
         </div>
+        {/* End of Link section */}
       </div>
     </div>
   );
