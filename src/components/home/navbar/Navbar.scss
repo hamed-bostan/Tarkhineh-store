@@ -16,6 +16,7 @@
   @include query(1000px) {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    padding: 0 3rem;
   }
 
   // Top container
@@ -97,7 +98,7 @@
       // Font
       color: $greyColorDark;
       text-align: center;
-      font-size: 1.25rem;
+      font-size: 1.1rem;
       line-height: 180%;
     }
 
