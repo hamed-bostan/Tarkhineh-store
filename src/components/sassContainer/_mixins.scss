@@ -132,15 +132,8 @@
 
 // Desktop
 @mixin iconDesktop {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  //
-  background: $primaryColorLight;
-  color: $primaryColor;
   width: 40px;
   height: 40px;
-  padding: 8px;
   border-radius: 4px;
 }
 
@@ -151,16 +144,9 @@
 
 // Mobile
 @mixin iconMobile {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  //
-  background: $primaryColorLight;
   color: $primaryColor;
   width: 24px;
   height: 24px;
-  // padding: 8px 4px;
-  border-radius: 4px;
 }
 
 @mixin iconMobileIsActive {

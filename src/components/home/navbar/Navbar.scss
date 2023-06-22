@@ -16,20 +16,9 @@
   @include query(768px) {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    // align-items: center;
   }
 
   // Top container
-  .navbar_left_side_container {
-    display: flex;
-    column-gap: 4px;
-
-    @include query(768px) {
-      grid-column: 4/5;
-      background: #ebbf46;
-    }
-  }
-
   .navbar_right_side_container {
     @include query(768px) {
       display: none;
@@ -39,18 +28,40 @@
   .navbar_center_container {
     @include query(768px) {
       grid-column: 1/2;
-      background: #50c719;
+      // background: #50c719;
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .navbar_left_side_container {
+    display: flex;
+    column-gap: 4px;
+
+    @include query(768px) {
+      grid-column: 4/5;
+      // background: #ebbf46;
+      display: flex;
+      justify-content: center;
     }
   }
 
   .navbar_icon {
-    width: 16px;
-    height: 16px;
+    @include iconMobile;
+
+    @include query(768px) {
+      @include iconDesktop;
+    }
   }
 
   .navbar_logo {
     width: 102px;
     height: 32px;
+
+    @include query(768px) {
+      width: 9.6875rem;
+      height: 3.1875rem;
+    }
   }
 
   // Links Container
@@ -61,7 +72,7 @@
     width: 100%;
     padding: 0 20px;
     // Font
-    color: $blackColor;
+    color: $greyColorDark;
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -70,7 +81,16 @@
     @include query(768px) {
       all: unset;
       grid-column: 2/4;
-      background: red;
+      grid-row: 1/2;
+      display: flex;
+      column-gap: 1rem;
+      justify-content: center;
+      // background: red;
+      // Font
+      color: $greyColorDark;
+      text-align: center;
+      font-size: 1.25rem;
+      line-height: 180%;
     }
 
     .navbar_links_wrapper_show {
@@ -92,13 +112,6 @@
       @include query(768px) {
         all: unset;
       }
-    }
-  }
-
-// Queries
-  @include query(768px) {
-    .navbar_right_side_container{
-      
     }
   }
 }
