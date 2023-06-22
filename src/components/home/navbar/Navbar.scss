@@ -13,7 +13,7 @@
   height: 4rem;
   padding: 0 1.25rem;
 
-  @include query(1000px) {
+  @include query(1100px) {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     padding: 0 3rem;
@@ -21,13 +21,13 @@
 
   // Top container
   .navbar_right_side_container {
-    @include query(1000px) {
+    @include query(1100px) {
       display: none;
     }
   }
 
   .navbar_center_container {
-    @include query(1000px) {
+    @include query(1100px) {
       grid-column: 1/2;
       // background: #50c719;
     }
@@ -37,7 +37,7 @@
     display: flex;
     column-gap: 0.25rem;
 
-    @include query(1000px) {
+    @include query(1100px) {
       grid-column: 4/5;
       column-gap: 0.5rem;
 
@@ -50,7 +50,7 @@
   .navbar_left_side_container img:first-child {
     display: none;
 
-    @include query(1000px) {
+    @include query(1100px) {
       display: block;
     }
   }
@@ -58,8 +58,19 @@
   .navbar_icon {
     @include iconMobile;
 
-    @include query(1000px) {
+    @include query(1100px) {
       @include iconDesktop;
+    }
+  }
+
+  .navbar_arrow_icon {
+    display: none;
+
+    @include query(1100px) {
+      display: inline-block;
+      width: 1rem;
+      height: 1rem;
+      margin-right: 0.5rem;
     }
   }
 
@@ -67,9 +78,9 @@
     width: 6.37rem;
     height: 2rem;
 
-    @include query(1000px) {
-      width: 9.6875rem;
-      height: 3.1875rem;
+    @include query(1100px) {
+      width: 9rem;
+      height: 3rem;
     }
   }
 
@@ -87,7 +98,7 @@
     font-size: 0.75rem;
     line-height: 180%;
 
-    @include query(1000px) {
+    @include query(1100px) {
       all: unset;
       grid-column: 2/4;
       grid-row: 1/2;
@@ -109,7 +120,7 @@
     .navbar_links_wrapper_not_show {
       display: none;
 
-      @include query(1000px) {
+      @include query(1100px) {
         display: block;
       }
     }
@@ -117,9 +128,11 @@
     .navbar_link_item {
       border-bottom: 1px solid #cbcbcb;
       margin-top: 0.7rem;
+      cursor: pointer;
 
-      @include query(1000px) {
+      @include query(1100px) {
         all: unset;
+        cursor: pointer;
       }
     }
   }

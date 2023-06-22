@@ -25,13 +25,11 @@ const Navbar = () => {
         />
       </div>
       <div className="navbar_left_side_container">
-        {/* search */}
         <img
           className="navbar_icon"
           src="assets/images/icons/search-normal-01.png"
           alt=""
         />
-        {/* search */}
         <img
           className="navbar_icon"
           src="assets/images/icons/shopping-cart.png"
@@ -56,6 +54,9 @@ const Navbar = () => {
               }`}
             >
               <p className="navbar_link_item">{link.text}</p>
+              {link?.icon && (
+                <img src={link.icon} alt="" className="navbar_arrow_icon" />
+              )}
             </div>
           );
         })}

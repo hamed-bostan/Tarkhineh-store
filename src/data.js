@@ -392,31 +392,27 @@ export const navbarItems = [
   {
     id: 1,
     text: "صفحه اصلی",
-    icon: false,
   },
   {
     id: 2,
     text: "شعبه",
-    icon: true,
+    icon: "assets/images/icons/arrow-down.png",
   },
   {
     id: 3,
     text: "منو",
-    icon: true,
+    icon: "assets/images/icons/arrow-down.png",
   },
   {
     id: 4,
     text: "اعطای نمایندگی",
-    icon: false,
   },
   {
     id: 5,
     text: "درباره ما",
-    icon: false,
   },
   {
     id: 6,
     text: "تماس با ما",
-    icon: false,
   },
 ];
