@@ -5,8 +5,8 @@ import Navbar from "../home/navbar/Navbar";
 const ContactUs = () => {
   return (
     <div>
-      contact us page
       <Navbar />
+      contact us page
     </div>
   );
 };

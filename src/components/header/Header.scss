@@ -1,0 +1,31 @@
+@import "../sassContainer/mixins";
+@import "../sassContainer/variables";
+
+.header_container {
+  width: 100%;
+
+  .header_information_container {
+    position: relative;
+  }
+
+  .header_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    // transform: translate(-50%, -50%);
+    inset: 0 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // Fonts
+    @include fontTitleMobile;
+    color: $primaryColorLight;
+    text-align: justify;
+  }
+
+  .header_image {
+    width: 22.5rem;
+    height: 11rem;
+    object-fit: cover;
+  }
+}

@@ -410,7 +410,6 @@ export const navbarItems = [
     id: 4,
     text: "اعطای نمایندگی",
     path: "/franchise",
-    
   },
   {
     id: 5,
@@ -421,5 +420,24 @@ export const navbarItems = [
     id: 6,
     text: "تماس با ما",
     path: "/contact",
+  },
+];
+
+// Banner
+export const banner = [
+  {
+    id: 1,
+    image: "assets/images/bannerImages/slider_01.png",
+    text: "تجربه غذای سالم و گیاهی به سبک ترخینه",
+  },
+  {
+    id: 2,
+    image: "assets/images/bannerImages/slider_02.png",
+    text: "طعم بی‌نظیر طبیعت!",
+  },
+  {
+    id: 3,
+    image: "assets/images/bannerImages/slider_03.png",
+    text: "لذت غذای سالم و گیاهی را با ترخینه تجربه کنید!",
   },
 ];
