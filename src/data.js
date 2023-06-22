@@ -392,16 +392,19 @@ export const navbarItems = [
   {
     id: 1,
     text: "صفحه اصلی",
+    path:"/"
   },
   {
     id: 2,
     text: "شعبه",
     icon: "assets/images/icons/arrow-down.png",
+    path:"/branch"
   },
   {
     id: 3,
     text: "منو",
     icon: "assets/images/icons/arrow-down.png",
+    path:"/menu"
   },
   {
     id: 4,
@@ -410,9 +413,11 @@ export const navbarItems = [
   {
     id: 5,
     text: "درباره ما",
+    path:"aboutUs"
   },
   {
     id: 6,
     text: "تماس با ما",
+    path:"contactUs"
   },
 ];
