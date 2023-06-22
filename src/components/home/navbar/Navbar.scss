@@ -10,55 +10,63 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 64px;
-  padding: 0 20px;
+  height: 4rem;
+  padding: 0 1.25rem;
 
-  @include query(768px) {
+  @include query(1000px) {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
   }
 
   // Top container
   .navbar_right_side_container {
-    @include query(768px) {
+    @include query(1000px) {
       display: none;
     }
   }
 
   .navbar_center_container {
-    @include query(768px) {
+    @include query(1000px) {
       grid-column: 1/2;
       // background: #50c719;
-      display: flex;
-      justify-content: center;
     }
   }
 
   .navbar_left_side_container {
     display: flex;
-    column-gap: 4px;
+    column-gap: 0.25rem;
 
-    @include query(768px) {
+    @include query(1000px) {
       grid-column: 4/5;
+      column-gap: 0.5rem;
+
       // background: #ebbf46;
-      display: flex;
-      justify-content: center;
+      justify-content: flex-end;
+    }
+  }
+
+  // Hiding search icon
+  .navbar_left_side_container img:first-child {
+    display: none;
+
+    @include query(1000px) {
+      display: block;
     }
   }
 
   .navbar_icon {
     @include iconMobile;
 
-    @include query(768px) {
+    @include query(1000px) {
       @include iconDesktop;
     }
   }
 
   .navbar_logo {
-    width: 102px;
-    height: 32px;
+    width: 6.37rem;
+    height: 2rem;
 
-    @include query(768px) {
+    @include query(1000px) {
       width: 9.6875rem;
       height: 3.1875rem;
     }
@@ -70,20 +78,20 @@
     top: 100%;
     right: 0;
     width: 100%;
-    padding: 0 20px;
+    padding: 0 1.25rem;
     // Font
     color: $greyColorDark;
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 0.75rem;
     line-height: 180%;
 
-    @include query(768px) {
+    @include query(1000px) {
       all: unset;
       grid-column: 2/4;
       grid-row: 1/2;
       display: flex;
-      column-gap: 1rem;
+      column-gap: 1.5rem;
       justify-content: center;
       // background: red;
       // Font
@@ -100,7 +108,7 @@
     .navbar_links_wrapper_not_show {
       display: none;
 
-      @include query(768px) {
+      @include query(1000px) {
         display: block;
       }
     }
@@ -109,7 +117,7 @@
       border-bottom: 1px solid #cbcbcb;
       margin-top: 0.7rem;
 
-      @include query(768px) {
+      @include query(1000px) {
         all: unset;
       }
     }

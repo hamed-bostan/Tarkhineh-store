@@ -25,6 +25,13 @@ const Navbar = () => {
         />
       </div>
       <div className="navbar_left_side_container">
+        {/* search */}
+        <img
+          className="navbar_icon"
+          src="assets/images/icons/search-normal-01.png"
+          alt=""
+        />
+        {/* search */}
         <img
           className="navbar_icon"
           src="assets/images/icons/shopping-cart.png"
