@@ -1,14 +1,13 @@
 import React from "react";
-import "./ContactUs.scss";
 import Navbar from "../home/navbar/Navbar";
 
-const ContactUs = () => {
+const Menu = () => {
   return (
     <div>
-      contact us page
+      Menu page
       <Navbar />
     </div>
   );
 };
 
-export default ContactUs;
+export default Menu;

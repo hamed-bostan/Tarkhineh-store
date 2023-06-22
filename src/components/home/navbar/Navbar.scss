@@ -3,7 +3,7 @@
 
 // Header Container
 .navbar_header {
-  background: #f1c4c4;
+  // background: #f1c4c4;
   position: fixed;
   width: 100%;
   display: flex;
@@ -133,6 +133,40 @@
       @include query(1100px) {
         all: unset;
         cursor: pointer;
+      }
+    }
+
+    // Active Links
+    .navbar_link_not_active {
+      color: $greyColorDark;
+      text-decoration: none;
+    }
+
+    .navbar_link_active {
+      color: $primaryColor;
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 400;
+    }
+
+    @include query(1100px) {
+      .navbar_link_active {
+        position: relative;
+        font-size: 1.25rem;
+        font-weight: 600;
+        line-height: 140%;
+      }
+
+      .navbar_link_active::after {
+        content: "";
+        background: $primaryColor;
+        position: absolute;
+        top: 1.6rem;
+        right: 0;
+        height: 1.5px;
+        width: 80%;
+        border-radius: 1px;
+        transform: translate(-10%, 0);
       }
     }
   }

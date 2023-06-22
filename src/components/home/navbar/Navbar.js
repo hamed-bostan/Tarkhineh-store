@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./Navbar.scss";
 // Components
 import { navbarItems } from "../../../data";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -53,10 +54,17 @@ const Navbar = () => {
                   : "navbar_links_wrapper_not_show"
               }`}
             >
-              <p className="navbar_link_item">{link.text}</p>
-              {link?.icon && (
-                <img src={link.icon} alt="" className="navbar_arrow_icon" />
-              )}
+              <NavLink
+                to={link?.path}
+                className={({ isActive }) =>
+                  isActive ? "navbar_link_active" : "navbar_link_not_active"
+                }
+              >
+                <p className="navbar_link_item">{link.text}</p>
+                {link?.icon && (
+                  <img src={link.icon} alt="" className="navbar_arrow_icon" />
+                )}
+              </NavLink>
             </div>
           );
         })}

@@ -1,14 +1,13 @@
 import React from "react";
-import "./ContactUs.scss";
 import Navbar from "../home/navbar/Navbar";
 
-const ContactUs = () => {
+const Franchise = () => {
   return (
     <div>
-      contact us page
+      Franchise page
       <Navbar />
     </div>
   );
 };
 
-export default ContactUs;
+export default Franchise;
