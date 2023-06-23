@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Header.scss";
 import { banner } from "../../data";
 
@@ -9,7 +9,7 @@ const Header = () => {
         const { image, text, id } = item;
         return (
           <div onKeyUp={id} className="header_information_container">
-            <img src={image} alt=""  className="header_image"/>
+            <img src={image} alt="" className="header_image" />
             <span className="header_text">{text}</span>
           </div>
         );

@@ -6,21 +6,19 @@
 
   .header_information_container {
     position: relative;
+    display: flex;
   }
 
   .header_text {
     position: absolute;
+    width: 100%;
     top: 50%;
     left: 50%;
-    // transform: translate(-50%, -50%);
-    inset: 0 10%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    transform: translate(-50%, -50%);
     // Fonts
     @include fontTitleMobile;
     color: $primaryColorLight;
-    text-align: justify;
+    text-align: center;
   }
 
   .header_image {
