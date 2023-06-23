@@ -456,3 +456,27 @@ export const bannerInformation = [
     text: "لذت غذای سالم و گیاهی را با ترخینه تجربه کنید!",
   },
 ];
+
+// Menu Component
+export const menuInformation = [
+  {
+    id: 1,
+    image: "assets/images/firstPageImages/01.png",
+    text: "غذای اصلی",
+  },
+  {
+    id: 2,
+    image: "assets/images/firstPageImages/02.png",
+    text: "پیش غذا",
+  },
+  {
+    id: 3,
+    image: "assets/images/firstPageImages/03.png",
+    text: "دسر",
+  },
+  {
+    id: 4,
+    image: "assets/images/firstPageImages/04.png",
+    text: "نوشیدنی",
+  },
+];
