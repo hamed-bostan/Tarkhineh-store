@@ -1,29 +1,49 @@
-@import "../sassContainer/mixins";
 @import "../sassContainer/variables";
+@import "../sassContainer/mixins";
 
 .header_container {
-  width: 100%;
+  cursor: grab;
+  overflow: hidden;
 
-  .header_information_container {
-    position: relative;
+  .header_wrapper {
     display: flex;
   }
 
-  .header_text {
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    // Fonts
-    @include fontTitleMobile;
-    color: $primaryColorLight;
-    text-align: center;
-  }
+  .header_item_container {
+    min-width: 22.5rem;
+    min-height: 11rem;
+    position: relative;
 
-  .header_image {
-    width: 22.5rem;
-    height: 11rem;
-    object-fit: cover;
+    .header_image {
+      width: 100%;
+      min-height: 100%;
+      pointer-events: none;
+    }
+
+    .header_text {
+      position: absolute;
+      width: 100%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      // Fonts
+      color: white;
+      text-align: center;
+    }
+
+    .header_button {
+      position: absolute;
+      left: 50%;
+      bottom: 2.5rem;
+      transform: translateX(-50%);
+      //
+      width: 5.68rem;
+      height: 1.5rem;
+      border-radius: 4px;
+      background: $primaryColor;
+      border: none;
+      // Fonts
+      @include fontInformationMobile;
+    }
   }
 }

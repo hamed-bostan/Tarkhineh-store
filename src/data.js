@@ -424,7 +424,7 @@ export const navbarItems = [
 ];
 
 // Banner
-export const banner = [
+export const bannerInformation = [
   {
     id: 1,
     image: "assets/images/bannerImages/slider_01.png",
@@ -437,6 +437,21 @@ export const banner = [
   },
   {
     id: 3,
+    image: "assets/images/bannerImages/slider_03.png",
+    text: "لذت غذای سالم و گیاهی را با ترخینه تجربه کنید!",
+  },
+  {
+    id: 4,
+    image: "assets/images/bannerImages/slider_01.png",
+    text: "تجربه غذای سالم و گیاهی به سبک ترخینه",
+  },
+  {
+    id: 5,
+    image: "assets/images/bannerImages/slider_02.png",
+    text: "طعم بی‌نظیر طبیعت!",
+  },
+  {
+    id: 6,
     image: "assets/images/bannerImages/slider_03.png",
     text: "لذت غذای سالم و گیاهی را با ترخینه تجربه کنید!",
   },
