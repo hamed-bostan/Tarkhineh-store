@@ -1,0 +1,71 @@
+@import "../../sassContainer//mixins";
+@import "../../sassContainer/variables";
+
+.menu_component_title {
+  margin-top: 1.5rem;
+  text-align: center;
+  @include fontTitleMobile;
+}
+
+.menu_component_wrapper {
+  padding: 0 1.25rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3.5rem 1rem;
+  margin-top: 0.75rem;
+}
+
+.menu_component_item_container {
+  display: flex;
+  justify-content: center;
+
+  .menu_component_image_container {
+    position: relative;
+  }
+}
+
+.menu_component_image {
+  width: 7.5rem;
+  height: 7.5rem;
+}
+
+.menu_component_background {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  //
+  width: 9.5rem;
+  height: 5rem;
+  border-radius: 4px;
+  z-index: -1;
+  background-color: $primaryColor;
+  border: 1px solid $primaryColor;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1),
+    0px 1px 2px 0px rgba(0, 0, 0, 0.1), 0px 4px 4px 0px rgba(0, 0, 0, 0.09),
+    0px 9px 5px 0px rgba(0, 0, 0, 0.05), 0px 16px 6px 0px rgba(0, 0, 0, 0.01),
+    0px 25px 7px 0px rgba(0, 0, 0, 0);
+}
+
+.menu_component_text {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 100%);
+  width: 6rem;
+  height: 2rem;
+  border-radius: 4px;
+  background: #f9f9f9;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1),
+    0px 1px 2px 0px rgba(0, 0, 0, 0.1), 0px 4px 4px 0px rgba(0, 0, 0, 0.09),
+    0px 9px 5px 0px rgba(0, 0, 0, 0.05), 0px 16px 6px 0px rgba(0, 0, 0, 0.01),
+    0px 25px 7px 0px rgba(0, 0, 0, 0);
+  // Fonts
+  color: $blackColor;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 180%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
