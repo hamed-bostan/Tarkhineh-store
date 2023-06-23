@@ -14,6 +14,11 @@
     min-height: 11rem;
     position: relative;
 
+    @include query(1000px) {
+      min-width: 62.5rem;
+      min-height: 20rem;
+    }
+
     .header_image {
       width: 100%;
       min-height: 100%;
@@ -29,6 +34,13 @@
       // Fonts
       color: white;
       text-align: center;
+      font-size: 1rem;
+      font-weight: 700;
+      line-height: 140%;
+
+      @include query(1000px) {
+        font-size: 2.5rem;
+      }
     }
 
     .header_button {
@@ -44,6 +56,14 @@
       border: none;
       // Fonts
       @include fontInformationMobile;
+
+      @include query(1000px) {
+        width: 10rem;
+        height: 2rem;
+        // Fonts
+        font-size: 1rem;
+        font-weight: 500;
+      }
     }
   }
 }
