@@ -1,5 +1,5 @@
-@import "../sassContainer/variables";
-@import "../sassContainer/mixins";
+@import "../../sassContainer/variables";
+@import "../../sassContainer/mixins";
 
 .header_container {
   cursor: grab;
@@ -10,13 +10,13 @@
   }
 
   .header_item_container {
-    min-width: 22.5rem;
+    // min-width: 22.5rem;
+    min-width: 100%;
     min-height: 11rem;
     position: relative;
 
     @include query(1000px) {
-      min-width: 62.5rem;
-      min-height: 20rem;
+      min-height: 17rem;
     }
 
     .header_image {
@@ -39,7 +39,7 @@
       line-height: 140%;
 
       @include query(1000px) {
-        font-size: 2.5rem;
+        font-size: 2.25rem;
       }
     }
 

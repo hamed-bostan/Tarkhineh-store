@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./Header.scss";
-import { bannerInformation } from "../../data";
+import { bannerInformation } from "../../../data"; 
 import { motion } from "framer-motion";
 
 const Header = () => {
