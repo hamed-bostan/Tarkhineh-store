@@ -161,19 +161,7 @@
   }
 }
 
-// Fonts
-@mixin fontInformationDesktop {
-  text-align: justify;
-  font-size: 1.25rem;
-  line-height: 180%;
-}
-
-@mixin fontTitleDesktop {
-  font-size: 1.5rem;
-  font-weight: 700;
-  line-height: 140%;
-}
-
+// Fonts | menu page
 // Mobile version
 @mixin fontInformationMobile {
   color: $naturalWhite;
@@ -181,9 +169,28 @@
   line-height: 180%;
 }
 
-@mixin fontTitleMobile {
+@mixin fontTitleMobilePrimary {
   color: $blackColor;
   font-size: 1rem;
   font-weight: 700;
   line-height: 140%;
+}
+
+@mixin fontTitleMobileSecondary {
+  color: $blackColor;
+  font-size: 0.75rem;
+  line-height: 180%;
+}
+
+// Desktop version
+@mixin fontInformationDesktop {
+  font-size: 1.25rem;
+}
+
+@mixin fontTitleDesktopPrimary {
+  font-size: 1.5rem;
+}
+
+@mixin fontTitleDesktopSecondary {
+  font-size: 1.25rem;
 }
