@@ -109,11 +109,9 @@
       display: flex;
       column-gap: 1.5rem;
       justify-content: center;
+      align-items: center;
       // Font
-      color: $greyColorDark;
-      text-align: center;
-      font-size: 1.1rem;
-      line-height: 180%;
+      @include fontTitleDesktopSecondary;
     }
 
     .navbar_links_wrapper_show {
@@ -155,7 +153,7 @@
     @include query(1100px) {
       .navbar_link_active {
         position: relative;
-        font-size: 1.25rem;
+        font-size: 1.15rem;
         font-weight: 600;
         line-height: 140%;
       }
