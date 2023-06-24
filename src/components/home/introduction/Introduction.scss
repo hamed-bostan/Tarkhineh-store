@@ -3,25 +3,49 @@
 
 .Introduction_container {
   padding: 1rem 1.25rem;
-  margin-top: 3.5rem;
+  margin: 3.5rem auto 0 auto;
   background: url("../../../../public/assets/images/bannerImages/about.png");
   background-size: cover;
+  max-width: 1500px;
+
+  @include query(1100px) {
+    display: flex;
+  }
 }
 
+// information section
 .introduction_information_container {
-  position: relative;
+  background: red;
+
+  @include query(1100px) {
+    flex: 1;
+  }
 
   .Introduction_title {
     @include fontTitleMobilePrimary;
     font-weight: normal;
     line-height: 180%;
     color: $naturalWhite;
+
+    @include query(1100px) {
+      @include fontTitleDesktopPrimary;
+    }
   }
 
   .introduction_information {
     @include fontInformationMobile;
     margin-top: 0.5rem;
     text-align: justify;
+    max-width: 24rem;
+
+    @include query(700px) {
+      max-width: 70%;
+    }
+
+    @include query(1100px) {
+      @include fontInformationDesktop;
+      max-width: 100%;
+    }
   }
 
   .Introduction_button {
@@ -29,12 +53,21 @@
     margin-top: 0.5rem;
   }
 }
-
+// End of information section
+// ***************
+// ***************
+// Icons section
 .Introduction_icons_container {
-  margin-top: 1.5rem;
+  padding-top: 1.5rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   row-gap: 1rem;
+  background: blue;
+
+  @include query(1100px) {
+    flex: 1;
+    background: green;
+  }
 
   .introduction_icons_wrapper {
     display: flex;
@@ -45,6 +78,11 @@
     .Introduction_icon {
       width: 1.5rem;
       height: 1.5rem;
+
+      @include query(1100px) {
+        width: 3rem;
+        height: 3rem;
+      }
     }
 
     .Introduction_text {
@@ -53,3 +91,4 @@
     }
   }
 }
+// End of Icons section

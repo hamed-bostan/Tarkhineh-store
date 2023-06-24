@@ -4,7 +4,7 @@ import { menuInformation } from "../../../data";
 
 const MenuComponent = () => {
   return (
-    <>
+    <div className="menu_component_container">
       <p className="menu_component_title">منوی رستوران</p>
       <div className="menu_component_wrapper">
         {menuInformation.map((item) => {
@@ -17,7 +17,7 @@ const MenuComponent = () => {
           );
         })}
       </div>
-    </>
+    </div>
   );
 };
 

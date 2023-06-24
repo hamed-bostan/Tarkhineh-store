@@ -1,6 +1,11 @@
 @import "../../sassContainer//mixins";
 @import "../../sassContainer/variables";
 
+.menu_component_container {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
 .menu_component_title {
   margin-top: 1.5rem;
   text-align: center;

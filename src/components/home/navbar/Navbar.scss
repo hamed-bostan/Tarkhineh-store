@@ -2,11 +2,15 @@
 @import "../../sassContainer/variables";
 
 // Header Container
-.navbar_header {
+
+.navbar_container_hamed {
   position: fixed;
   top: 0;
   right: 0;
   width: 100%;
+}
+
+.navbar_header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -15,6 +19,8 @@
   padding: 0 1.25rem;
   z-index: 900;
   background: $naturalWhite;
+  max-width: 1500px;
+  margin: 0 auto;
 
   @include query(1100px) {
     display: grid;
