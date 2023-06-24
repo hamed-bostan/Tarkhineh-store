@@ -31,11 +31,9 @@
       left: 50%;
       transform: translate(-50%, -50%);
       // Fonts
+      @include fontTitleMobilePrimary;
       color: white;
       text-align: center;
-      font-size: 1rem;
-      font-weight: 700;
-      line-height: 140%;
 
       @include query(1000px) {
         font-size: 2rem;
@@ -48,23 +46,10 @@
       bottom: 2.5rem;
       transform: translateX(-50%);
       //
-      width: 5.68rem;
-      height: 1.5rem;
-      border-radius: 4px;
-      background: $primaryColor;
-      border: none;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      // Fonts
-      @include fontInformationMobile;
+      @include primaryButtonMobile;
 
       @include query(1000px) {
-        width: 10rem;
-        height: 2rem;
-        // Fonts
-        font-size: 1rem;
-        font-weight: 500;
+        @include primaryButtonDesktop;
       }
     }
   }

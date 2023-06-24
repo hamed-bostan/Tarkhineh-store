@@ -1,167 +1,6 @@
 @import "./variables";
 
-// Desktop version | Branch page
-@mixin primaryButtonDesktop {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  //
-  background: $primaryColor;
-  width: 16rem;
-  height: 2.5rem;
-  padding: 0.5rem 1rem;
-  border-radius: 0.25rem;
-  // Font
-  color: $whiteColor;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 1rem;
-  line-height: 180%;
-}
-
-// Mobile version. Branch page
-@mixin primaryButtonMobile {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  //
-  background: $primaryColor;
-  width: 9.5rem;
-  height: 2rem;
-  padding: 0.5rem;
-  border-radius: 0.25rem;
-  // Font
-  color: $whiteColor;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 0.625rem;
-  line-height: 180%;
-}
-
-// Desktop version | Branch page
-@mixin primaryButtonOutlinedDesktop {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  //
-  background: transparent;
-  width: 11.5rem;
-  height: 2.5rem;
-  padding: 0.5rem 1rem;
-  border: 1px solid $primaryColor;
-  border-radius: 0.25rem;
-  // Font
-  color: $primaryColor;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 1rem;
-  line-height: 180%;
-}
-
-// Mobile version | Branch page
-@mixin primaryButtonOutlinedMobile {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  //
-  background: transparent;
-  width: 9.5rem;
-  height: 2rem;
-  padding: 0.5rem;
-  border: 1px solid $primaryColor;
-  border-radius: 0.25rem;
-  // Font
-  color: $primaryColor;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 0.75rem;
-  line-height: 180%;
-}
-
-// Discount | Menu page
-@mixin discount {
-  width: 2rem;
-  height: 1;
-  background: $redColorLight;
-  border-radius: 0.5rem;
-  // Font
-  font-style: normal;
-  font-weight: 400;
-  font-size: 0.625rem;
-  line-height: 180%;
-  color: $redColor;
-}
-
-// Desktop version | Menu page
-@mixin greyButtonDesktop {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  //
-  background: $greyColor;
-  width: 7.875rem;
-  height: 2rem;
-  padding: 0px 0.5rem;
-  border-radius: 4rem;
-  // Font
-  color: $blackColor;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 180%;
-}
-
-// Mobile version | Menu page
-@mixin greyButtonMobile {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  //
-  background: $greyColor;
-  width: 5.5rem;
-  height: 1.5rem;
-  padding: 0px 0.5rem;
-  border-radius: 0.5rem;
-  // Font
-  color: $blackColor;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 0.625rem;
-  line-height: 180%;
-}
-
-// Desktop
-@mixin iconDesktop {
-  width: 1.5rem;
-  height: 1.5rem;
-  border-radius: 0.25rem;
-}
-
-@mixin iconDesktopIsActive {
-  background-color: $primaryColor;
-  color: $whiteColor;
-}
-
-// Mobile
-@mixin iconMobile {
-  color: $primaryColor;
-  width: 1rem;
-  height: 1rem;
-}
-
-@mixin iconMobileIsActive {
-  background-color: $primaryColor;
-  color: $whiteColor;
-}
-
-// Query
-@mixin query($width) {
-  @media (min-width: $width) {
-    @content;
-  }
-}
-
-// Fonts | menu page
+// Fonts section | Main page
 // Mobile version
 @mixin fontInformationMobile {
   color: $naturalWhite;
@@ -193,4 +32,137 @@
 
 @mixin fontTitleDesktopSecondary {
   font-size: 1.25rem;
+}
+// End of Fonts section
+
+// Buttons section
+// primary button
+// Mobile version | Main page
+@mixin primaryButtonMobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //
+  background: $primaryColor;
+  width: 5.68rem;
+  height: 1.5rem;
+  border-radius: 4px;
+  border: none;
+  // Font
+  @include fontInformationMobile;
+}
+
+// Desktop version
+@mixin primaryButtonDesktop {
+  width: 11.5rem;
+  height: 2.5rem;
+  border-radius: 8px;
+  // Font
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 180%;
+}
+// End of primary button
+
+// outlined button
+// Mobile version
+@mixin primaryButtonOutlinedMobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //
+  background: transparent;
+  width: 9.5rem;
+  height: 2rem;
+  border-radius: 4px;
+  border: 1px solid $naturalWhite;
+  // Font
+  @include fontTitleMobileSecondary;
+  color: $naturalWhite;
+}
+
+// Desktop version
+@mixin primaryButtonOutlinedDesktop {
+  width: 11.5rem;
+  height: 2.5rem;
+  // Font
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 180%;
+}
+// End of outlined button
+
+// Grey button
+// Mobile version | Menu page
+@mixin greyButtonMobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //
+  background: $greyColor;
+  height: 1.5rem;
+  padding: 0rem 0.5rem;
+  border-radius: 0.5rem;
+  // Font
+  @include fontInformationMobile;
+  color: $blackColor;
+}
+
+// Desktop version
+@mixin greyButtonDesktop {
+  height: 2rem;
+  padding: 0 0.5rem;
+  border-radius: 4rem;
+  // Font
+  font-size: 1rem;
+}
+// End of Grey button
+// End of buttons section
+
+// Discount section | Main page
+@mixin discount {
+  width: 2rem;
+  height: 1;
+  background: $redColorLight;
+  border-radius: 0.5rem;
+  // Font
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.625rem;
+  line-height: 180%;
+  color: $redColor;
+}
+// End of discount section
+
+// Icons section
+// Mobile version
+@mixin iconMobile {
+  color: $primaryColor;
+  width: 1rem;
+  height: 1rem;
+}
+
+@mixin iconMobileIsActive {
+  background-color: $primaryColor;
+  color: $whiteColor;
+}
+
+// Desktop version
+@mixin iconDesktop {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 0.25rem;
+}
+
+@mixin iconDesktopIsActive {
+  background-color: $primaryColor;
+  color: $whiteColor;
+}
+// End od Icons section
+
+// Query
+@mixin query($width) {
+  @media (min-width: $width) {
+    @content;
+  }
 }
