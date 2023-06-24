@@ -480,3 +480,27 @@ export const menuInformation = [
     text: "نوشیدنی",
   },
 ];
+
+// Introduction
+export const introductionIcons = [
+  {
+    id: 1,
+    icon: "assets/images/icons/user_02.png",
+    text: "پرسنلی مجرب و حرفه‌ای",
+  },
+  {
+    id: 2,
+    icon: "assets/images/icons/diagram.png",
+    text: "کیفیت بالای غذاها",
+  },
+  {
+    id: 3,
+    icon: "assets/images/icons/home-wifi.png",
+    text: "محیطی دلنشین و آرام",
+  },
+  {
+    id: 4,
+    icon: "assets/images/icons/menu-board.png",
+    text: "منوی متنوع",
+  },
+];

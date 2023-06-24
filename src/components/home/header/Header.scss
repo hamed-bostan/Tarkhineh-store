@@ -14,7 +14,7 @@
     height: 11rem;
     position: relative;
 
-    @include query(1000px) {
+    @include query(1100px) {
       min-height: 17rem;
     }
 
@@ -35,7 +35,7 @@
       color: white;
       text-align: center;
 
-      @include query(1000px) {
+      @include query(1100px) {
         font-size: 2rem;
       }
     }
@@ -48,7 +48,7 @@
       //
       @include primaryButtonMobile;
 
-      @include query(1000px) {
+      @include query(1100px) {
         @include primaryButtonDesktop;
       }
     }

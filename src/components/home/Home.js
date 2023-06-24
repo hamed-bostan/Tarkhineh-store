@@ -4,6 +4,7 @@ import "./Home.scss";
 import Navbar from "./navbar/Navbar";
 import Header from "./header/Header";
 import MenuComponent from "./menuComponent/MenuComponent";
+import Introduction from "./introduction/Introduction";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <Navbar />
       <Header />
       <MenuComponent />
+      <Introduction />
     </div>
   );
 };

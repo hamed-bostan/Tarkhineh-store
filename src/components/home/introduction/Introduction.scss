@@ -1,0 +1,55 @@
+@import "../../sassContainer/variables";
+@import "../../sassContainer/mixins";
+
+.Introduction_container {
+  padding: 1rem 1.25rem;
+  margin-top: 3.5rem;
+  background: url("../../../../public/assets/images/bannerImages/about.png");
+  background-size: cover;
+}
+
+.introduction_information_container {
+  position: relative;
+
+  .Introduction_title {
+    @include fontTitleMobilePrimary;
+    font-weight: normal;
+    line-height: 180%;
+    color: $naturalWhite;
+  }
+
+  .introduction_information {
+    @include fontInformationMobile;
+    margin-top: 0.5rem;
+    text-align: justify;
+  }
+
+  .Introduction_button {
+    @include primaryButtonOutlinedMobile;
+    margin-top: 0.5rem;
+  }
+}
+
+.Introduction_icons_container {
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 1rem;
+
+  .introduction_icons_wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.25rem;
+    align-items: center;
+
+    .Introduction_icon {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+
+    .Introduction_text {
+      @include fontTitleMobileSecondary;
+      color: $naturalWhite;
+    }
+  }
+}
