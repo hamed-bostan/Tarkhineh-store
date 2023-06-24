@@ -54,6 +54,9 @@
       border-radius: 4px;
       background: $primaryColor;
       border: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       // Fonts
       @include fontInformationMobile;
 
