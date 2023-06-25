@@ -8,7 +8,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="navbar_container_hamed">
+    <div className="navbar_container">
       <div className="navbar_header">
         {/* Header section */}
         <div className="navbar_right_side_container">
