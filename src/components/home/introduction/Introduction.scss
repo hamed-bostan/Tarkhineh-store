@@ -15,8 +15,6 @@
 
 // information section
 .introduction_information_container {
-  background: red;
-
   @include query(1100px) {
     flex: 1;
   }
@@ -29,6 +27,7 @@
 
     @include query(1100px) {
       @include fontTitleDesktopPrimary;
+      font-weight: 700;
     }
   }
 
@@ -62,11 +61,9 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   row-gap: 1rem;
-  background: blue;
 
   @include query(1100px) {
     flex: 1;
-    background: green;
   }
 
   .introduction_icons_wrapper {
@@ -82,12 +79,18 @@
       @include query(1100px) {
         width: 3rem;
         height: 3rem;
+        width: 2.5rem;
+        height: 2.5rem;
       }
     }
 
     .Introduction_text {
       @include fontTitleMobileSecondary;
       color: $naturalWhite;
+
+      @include query(1100px) {
+        @include fontTitleDesktopSecondary;
+      }
     }
   }
 }

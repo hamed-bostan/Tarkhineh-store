@@ -4,6 +4,26 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: estedad;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../public/assets/fonts/Estedad-Regular.ttf") format("ttf");
+  src: url("../public/assets/fonts/Estedad-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: estedad;
+  font-style: normal;
+  font-weight: 700;
+  // src: url("../public/assets/fonts/Estedad-Bold.ttf") format("ttf");
+  // src: url("../public/assets/fonts/Estedad-Bold.woff2") format("woff2");
+  src: url("../public/assets/fonts/Estedad-Medium.ttf") format("ttf");
+  src: url("../public/assets/fonts/Estedad-Medium.woff2") format("woff2");
+}
+
 body {
+  font-family: estedad;
+  direction: rtl;
   padding-top: 4rem;
 }

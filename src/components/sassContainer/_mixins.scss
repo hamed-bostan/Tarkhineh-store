@@ -23,17 +23,21 @@
 
 // Desktop version
 @mixin fontInformationDesktop {
-  font-size: 1.25rem;
+  // font-size: 1.25rem;
+  // cause it was too big i changed to:
+  font-size: 0.7rem;
 }
 
 @mixin fontTitleDesktopPrimary {
-  font-size: 1.5rem;
+  // font-size: 1.5rem;
+  // cause it was too big i changed to:
+  font-size: 1.1rem;
 }
 
 @mixin fontTitleDesktopSecondary {
   // font-size: 1.25rem;
   // cause it was too big i changed to:
-  font-size: 1.1rem;
+  font-size: 0.8rem;
 }
 // End of Fonts section
 
@@ -56,8 +60,11 @@
 
 // Desktop version
 @mixin primaryButtonDesktop {
-  width: 11.5rem;
-  height: 2.5rem;
+  // width: 11.5rem;
+  // height: 2.5rem;
+  // cause it was too big i changed to:
+  width: 9rem;
+  height: 2.2rem;
   border-radius: 8px;
   // Font
   font-size: 1rem;
@@ -151,9 +158,12 @@
 
 // Desktop version
 @mixin iconDesktop {
-  width: 1.5rem;
-  height: 1.5rem;
   border-radius: 0.25rem;
+  // width: 1.5rem;
+  // height: 1.5rem;
+  // cause it was too big i changed to:
+  width: 1.2rem;
+  height: 1.2rem;
 }
 
 @mixin iconDesktopIsActive {
