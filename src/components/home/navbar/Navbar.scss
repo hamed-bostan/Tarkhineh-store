@@ -158,7 +158,7 @@
     @include query(1100px) {
       .navbar_link_active {
         position: relative;
-        font-size: 1.15rem;
+        font-size: 0.96rem;
         font-weight: 600;
         line-height: 140%;
       }
@@ -167,9 +167,9 @@
         content: "";
         background: $primaryColor;
         position: absolute;
-        top: 1.6rem;
+        top: 1.9rem;
         right: 0;
-        height: 1.5px;
+        height: 1.2px;
         width: 80%;
         border-radius: 1px;
         transform: translate(-10%, 0);

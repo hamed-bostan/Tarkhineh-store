@@ -50,6 +50,11 @@
   .Introduction_button {
     @include primaryButtonOutlinedMobile;
     margin-top: 0.5rem;
+
+    @include query(1100px) {
+      @include primaryButtonOutlinedDesktop;
+      margin-top: 1rem;
+    }
   }
 }
 // End of information section
