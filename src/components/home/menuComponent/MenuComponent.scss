@@ -4,6 +4,7 @@
 .menu_component_container {
   max-width: 1500px;
   margin: 0 auto;
+  padding: 0 1.25rem;
 }
 
 .menu_component_title {
@@ -18,7 +19,6 @@
 }
 
 .menu_component_wrapper {
-  padding: 0 1.25rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 3.5rem 1rem;
@@ -27,6 +27,8 @@
   @include query(1100px) {
     grid-template-columns: repeat(4, 1fr);
     margin-top: 1.6rem;
+    justify-items: center;
+    gap: 0;
   }
 }
 
@@ -34,6 +36,11 @@
   display: flex;
   justify-content: center;
   position: relative;
+
+  @include query(1100px) {
+    // width: 10.8rem;
+    width: 11.3rem;
+  }
 }
 
 .menu_component_image {
@@ -64,7 +71,7 @@
     0px 25px 7px 0px rgba(0, 0, 0, 0);
 
   @include query(1100px) {
-    width: 10.8rem;
+    width: 100%;
     height: 5.7rem;
   }
 }

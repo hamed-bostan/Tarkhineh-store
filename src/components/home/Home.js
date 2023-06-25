@@ -5,6 +5,7 @@ import Navbar from "./navbar/Navbar";
 import Header from "./header/Header";
 import MenuComponent from "./menuComponent/MenuComponent";
 import Introduction from "./introduction/Introduction";
+import BranchComponent from "./branchComponent/BranchComponent";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <Header />
       <MenuComponent />
       <Introduction />
+      <BranchComponent />
     </div>
   );
 };

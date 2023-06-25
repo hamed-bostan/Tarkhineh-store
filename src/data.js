@@ -371,7 +371,7 @@ export const branchesInformation = [
     image: "assets/images/branchImages/branch_02.png",
     title: "شعبه چالوس",
     description:
-      "چالوس، خیابان ۱۷ شهریور، بعد کوچه کوروش، جنب داروخانه دکتر میلانی، رستوران ترخینه",
+      "چالوس، خیابان ۱۷ شهریور، بعد کوچه کوروش، جنب داروخانه دکتر میلانی",
   },
   {
     id: 3,
