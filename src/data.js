@@ -370,8 +370,7 @@ export const branchesInformation = [
     id: 2,
     image: "assets/images/branchImages/branch_02.png",
     title: "شعبه چالوس",
-    description:
-      "چالوس، خیابان ۱۷ شهریور، بعد کوچه کوروش، جنب داروخانه دکتر میلانی",
+    description: "چالوس، خیابان ۱۷ شهریور، بعد کوچه کوروش، جنب داروخانه",
   },
   {
     id: 3,

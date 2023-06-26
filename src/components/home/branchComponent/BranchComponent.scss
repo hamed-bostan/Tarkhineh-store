@@ -39,13 +39,30 @@
     background: $naturalWhite;
     height: 5rem;
 
+    &:hover .branch_component_gallery_icon {
+      display: block;
+    }
+
     @include query(1100px) {
       flex-direction: column;
-      width: 11.3rem;
+      // width: 11.3rem;
+      width: 13rem;
       height: 17rem;
       column-gap: 0;
+
+      &:hover .branch_component_image {
+        height: 8rem;
+      }
+
+      &:hover .branch_component_button_container {
+        display: flex;
+      }
     }
   }
+}
+
+.branch_component_image_container {
+  position: relative;
 }
 
 .branch_component_image {
@@ -64,9 +81,41 @@
   }
 }
 
+.branch_component_expand_icon {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  width: 1rem;
+  height: 1rem;
+  cursor: pointer;
+
+  @include query(1100px) {
+    display: none;
+  }
+}
+
+.branch_component_gallery_icon {
+  display: none;
+
+  @include query(1100px) {
+    // display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2rem;
+    height: 2rem;
+    transform: translate(-50%, -50%);
+  }
+}
+
 // Information container
 .branch_component_information {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0.2rem;
 }
 
 .branch_component_card_title {
@@ -91,4 +140,36 @@
     font-size: 0.875rem;
     font-weight: 500;
   }
+}
+
+.branch_component_button_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 6rem;
+  height: 1.7rem;
+  background: transparent;
+  border: 1px solid $primaryColorMiddleDark;
+  border-radius: 4px;
+  margin-top: 0.5rem;
+  // hidden
+  display: none;
+}
+
+.branch_component_button {
+  @include query(1100px) {
+    background: transparent;
+    border: none;
+    // Fonts
+    color: $primaryColorMiddleDark;
+    font-size: 0.7rem;
+    line-height: 170%;
+    font-family: estedad;
+  }
+}
+
+.branch_component_arrow_left {
+  width: 1rem;
+  height: 1rem;
 }

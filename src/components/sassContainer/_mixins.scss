@@ -92,8 +92,11 @@
 
 // Desktop version
 @mixin primaryButtonOutlinedDesktop {
-  width: 11.5rem;
-  height: 2.5rem;
+  // width: 11.5rem;
+  // height: 2.5rem;
+  // cause it was too big i changed to:
+  width: 9rem;
+  height: 2rem;
   // Font
   font-size: 1rem;
   font-weight: 500;
