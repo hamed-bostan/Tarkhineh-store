@@ -503,3 +503,18 @@ export const introductionIcons = [
     text: "منوی متنوع",
   },
 ];
+
+export const footerInformation = [
+  {
+    id: 1,
+    text: "پرسش‌های متداول",
+  },
+  {
+    id: 2,
+    text: "قوانین ترخینه",
+  },
+  {
+    id: 3,
+    text: "حریم خصوصی",
+  },
+];

@@ -6,6 +6,7 @@ import Header from "./header/Header";
 import MenuComponent from "./menuComponent/MenuComponent";
 import Introduction from "./introduction/Introduction";
 import BranchComponent from "./branchComponent/BranchComponent";
+import Footer from "./footer/Footer";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <MenuComponent />
       <Introduction />
       <BranchComponent />
+      <Footer />
     </div>
   );
 };
