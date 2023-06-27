@@ -34,11 +34,12 @@
       transform: translate(-50%, -50%);
       // Fonts
       @include fontTitleMobilePrimary;
-      color: white;
+      color: #e5f2e9;
       text-align: center;
 
       @include query(1100px) {
         @include fontTitleDesktopPrimary;
+        color: #e5f2e9;
       }
     }
 

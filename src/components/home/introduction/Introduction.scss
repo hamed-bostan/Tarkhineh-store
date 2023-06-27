@@ -28,6 +28,7 @@
     @include query(1100px) {
       @include fontTitleDesktopPrimary;
       font-weight: 700;
+      color: $naturalWhite;
     }
   }
 
@@ -95,6 +96,7 @@
 
       @include query(1100px) {
         @include fontTitleDesktopSecondary;
+        color: $naturalWhite;
       }
     }
   }
