@@ -1,0 +1,26 @@
+@import "../sassContainer/mixins";
+
+.cart_header_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.25rem;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+// header cart section
+.cart_arrow_icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+.cart_header_title {
+  @include fontTitleMobilePrimary;
+}
+
+.cart_trash_icon {
+  width: 1rem;
+  height: 1rem;
+}
+// End of header cart section

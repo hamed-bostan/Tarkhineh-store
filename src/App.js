@@ -1,5 +1,9 @@
 import "./App.scss";
+// React Router Dom
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+// Redux
+import { Provider } from "react-redux";
+import store from "./components/redux/store";
 // Components
 import Home from "./components/home/Home";
 import ContactUs from "./components/contactUs/ContactUs";
@@ -12,17 +16,19 @@ import Cart from "./components/cart/Cart";
 function App() {
   return (
     <div>
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/contact" element={<ContactUs />} />
-          <Route path="/aboutUs" element={<AboutUs />} />
-          <Route path="/franchise" element={<Franchise />} />
-          <Route path="/menu" element={<Menu />} />
-          <Route path="/cart" element={<Cart />} />
-          <Route path="*" element={<NoPage />} />
-        </Routes>
-      </BrowserRouter>
+      <Provider store={store}>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/contact" element={<ContactUs />} />
+            <Route path="/aboutUs" element={<AboutUs />} />
+            <Route path="/franchise" element={<Franchise />} />
+            <Route path="/menu" element={<Menu />} />
+            <Route path="/cart" element={<Cart />} />
+            <Route path="*" element={<NoPage />} />
+          </Routes>
+        </BrowserRouter>
+      </Provider>
     </div>
   );
 }

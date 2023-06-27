@@ -34,6 +34,7 @@ const Menu = () => {
         </div>
       </div>
       {/* End of title section */}
+      {/* card section */}
       <section className="menu_items_main_container">
         {data.map((item) => {
           const {
@@ -79,6 +80,7 @@ const Menu = () => {
           );
         })}
       </section>
+      {/* End of card section */}
     </div>
   );
 };
