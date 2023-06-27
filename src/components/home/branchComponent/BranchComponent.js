@@ -9,9 +9,9 @@ const BranchComponent = () => {
       <span className="branch_component_main_title">ترخینه گردی</span>
       <div className="branch_component_wrapper">
         {branchesInformation.map((item) => {
-          const { image, title, description } = item;
+          const { id, image, title, description } = item;
           return (
-            <div className="branch_component_container">
+            <div className="branch_component_container" key={id}>
               {/* image container */}
               <div className="branch_component_image_container">
                 <img src={image} alt="" className="branch_component_image" />

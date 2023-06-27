@@ -87,6 +87,7 @@
     @include query(1100px) {
       width: 9rem;
       height: 3rem;
+      // object-fit: cover;
     }
   }
 

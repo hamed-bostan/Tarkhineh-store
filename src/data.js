@@ -1,7 +1,8 @@
 // Iranian Foods
-export const iranianFoodInformation = [
+export const foodInformation = [
   {
     id: 1,
+    category: "غذاهای ایرانی",
     image: "assets/images/foodImages/iranian_food/iranian_food_01.png",
     title: "کوفته برنجی",
     description: "برنج سبزی کوفته لپه آرد نخودچی، گردو و زرشک و آلو پیاز",
@@ -12,6 +13,7 @@ export const iranianFoodInformation = [
   },
   {
     id: 2,
+    category: "غذاهای ایرانی",
     image: "assets/images/foodImages/iranian_food/iranian_food_02.png",
     title: "کشک بادمجان",
     description: "بادمجان، کشک، نعناع خشک، مغز گردو، سیر، پیاز",
@@ -22,6 +24,7 @@ export const iranianFoodInformation = [
   },
   {
     id: 3,
+    category: "غذاهای ایرانی",
     image: "assets/images/foodImages/iranian_food/iranian_food_03.png",
     title: "میرزا قاسمی",
     description: "بادمجان، گوجه فرنگی، تخم مرغ، سیر، رب گوجه فرنگی",
@@ -32,6 +35,7 @@ export const iranianFoodInformation = [
   },
   {
     id: 4,
+    category: "غذاهای ایرانی",
     image: "assets/images/foodImages/iranian_food/iranian_food_04.png",
     title: "باقلاقاتوق",
     description: "پاچ باقلا، شوید خشک، کره، سیر، تخم مرغ",
@@ -42,6 +46,7 @@ export const iranianFoodInformation = [
   },
   {
     id: 5,
+    category: "غذاهای ایرانی",
     image: "assets/images/foodImages/iranian_food/iranian_food_05.png",
     title: "فلافل",
     description: "نخود، پیاز، تخم گشنیز، سیر، جعفری، سیب زمینی",
@@ -52,6 +57,7 @@ export const iranianFoodInformation = [
   },
   {
     id: 6,
+    category: "غذاهای ایرانی",
     image: "assets/images/foodImages/iranian_food/iranian_food_06.png",
     title: "کله جوش",
     description: "کشک، گردو، پیاز، نعناع خشک",
@@ -62,6 +68,7 @@ export const iranianFoodInformation = [
   },
   {
     id: 7,
+    category: "غذاهای ایرانی",
     image: "assets/images/foodImages/iranian_food/iranian_food_07.png",
     title: "بورانی بادمجان",
     description: "بادمجان قلمی، ماست چکیده، سیر، روغن زیتون، مغز گردو",
@@ -73,6 +80,7 @@ export const iranianFoodInformation = [
   },
   {
     id: 8,
+    category: "غذاهای ایرانی",
     image: "assets/images/foodImages/iranian_food/iranian_food_08.png",
     title: "بادمجان شکم‌پر",
     description: "بادمجان، پیاز، گوجه فرنگی	، سبزی خشک",
@@ -84,6 +92,7 @@ export const iranianFoodInformation = [
   },
   {
     id: 9,
+    category: "غذاهای ایرانی",
     image: "assets/images/foodImages/iranian_food/iranian_food_09.png",
     title: "دلمه برگ کلم",
     description: "کلم برگ، برنج، لپه پخته، پیاز، سبزی معطر رب",
@@ -95,6 +104,7 @@ export const iranianFoodInformation = [
   },
   {
     id: 10,
+    category: "غذاهای ایرانی",
     image: "assets/images/foodImages/iranian_food/iranian_food_10.png",
     title: "دلمه برگ مو",
     description: "پیاز، برنج، لپه، سبزی دلمه، سرکه",
@@ -105,6 +115,7 @@ export const iranianFoodInformation = [
   },
   {
     id: 11,
+    category: "غذاهای ایرانی",
     image: "assets/images/foodImages/iranian_food/iranian_food_11.png",
     title: "کوکو سبزی",
     description: "تخم مرغ، گردو، سیر، آرد، روغن مایع سبزی کوکویی",
@@ -115,6 +126,7 @@ export const iranianFoodInformation = [
   },
   {
     id: 12,
+    category: "غذاهای ایرانی",
     image: "assets/images/foodImages/iranian_food/iranian_food_12.png",
     title: "کوکو سیب‌زمینی و عدس",
     description: "عدس، سیب زمینی، پیاز متوسط، تخم مرغ، پودر سیر، آرد سوخاری",
@@ -123,12 +135,11 @@ export const iranianFoodInformation = [
     discountedPrice: "۱۰۵٬۰۰۰ تومان",
     star: "some star",
   },
-];
 
-// Not Iranian Foods
-export const notIranianFoodInformation = [
+  // Not Iranian Foods
   {
-    id: 1,
+    id: 13,
+    category: "غذاهای غیر ایرانی",
     image: "assets/images/foodImages/not_iranian_food/not_iranian_food_01.png",
     title: "پاستا سبزیجات",
     description: "پاستا، قارچ، گوجه، کدوی خوردشده، پیاز خلالی‌شده",
@@ -138,7 +149,8 @@ export const notIranianFoodInformation = [
     star: "some star",
   },
   {
-    id: 2,
+    id: 14,
+    category: "غذاهای غیر ایرانی",
     image: "assets/images/foodImages/not_iranian_food/not_iranian_food_02.png",
     title: "پاستا بلونز",
     description:
@@ -149,7 +161,8 @@ export const notIranianFoodInformation = [
     star: "some star",
   },
   {
-    id: 3,
+    id: 15,
+    category: "غذاهای غیر ایرانی",
     image: "assets/images/foodImages/not_iranian_food/not_iranian_food_03.png",
     title: "راتاتویی",
     description:
@@ -161,7 +174,8 @@ export const notIranianFoodInformation = [
     score: "(۴۳ امتیاز)",
   },
   {
-    id: 4,
+    id: 16,
+    category: "غذاهای غیر ایرانی",
     image: "assets/images/foodImages/not_iranian_food/not_iranian_food_04.png",
     title: "لازانیا",
     description:
@@ -173,7 +187,8 @@ export const notIranianFoodInformation = [
     score: "(۴۸ امتیاز)",
   },
   {
-    id: 5,
+    id: 17,
+    category: "غذاهای غیر ایرانی",
     image: "assets/images/foodImages/not_iranian_food/not_iranian_food_05.png",
     title: "سوشی",
     description:
@@ -185,7 +200,8 @@ export const notIranianFoodInformation = [
     score: "(۷۰ امتیاز)",
   },
   {
-    id: 6,
+    id: 18,
+    category: "غذاهای غیر ایرانی",
     image: "assets/images/foodImages/not_iranian_food/not_iranian_food_06.png",
     title: "پاکورا سبزیجات",
     description: "گرام ماسالا، پودر کاری، سیر له شده، ،گشنیز خرد شده",
@@ -196,7 +212,8 @@ export const notIranianFoodInformation = [
     score: "(۷۵ امتیاز)",
   },
   {
-    id: 7,
+    id: 19,
+    category: "غذاهای غیر ایرانی",
     image: "assets/images/foodImages/not_iranian_food/not_iranian_food_07.png",
     title: "کالزونه اسفناج",
     description:
@@ -208,7 +225,8 @@ export const notIranianFoodInformation = [
     score: "(۶۲ امتیاز)",
   },
   {
-    id: 8,
+    id: 20,
+    category: "غذاهای غیر ایرانی",
     image: "assets/images/foodImages/not_iranian_food/not_iranian_food_08.png",
     title: "پالاک پنیر ",
     description: "پنیر، اسفناج، گوجه، پیاز، سیر ",
@@ -217,12 +235,11 @@ export const notIranianFoodInformation = [
     discountedPrice: "۱۸۰٬۰۰۰ تومان",
     star: "some star",
   },
-];
 
-// Pizzas
-export const pizzaInformation = [
+  // Pizzas
   {
-    id: 1,
+    id: 21,
+    category: "پیتزاها",
     image: "assets/images/foodImages/pizza/pizza_01.png",
     title: "پیتزا روکولا",
     description:
@@ -233,7 +250,8 @@ export const pizzaInformation = [
     star: "some star",
   },
   {
-    id: 2,
+    id: 22,
+    category: "پیتزاها",
     image: "assets/images/foodImages/pizza/pizza_02.png",
     title: "پیتزا بادمجان و زیتون",
     description:
@@ -244,7 +262,8 @@ export const pizzaInformation = [
     star: "some star",
   },
   {
-    id: 3,
+    id: 23,
+    category: "پیتزاها",
     image: "assets/images/foodImages/pizza/pizza_03.png",
     title: "پیتزا سبزیجات و خامه",
     description:
@@ -255,7 +274,8 @@ export const pizzaInformation = [
     star: "some star",
   },
   {
-    id: 4,
+    id: 24,
+    category: "پیتزاها",
     image: "assets/images/foodImages/pizza/pizza_04.png",
     title: "پیتزا قارچ",
     description:
@@ -267,7 +287,8 @@ export const pizzaInformation = [
     score: "(۳۳ امتیاز)",
   },
   {
-    id: 5,
+    id: 25,
+    category: "پیتزاها",
     image: "assets/images/foodImages/pizza/pizza_05.png",
     title: "پیتزا پپرونی",
     description:
@@ -279,7 +300,8 @@ export const pizzaInformation = [
     score: "(۵۱ امتیاز)",
   },
   {
-    id: 6,
+    id: 26,
+    category: "پیتزاها",
     image: "assets/images/foodImages/pizza/pizza_06.png",
     title: "پیتزا اسفناج",
     description: "اسفناج تازه، پیاز، سیر، پنیر پیتزا، قارچ",
@@ -289,7 +311,8 @@ export const pizzaInformation = [
     star: "some star",
   },
   {
-    id: 7,
+    id: 27,
+    category: "پیتزاها",
     image: "assets/images/foodImages/pizza/pizza_07.png",
     title: "پیتزا مارگاریتا",
     description: "گوجه فرنگی، ریحان، سیر، پنیر پیتزا",
@@ -299,7 +322,8 @@ export const pizzaInformation = [
     star: "some star",
   },
   {
-    id: 8,
+    id: 28,
+    category: "پیتزاها",
     image: "assets/images/foodImages/pizza/pizza_08.png",
     title: "پیتزا پنیر",
     description:
@@ -309,12 +333,11 @@ export const pizzaInformation = [
     discountedPrice: "۱۰۵٬۰۰۰  تومان",
     star: "some star",
   },
-];
 
-// Sandwiches
-export const sandwichesInformation = [
+  // Sandwiches
   {
-    id: 1,
+    id: 29,
+    category: "ساندویچ‌ها",
     image: "assets/images/foodImages/sandwich/sandwich_01.png",
     title: "ساندویچ کتلت مخصوص",
     description:
@@ -325,7 +348,8 @@ export const sandwichesInformation = [
     star: "some star",
   },
   {
-    id: 2,
+    id: 30,
+    category: "ساندویچ‌ها",
     image: "assets/images/foodImages/sandwich/sandwich_02.png",
     title: "ساندویچ سوسیس کوکتل",
     description: "سوسیس گیاهی، پیاز، سیب زمینی،  رب گوجه فرنگی",
@@ -335,7 +359,8 @@ export const sandwichesInformation = [
     star: "some star",
   },
   {
-    id: 3,
+    id: 31,
+    category: "ساندویچ‌ها",
     image: "assets/images/foodImages/sandwich/sandwich_03.png",
     title: "ساندویچ کتلت کدو سبز",
     description: "کدو سبز، هویج، سیب زمینی، پیاز",
@@ -345,7 +370,8 @@ export const sandwichesInformation = [
     star: "some star",
   },
   {
-    id: 4,
+    id: 32,
+    category: "ساندویچ‌ها",
     image: "assets/images/foodImages/sandwich/sandwich_04.png",
     title: "پنینی اسفناج",
     description:
@@ -357,6 +383,15 @@ export const sandwichesInformation = [
     score: "(۲۰ امتیاز)",
   },
 ];
+
+// Not Iranian Foods
+// export const notIranianFoodInformation = [];
+
+// Pizzas
+// export const pizzaInformation = [];
+
+// Sandwiches
+// export const sandwichesInformation = [];
 
 // Branches
 export const branchesInformation = [

@@ -9,7 +9,7 @@ const MenuComponent = () => {
       <div className="menu_component_wrapper">
         {menuInformation.map((item) => {
           return (
-            <div className="menu_component_item_container">
+            <div className="menu_component_item_container" key={item.id}>
               <img src={item.image} alt="" className="menu_component_image" />
               <div className="menu_component_background"></div>
               <span className="menu_component_text">{item.text}</span>

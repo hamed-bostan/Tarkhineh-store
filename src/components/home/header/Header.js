@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./Header.scss";
-import { bannerInformation } from "../../../data"; 
+import { bannerInformation } from "../../../data";
 import { motion } from "framer-motion";
 
 const Header = () => {
@@ -10,7 +10,6 @@ const Header = () => {
   const [indexSlider, setIndexSlider] = useState(0);
 
   useEffect(() => {
-    console.log(carousel.current);
     setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
   }, []);
 

@@ -1,0 +1,32 @@
+@import "../../sassContainer/variables";
+@import "../../sassContainer/mixins";
+
+.header_component_container {
+  display: flex;
+  flex-direction: row;
+  column-gap: 0.5rem;
+  padding: 0 1.25rem;
+}
+
+.header_component_button_container {
+  border-radius: 8px;
+  background: $greyColor;
+  padding: 0rem 0.5rem;
+  display: flex;
+  align-items: center;
+  height: 1.5rem;
+  column-gap: 0.25rem;
+  cursor: pointer;
+}
+
+.header_component_button {
+  border: none;
+  // Fonts
+  @include fontInformationMobile;
+  color: $blackColor;
+}
+
+.header_component_arrow_icon {
+  width: 0.75rem;
+  height: 0.75rem;
+}

@@ -49,6 +49,7 @@ const Navbar = () => {
           {navbarItems.map((link) => {
             return (
               <div
+                key={link.id}
                 className={`${
                   isOpen
                     ? "navbar_links_wrapper_show"
