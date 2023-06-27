@@ -24,3 +24,76 @@
   height: 1rem;
 }
 // End of header cart section
+
+// information section
+.cart_information_main_container {
+  width: 20rem;
+  height: 29.5rem;
+  border-radius: 8px;
+  border: 1px solid $greyColorSecondary;
+  background: $naturalWhite;
+  padding: 1.5rem;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+}
+
+.cart_wrapper {
+  height: 10.5rem;
+  width: 100%;
+  background: $greyColorTertiary;
+  overflow-y: scroll;
+  padding: 0 0.5rem;
+}
+
+.cart_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background: #f9f9f9;
+  height: 3.43rem;
+}
+
+.cart_information_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.cart_information_title {
+  @include fontTitleMobileSecondary;
+}
+
+.cart_information_discounted_price {
+  @include fontInformationMobile;
+  color: $greyColorDark;
+}
+
+.cart_button_container {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid $primaryColorLight;
+  background: $primaryColorLight;
+  height: 2rem;
+  padding: 0rem 0.25rem;
+}
+
+// icons
+.cart_information_button_icon_increase {
+  width: 0.7rem;
+  height: 0.7rem;
+}
+
+.cart_information_button_icon_decrease {
+  width: 0.7rem;
+  height: 0.2rem;
+}
+
+.cart_information_button_icon_trash {
+  width: 1rem;
+  height: 1rem;
+}
+// End of icons
+
+// End of information section
