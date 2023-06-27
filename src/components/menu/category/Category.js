@@ -1,7 +1,7 @@
 import React from "react";
-import "./HeaderComponent.scss";
+import "./Category.scss";
 
-const HeaderComponent = ({ categories }) => {
+const Category = ({ categories }) => {
   return (
     <div className="header_component_container">
       {categories.map((category, index) => {
@@ -22,4 +22,4 @@ const HeaderComponent = ({ categories }) => {
   );
 };
 
-export default HeaderComponent;
+export default Category;

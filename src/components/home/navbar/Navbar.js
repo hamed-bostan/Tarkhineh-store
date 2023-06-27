@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Navbar.scss";
 // Components
 import { navbarItems } from "../../../data";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -32,11 +32,13 @@ const Navbar = () => {
             src="assets/images/icons/search-normal-01.png"
             alt=""
           />
-          <img
-            className="navbar_icon"
-            src="assets/images/icons/shopping-cart.png"
-            alt=""
-          />
+          <Link to="/cart">
+            <img
+              className="navbar_icon"
+              src="assets/images/icons/shopping-cart.png"
+              alt=""
+            />
+          </Link>
           <img
             className="navbar_icon"
             src="assets/images/icons/user.png"

@@ -1,0 +1,38 @@
+@import "../../sassContainer/mixins";
+@import "../../sassContainer/variables";
+
+.search_container {
+  padding: 0 1.25rem;
+  max-width: 1500px;
+  margin: 0 auto;
+  margin-top: 0.7rem;
+}
+
+.search_wrapper {
+  display: flex;
+  align-items: center;
+  width: 20rem;
+  height: 2rem;
+  border-radius: 4px;
+  border: 1px solid #cbcbcb;
+  padding: 0 1rem;
+}
+
+.search_input {
+  border: none;
+  width: 18rem;
+  @include fontInformationMobile;
+
+  &:focus {
+    outline: none;
+  }
+
+  &::placeholder {
+    color: $blackColor;
+  }
+}
+
+.search_icon {
+  width: 1rem;
+  height: 1rem;
+}

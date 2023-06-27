@@ -179,15 +179,18 @@
 
 // Discount section | Main page
 @mixin discount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //
   width: 2rem;
   height: 1;
   background: $redColorLight;
   border-radius: 0.5rem;
   // Font
+  @include fontInformationMobile;
   font-style: normal;
   font-weight: 400;
-  font-size: 0.625rem;
-  line-height: 180%;
   color: $redColor;
 }
 // End of discount section
