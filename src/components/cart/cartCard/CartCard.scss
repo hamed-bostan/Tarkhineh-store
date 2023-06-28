@@ -1,0 +1,52 @@
+@import "../../sassContainer/mixins";
+
+.cart_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background: #f9f9f9;
+  height: 3.43rem;
+}
+
+.cart_information_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.cart_information_title {
+  @include fontTitleMobileSecondary;
+}
+
+.cart_information_discounted_price {
+  @include fontInformationMobile;
+  color: $greyColorDark;
+}
+
+.cart_button_container {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid $primaryColorLight;
+  background: $primaryColorLight;
+  height: 2rem;
+  padding: 0rem 0.25rem;
+}
+
+// icons
+.cart_information_button_icon_increase {
+  width: 0.7rem;
+  height: 0.7rem;
+}
+
+.cart_information_button_icon_decrease {
+  width: 0.7rem;
+  height: 0.2rem;
+}
+
+.cart_information_button_icon_trash {
+  width: 1rem;
+  height: 1rem;
+}
+// End of icons

@@ -1,33 +1,8 @@
 @import "../sassContainer/mixins";
 
-.cart_header_container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 1.25rem;
-  max-width: 1500px;
-  margin: 0 auto;
-}
-
-// header cart section
-.cart_arrow_icon {
-  width: 1rem;
-  height: 1rem;
-}
-
-.cart_header_title {
-  @include fontTitleMobilePrimary;
-}
-
-.cart_trash_icon {
-  width: 1rem;
-  height: 1rem;
-}
-// End of header cart section
-
 // information section
 .cart_information_main_container {
-  width: 20rem;
+  max-width: 20rem;
   height: 29.5rem;
   border-radius: 8px;
   border: 1px solid $greyColorSecondary;
@@ -45,55 +20,80 @@
   padding: 0 0.5rem;
 }
 
-.cart_container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  background: #f9f9f9;
-  height: 3.43rem;
-}
+// End of information section
 
-.cart_information_container {
+// payment section
+.cart_payment_container {
   display: flex;
   flex-direction: column;
+  margin-top: 0.75rem;
+  row-gap: 0.75rem;
+  // Fonts
+  @include fontInformationDesktopSecondary;
+  color: $blackColor;
+  font-weight: normal;
 }
 
-.cart_information_title {
-  @include fontTitleMobileSecondary;
+.cart_horizontal_line {
 }
 
-.cart_information_discounted_price {
-  @include fontInformationMobile;
+.cart_payment_discount {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart_payment_price {
   color: $greyColorDark;
 }
 
-.cart_button_container {
+.cart_payment_delivery {
   display: flex;
-  align-items: center;
+  justify-content: space-between;
+}
+
+.cart_payment_warning {
+  display: flex;
+  justify-content: space-between;
   column-gap: 0.5rem;
-  border-radius: 4px;
-  border: 1px solid $primaryColorLight;
-  background: $primaryColorLight;
-  height: 2rem;
-  padding: 0rem 0.25rem;
+  text-align: justify;
 }
 
-// icons
-.cart_information_button_icon_increase {
-  width: 0.7rem;
-  height: 0.7rem;
-}
-
-.cart_information_button_icon_decrease {
-  width: 0.7rem;
-  height: 0.2rem;
-}
-
-.cart_information_button_icon_trash {
+.cart_payment_warning_icon {
   width: 1rem;
   height: 1rem;
 }
-// End of icons
 
-// End of information section
+.cart_payment_warning_text {
+  @include fontInformationMobile;
+  color: #a9791c;
+}
+
+.cart_payment_total {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart_payment_total_price {
+  color: $primaryColor;
+}
+
+.cart_payment_logging_button_container {
+  @include primaryButtonMobile;
+  @include fontTitleMobileSecondary;
+
+  width: 17rem;
+  height: 2rem;
+  column-gap: 0.25rem;
+}
+
+.cart_payment_logging_user_icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+.cart_payment_logging_button {
+  border: none;
+  background: transparent;
+  color: $naturalWhite;
+}
