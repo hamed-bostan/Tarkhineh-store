@@ -4,6 +4,12 @@ import "./CartPayment.scss";
 const CartPayment = () => {
   return (
     <div className="cart_payment_container">
+      <div className="cart_payment_quantity_container">
+        <span>سبد خرید (۴)</span>
+        <img src="assets/images/icons/trash.png" alt="" 
+            className="cart_payment_trash_icon"
+        />
+      </div>
       <hr className="cart_horizontal_line" />
       <div className="cart_payment_discount">
         <span>تخفیف محصولات</span>

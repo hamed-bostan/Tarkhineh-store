@@ -10,9 +10,28 @@
   @include fontInformationDesktopSecondary;
   color: $blackColor;
   font-weight: normal;
+
+  @include query(1100px) {
+    margin-top: 0;
+  }
+}
+
+.cart_payment_quantity_container {
+  display: none;
+
+  @include query(1100px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.cart_payment_trash_icon {
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 .cart_horizontal_line {
+  color: $greyColorSecondary;
 }
 
 .cart_payment_discount {
