@@ -4,6 +4,8 @@ import "./CartCard.scss";
 const CartCard = ({ item }) => {
   return (
     <div className="cart_container">
+      <img src={item.image} alt="" className="cart_image" />
+
       {/* information container */}
       <div className="cart_information_container">
         <p className="cart_information_title">{item.title}</p>
@@ -42,10 +44,6 @@ const CartCard = ({ item }) => {
       {/* 1100px */}
       {/* ************** */}
       {/* 1100px */}
-
-      {/* <img src={item.image} alt="" 
-        className="cart_image"
-      /> */}
 
       {/* description container */}
       <div className="cart_description_container">

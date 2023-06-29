@@ -52,7 +52,9 @@
 }
 
 @mixin fontTitleDesktopTertiary {
-  font-size: 1.25rem;
+  // font-size: 1.25rem;
+  // cause it was too big i changed to:
+  font-size: 1.05rem;
   font-weight: 600;
   line-height: 180%;
   color: $blackColor;
@@ -184,7 +186,7 @@
   align-items: center;
   //
   width: 2rem;
-  height: 1;
+  height: 1rem;
   background: $redColorLight;
   border-radius: 0.5rem;
   // Font
