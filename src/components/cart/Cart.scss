@@ -15,12 +15,14 @@
 
   @include query(1100px) {
     all: unset;
-    width: 100%;
+    // width: 100%;
     // height: 20rem;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    column-gap: 2rem;
+    // justify-content: space-between;
     // background: rgb(44, 209, 10);
+    padding: 0 2rem;
   }
 }
 
@@ -34,12 +36,19 @@
 
   @include query(1100px) {
     all: unset;
-    // background: $naturalWhite;
-    // background: red;
-    // display: flex;
-    // flex-direction: column;
-    // flex-direction: row;
-    flex: 1.5;
+    // flex: 1.5;
+    background: $naturalWhite;
+    border: 1px solid $greyColorSecondary;
+    border-radius: 0.5rem;
+    // width: 44rem;
+    // height: 34.625rem;
+    width: 30rem;
+    height: 30rem;
+    overflow-y: scroll;
+    padding: 1.5rem 1.5rem 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
   }
 }
 

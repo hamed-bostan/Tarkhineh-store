@@ -13,8 +13,15 @@
 
   @include query(1100px) {
     margin-top: 0;
-    display: flex;
-    flex: 1;
+    // display: flex;
+    // flex: 1;
+    border-radius: 0.5rem;
+    border: 1px solid $greyColorSecondary;
+    background: $naturalWhite;
+    padding: 1.5rem 1.5rem 0 1.5rem;
+    width: 31rem;
+    width: 25rem;
+    height: 20rem;
   }
 }
 
