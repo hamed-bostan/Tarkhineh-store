@@ -5,6 +5,7 @@ import Navbar from "../home/navbar/Navbar";
 import HeaderContactUs from "./headerContactUs/HeaderContactUs";
 import { branchesInformation } from "../../data";
 import ContactUsCard from "./contactUsCard/ContactUsCard";
+import Footer from "../home/footer/Footer";
 
 const ContactUs = () => {
   return (
@@ -16,6 +17,7 @@ const ContactUs = () => {
           return <ContactUsCard data={item} key={item.id} />;
         })}
       </div>
+      <Footer />
     </div>
   );
 };
