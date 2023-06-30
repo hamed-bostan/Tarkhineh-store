@@ -7,15 +7,8 @@ import { addItem } from "../../redux/cart/cartAction";
 const MenuCard = ({ data }) => {
   const dispatch = useDispatch();
 
-  const {
-    image,
-    title,
-    description,
-    highPrice,
-    discount,
-    discountedPrice,
-    star,
-  } = data;
+  const { image, title, description, highPrice, discount, finalPrice, star } =
+    data;
 
   return (
     <section className="menu_items_main_container">
@@ -27,13 +20,16 @@ const MenuCard = ({ data }) => {
             <span className="menu_single_item_title">{title}</span>
             <div className="menu_high_price_container">
               <span className="menu_high_price">{highPrice}</span>
-              <span className="menu_discount_item">{discount}</span>
+              {/* <span className="menu_discount_item">{discount}</span> */}
+              <span className={`${data?.discount ? "menu_discount_item" : ""}`}>
+                {discount}
+              </span>
             </div>
           </div>
           {/* next div */}
           <div className="menu_single_item_container">
             <p>{description.slice(0, 20)} ...</p>
-            <span>{discountedPrice}</span>
+            <span>{finalPrice}</span>
           </div>
           {/* next div */}
           <div className="menu_single_item_container">

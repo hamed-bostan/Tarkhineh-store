@@ -68,10 +68,8 @@
     justify-content: flex-end;
     padding-left: 1rem;
     // Fonts
-    @include fontInformationDesktop;
+    @include fontInformationDesktopQuaternary;
     color: $greyColorDark;
-    font-size: 1rem;
-    font-weight: 400;
   }
 }
 
@@ -165,11 +163,7 @@
     @include query(1100px) {
       text-decoration: line-through;
       // Fonts
-      font-size: 0.9rem;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 180%;
-      color: #adadad;
+      @include fontInformationDesktopTertiary;
     }
   }
 

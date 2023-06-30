@@ -10,28 +10,6 @@
   // done
 }
 
-@mixin fontTitleMobileSecondary {
-  font-size: 0.75rem;
-  line-height: 180%;
-  color: $blackColor;
-  // done
-}
-
-@mixin fontTitleMobileTertiary {
-  font-size: 0.875rem;
-  font-weight: 500;
-  line-height: 1.5rem;
-  color: $blackColor;
-  // done
-}
-
-@mixin fontInformationMobile {
-  font-size: 0.625rem;
-  line-height: 180%;
-  color: $naturalWhite;
-  // done
-}
-
 // Desktop version
 @mixin fontTitleDesktopPrimary {
   // font-size: 1.5rem;
@@ -40,8 +18,18 @@
   font-weight: 700;
   line-height: 140%;
   color: $blackColor;
+  // moved here
 }
 
+// Mobile version
+@mixin fontTitleMobileSecondary {
+  font-size: 0.75rem;
+  line-height: 180%;
+  color: $blackColor;
+  // done
+}
+
+// Desktop version
 @mixin fontTitleDesktopSecondary {
   // font-size: 1.25rem;
   // cause it was too big i changed to:
@@ -49,8 +37,19 @@
   ine-height: 180%;
   color: $blackColor;
   // done
+  // moved here
 }
 
+// Mobile version
+@mixin fontTitleMobileTertiary {
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  color: $blackColor;
+  // done
+}
+
+// Desktop version
 @mixin fontTitleDesktopTertiary {
   // font-size: 1.25rem;
   // cause it was too big i changed to:
@@ -59,6 +58,26 @@
   line-height: 180%;
   color: $blackColor;
   // done
+  // moved here
+}
+
+// Mobile version
+@mixin fontInformationMobile {
+  font-size: 0.625rem;
+  line-height: 180%;
+  color: $naturalWhite;
+  // done
+}
+
+// Desktop version
+@mixin fontInformationDesktop {
+  // font-size: 1.25rem;
+  // cause it was too big i changed to:
+  font-size: 0.7rem;
+  line-height: 180%;
+  color: $naturalWhite;
+  // done
+  // moved here
 }
 
 // no mobile
@@ -66,15 +85,6 @@
   font-size: 1.25rem;
   font-weight: 700;
   line-height: 140%;
-  color: $naturalWhite;
-  // done
-}
-
-@mixin fontInformationDesktop {
-  // font-size: 1.25rem;
-  // cause it was too big i changed to:
-  font-size: 0.7rem;
-  line-height: 180%;
   color: $naturalWhite;
   // done
 }
@@ -87,6 +97,29 @@
   color: $greyColorDark;
 }
 
+// no mobile
+@mixin fontInformationDesktopTertiary {
+  // font-size: 1rem;
+  // cause it was too big i changed to:
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 180%;
+  font-style: normal;
+  color: $greyColorQuaternary;
+}
+
+// no mobile
+@mixin fontInformationDesktopQuaternary {
+  // font-size: 1.25rem;
+  // cause it was too big i changed to:
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 180%;
+  font-style: normal;
+  color: $blackColor;
+}
+
+// End of Fonts section
 // End of Fonts section
 
 // Buttons section

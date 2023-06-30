@@ -50,7 +50,10 @@ const CartCard = ({ item }) => {
         <p className="cart_description">{item.description.slice(0, 20)}</p>
         <div className="cart_highPrice_discount_container">
           <span className="cart_high_price">{item.highPrice}</span>
-          <span className="cart_discount">{item.discount}</span>
+          {/* <span className="cart_discount">{item?.discount}</span> */}
+          <span className={`${item?.discount ? "cart_discount" : ""}`}>
+            {item?.discount}
+          </span>
         </div>
       </div>
       {/* End of description container */}
