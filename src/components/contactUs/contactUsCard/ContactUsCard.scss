@@ -1,0 +1,35 @@
+@import "../../sassContainer/mixins";
+
+.ContactUs_card_container {
+  width: 20rem;
+  // height: 17rem;
+  //
+  border-radius: 0.25rem;
+  border: 1px solid $greyColorSecondary;
+  background: $naturalWhite;
+}
+
+.ContactUs_card_image {
+  width: 100%;
+  height: 7rem;
+  object-fit: cover;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+
+.ContactUs_card_information_container {
+  @include fontInformationMobile;
+  font-weight: 400;
+  color: $greyColorDark;
+  font-style: normal;
+  //
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ContactUs_card_title {
+  @include fontTitleMobileSecondary;
+  display: flex;
+  justify-content: center;
+}

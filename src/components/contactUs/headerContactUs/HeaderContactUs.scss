@@ -1,0 +1,22 @@
+@import "../../sassContainer/mixins";
+
+.Contact_header_container {
+  position: relative;
+  width: 22.5rem;
+  height: 11rem;
+}
+
+.Contact_header_image {
+  width: 100%;
+  height: 100%;
+}
+
+.Contact_header_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  // Fonts
+  @include fontTitleMobilePrimary;
+  color: #e5f2e9;
+}

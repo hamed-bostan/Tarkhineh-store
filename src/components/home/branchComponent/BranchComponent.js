@@ -9,7 +9,7 @@ const BranchComponent = () => {
       <span className="branch_component_main_title">ترخینه گردی</span>
       <div className="branch_component_wrapper">
         {branchesInformation.map((item) => {
-          const { id, image, title, description } = item;
+          const { id, image, title, address } = item;
           return (
             <div className="branch_component_container" key={id}>
               {/* image container */}
@@ -29,7 +29,7 @@ const BranchComponent = () => {
               {/* information container */}
               <div className="branch_component_information">
                 <span className="branch_component_card_title">{title}</span>
-                <p className="branch_component_description">{description}</p>
+                <p className="branch_component_description">{address}</p>
                 <div className="branch_component_button_container">
                   <button className="branch_component_button">صفحه شعبه</button>
                   <img

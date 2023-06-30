@@ -20,7 +20,6 @@ const MenuCard = ({ data }) => {
             <span className="menu_single_item_title">{title}</span>
             <div className="menu_high_price_container">
               <span className="menu_high_price">{highPrice}</span>
-              {/* <span className="menu_discount_item">{discount}</span> */}
               <span className={`${data?.discount ? "menu_discount_item" : ""}`}>
                 {discount}
               </span>
