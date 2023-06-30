@@ -1,35 +1,142 @@
 @import "../../sassContainer/mixins";
 
 .ContactUs_card_container {
-  width: 20rem;
-  // height: 17rem;
+  min-width: 20rem;
+  height: 15.75rem;
   //
   border-radius: 0.25rem;
   border: 1px solid $greyColorSecondary;
   background: $naturalWhite;
+
+  @include query(1100px) {
+    display: flex;
+    width: 60rem;
+    height: 13rem;
+    margin: 0 auto;
+  }
+
+  &:hover .ContactUs_card_gallery_icon {
+    display: block;
+  }
+
+  &:hover .ContactUs_card_button_container {
+    display: flex;
+  }
 }
 
-.ContactUs_card_image {
-  width: 100%;
-  height: 7rem;
-  object-fit: cover;
-  border-top-left-radius: 0.25rem;
-  border-top-right-radius: 0.25rem;
+.ContactUs_card_image_container {
+  position: relative;
+
+  .ContactUs_card_image {
+    width: 100%;
+    height: 7rem;
+    object-fit: cover;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+
+    @include query(1100px) {
+      all: unset;
+      // width: 37.625rem;
+      // height: 17.5rem;
+      width: 25rem;
+      height: 100%;
+    }
+  }
+
+  .ContactUs_card_gallery_icon {
+    display: none;
+
+    @include query(1100px) {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 2rem;
+      height: 2rem;
+    }
+  }
 }
 
 .ContactUs_card_information_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // Fonts
   @include fontInformationMobile;
   font-weight: 400;
   color: $greyColorDark;
   font-style: normal;
-  //
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
+  @include query(1100px) {
+    @include fontInformationDesktopQuaternary;
+    color: $greyColorDark;
+    margin: 0 auto;
+    // margin-top: 1.5rem;
+    margin-top: 0.7rem;
+    // row-gap: 0.5rem;
+    row-gap: 0.2rem;
+    // background: #000;
+  }
 }
 
 .ContactUs_card_title {
   @include fontTitleMobileSecondary;
   display: flex;
   justify-content: center;
+
+  @include query(1100px) {
+    @include fontTitleDesktopTertiary;
+  }
+}
+
+.ContactUs_card_button_container {
+  display: flex;
+  margin-top: 0.75rem;
+  column-gap: 1rem;
+
+  @include query(1100px) {
+    margin-top: 0.5rem;
+    column-gap: 1.3rem;
+    display: none;
+  }
+
+  .ContactUs_card_brach_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    width: 8rem;
+    height: 1.5rem;
+    border-radius: 0.25rem;
+    border: 1px solid $primaryColor;
+    // Fonts
+    @include fontInformationMobile;
+    font-weight: 400;
+    color: $primaryColor;
+
+    @include query(1100px) {
+      width: 7rem;
+      height: 2rem;
+    }
+  }
+
+  .ContactUs_card_map_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $primaryColor;
+    width: 8rem;
+    height: 1.5rem;
+    border-radius: 0.25rem;
+    border: 1px solid $primaryColor;
+    // Fonts
+    @include fontInformationMobile;
+    font-weight: 400;
+    color: $naturalWhite;
+
+    @include query(1100px) {
+      width: 7rem;
+      height: 2rem;
+    }
+  }
 }

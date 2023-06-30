@@ -6,10 +6,13 @@ const ContactUsCard = ({ data }) => {
 
   return (
     <div className="ContactUs_card_container">
-      <img src={image} alt="" className="ContactUs_card_image" />
+      <div className="ContactUs_card_image_container">
+        <img src="assets/images/icons/gallery.png" alt="" className="ContactUs_card_gallery_icon" />
+        <img src={image} alt="" className="ContactUs_card_image" />
+      </div>
       <div className="ContactUs_card_information_container">
         <span className="ContactUs_card_title">{title}</span>
-        <div>
+        <div className="ContactUs_card_address_container">
           <span>آدرس: </span>
           <span>{address}</span>
         </div>
@@ -21,9 +24,9 @@ const ContactUsCard = ({ data }) => {
           <span>ساعت کاری: </span>
           <span>{workTime}</span>
         </div>
-        <div>
-          <button>صفحه شعبه</button>
-          <button>دیدن در نقشه</button>
+        <div className="ContactUs_card_button_container">
+          <button className="ContactUs_card_brach_button">صفحه شعبه</button>
+          <button className="ContactUs_card_map_button">دیدن در نقشه</button>
         </div>
       </div>
     </div>
