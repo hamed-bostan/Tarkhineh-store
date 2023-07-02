@@ -4,9 +4,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 1.25rem;
-  max-width: 1500px;
   margin: 0 auto;
+  max-width: 20rem;
 
   @include query(1100px) {
     display: none;
