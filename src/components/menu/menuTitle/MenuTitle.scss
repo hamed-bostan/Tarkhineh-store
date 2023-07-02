@@ -1,0 +1,47 @@
+@import "../../sassContainer/mixins";
+@import "../../sassContainer/variables";
+
+.menu_title_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+  margin-top: 0.9rem;
+}
+
+.menu_title {
+  @include fontTitleMobilePrimary;
+
+  @include query(1100px) {
+    @include fontTitleDesktopPrimary;
+  }
+}
+
+.menu_cart_icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+.menu_button_container {
+  height: 2rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid $primaryColor;
+  display: flex;
+  align-items: center;
+  column-gap: 0.25rem;
+}
+
+.menu_title_button {
+  border: none;
+  background: transparent;
+  @include fontTitleMobileSecondary;
+  color: $primaryColor;
+
+  @include query(1100px) {
+    @include fontInformationDesktopQuinary;
+    color: $primaryColor;
+  }
+}

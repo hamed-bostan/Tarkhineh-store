@@ -53,6 +53,7 @@
 
       @include query(1100px) {
         @include primaryButtonDesktop;
+        cursor: pointer;
       }
     }
   }

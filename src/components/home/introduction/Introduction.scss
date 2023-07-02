@@ -55,6 +55,7 @@
     @include query(1100px) {
       @include primaryButtonOutlinedDesktop;
       margin-top: 1rem;
+      cursor: pointer;
     }
   }
 }

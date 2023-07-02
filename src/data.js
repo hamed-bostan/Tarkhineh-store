@@ -382,6 +382,18 @@ export const foodInformation = [
     star: "some star",
     score: "(۲۰ امتیاز)",
   },
+  {
+    id: 33,
+    category: "ساندویچ‌ها",
+    image: "assets/images/foodImages/sandwich/sandwich_04.png",
+    title: "ساندویچ همبرگر",
+    description: " قارچ، پیاز، پنیر پیتزا، گردو، سرکه بالزامیک، سس مایونز",
+    highPrice: "۲۱۰٬۰۰۰",
+    discount: "%۱۵",
+    finalPrice: "۱۹۰٬۰۰۰ تومان",
+    star: "some star",
+    score: "(۲۰ امتیاز)",
+  },
 ];
 
 // Not Iranian Foods
