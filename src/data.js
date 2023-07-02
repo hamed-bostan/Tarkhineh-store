@@ -351,7 +351,7 @@ export const foodInformation = [
     id: 30,
     category: "ساندویچ‌ها",
     image: "assets/images/foodImages/sandwich/sandwich_02.png",
-    title: "ساندویچ سوسیس کوکتل",
+    title: "ساندویچ سوسیس",
     description: "سوسیس گیاهی، پیاز، سیب زمینی،  رب گوجه فرنگی",
     highPrice: "۲۰۵٬۰۰۰",
     discount: "%۳۵",

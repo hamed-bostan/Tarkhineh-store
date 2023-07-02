@@ -119,6 +119,25 @@
   color: $blackColor;
 }
 
+// no mobile
+@mixin fontInformationDesktopQuinary {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 180%;
+  font-style: normal;
+  color: $blackColor;
+}
+
+
+// no mobile
+@mixin fontInformationDesktopSenary {
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 180%;
+  font-style: normal;
+  color: $blackColor;
+}
+
 // End of Fonts section
 // End of Fonts section
 

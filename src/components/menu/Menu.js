@@ -1,13 +1,14 @@
 import React from "react";
 import "./Menu.scss";
 import { useState } from "react";
-import { foodInformation } from "../../data";
 // Components
+import { foodInformation } from "../../data";
 import Navbar from "../home/navbar/Navbar";
 import Header from "../home/header/Header";
 import Category from "./category/Category";
 import Search from "./search/Search";
 import MenuCard from "./menuCard/MenuCard";
+import Footer from "../home/footer/Footer";
 
 const Menu = () => {
   const [data, setData] = useState(foodInformation);
@@ -38,10 +39,13 @@ const Menu = () => {
       </div>
       {/* End of title section */}
       {/* card section */}
-      {data.map((item) => {
-        return <MenuCard data={item} key={item.id} />;
-      })}
+      <div className="menu_card_main_container">
+        {data.map((item) => {
+          return <MenuCard data={item} key={item.id} />;
+        })}
+      </div>
       {/* End of card section */}
+      <Footer />
     </div>
   );
 };

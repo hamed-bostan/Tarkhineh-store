@@ -26,6 +26,10 @@
 
 .menu_title {
   @include fontTitleMobilePrimary;
+
+  @include query(1100px) {
+    @include fontTitleDesktopPrimary;
+  }
 }
 
 .menu_cart_icon {
@@ -48,5 +52,30 @@
   background: transparent;
   @include fontTitleMobileSecondary;
   color: $primaryColor;
+
+  @include query(1100px) {
+    @include fontInformationDesktopQuinary;
+    color: $primaryColor;
+  }
 }
 // End of title section
+
+.menu_card_main_container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.75rem;
+  padding: 0 1.25rem;
+  padding-bottom: 2rem;
+  max-width: 1500px;
+  margin: 0 auto;
+  margin-top: 0.75rem;
+
+  @include query(1100px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 1.5rem;
+    margin-top: 1.2rem;
+    column-gap: 1rem;
+  }
+}
