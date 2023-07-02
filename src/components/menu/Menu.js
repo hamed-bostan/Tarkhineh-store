@@ -20,8 +20,10 @@ const Menu = () => {
     <div>
       <Navbar />
       <Header />
-      <Category categories={categories} />
-      <Search />
+      <div className="menu_component_category_search_container">
+        <Category categories={categories} />
+        <Search />
+      </div>
       {/* title section */}
       <div className="menu_title_container">
         <span className="menu_title">غذاهای ایرانی</span>

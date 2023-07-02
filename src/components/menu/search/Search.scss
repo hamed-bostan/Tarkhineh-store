@@ -2,10 +2,15 @@
 @import "../../sassContainer/variables";
 
 .search_container {
-  padding: 0 1.25rem;
-  max-width: 1500px;
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
   margin-top: 0.7rem;
+
+  @include query(1100px) {
+    margin-top: 0;
+    justify-content: flex-start;
+    width: 100%;
+  }
 }
 
 .search_wrapper {
@@ -16,6 +21,10 @@
   border-radius: 4px;
   border: 1px solid #cbcbcb;
   padding: 0 1rem;
+
+  @include query(1100px) {
+    width: 50%;
+  }
 }
 
 .search_input {
@@ -29,6 +38,10 @@
 
   &::placeholder {
     color: $blackColor;
+  }
+
+  @include query(1100px) {
+    width: 100%;
   }
 }
 
