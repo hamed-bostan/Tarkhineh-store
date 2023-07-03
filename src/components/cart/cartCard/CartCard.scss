@@ -104,6 +104,12 @@
   height: 0.7rem;
 }
 
+.cart_card_quantity {
+  @include fontInformationDesktopSecondary;
+  font-weight: 400;
+  color: $primaryColor;
+}
+
 .cart_decrease_icon {
   width: 0.7rem;
   height: 0.2rem;

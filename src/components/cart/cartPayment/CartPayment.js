@@ -1,13 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import "./CartPayment.scss";
+import { useSelector } from "react-redux";
+import CartClear from "../cartClear/CartClear";
 
 const CartPayment = () => {
+  const state = useSelector((state) => state.cartState);
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div className="cart_payment_container">
       <div className="cart_payment_quantity_container">
-        <span>سبد خرید (۴)</span>
-        <img src="assets/images/icons/trash.png" alt="" 
-            className="cart_payment_trash_icon"
+        <span>سبد خرید ({state.itemsCounter})</span>
+        <img
+          src="assets/images/icons/trash.png"
+          alt=""
+          className="cart_payment_trash_icon"
+          onClick={() => setIsOpen(true)}
         />
       </div>
       <hr className="cart_horizontal_line" />
@@ -34,7 +42,9 @@ const CartPayment = () => {
       <hr className="cart_horizontal_line" />
       <div className="cart_payment_total">
         <span>مبلغ قابل پرداخت</span>
-        <span className="cart_payment_total_price">۵۴۲٬۰۰۰ تومان</span>
+        <span className="cart_payment_total_price">
+          {state.totalPrice} تومان
+        </span>
       </div>
       <div className="cart_payment_logging_button_container">
         <img
@@ -44,6 +54,7 @@ const CartPayment = () => {
         />
         <button className="cart_payment_logging_button">ورود/ثبت‌نام</button>
       </div>
+      {isOpen && <CartClear close={() => setIsOpen(false)} />}
     </div>
   );
 };

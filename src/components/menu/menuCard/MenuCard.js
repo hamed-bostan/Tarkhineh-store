@@ -27,7 +27,7 @@ const MenuCard = ({ data }) => {
         {/* next div */}
         <div className="menu_card_single_item_container">
           <p>{description.slice(0, 20)} ...</p>
-          <span>{finalPrice}</span>
+          <span>{finalPrice} تومان</span>
         </div>
         {/* next div */}
         <div className="menu_card_single_item_container">

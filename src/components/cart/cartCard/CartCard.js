@@ -1,7 +1,12 @@
 import React from "react";
 import "./CartCard.scss";
+// Components
+import { increase, removeItem, decrease } from "../../redux/cart/cartAction";
+import { useDispatch } from "react-redux";
 
 const CartCard = ({ item }) => {
+  const dispatch = useDispatch();
+
   return (
     <div className="cart_container">
       <img src={item.image} alt="" className="cart_image" />
@@ -13,12 +18,13 @@ const CartCard = ({ item }) => {
           src="assets/images/icons/trash.png"
           alt=""
           className="cart_information_trash_icon"
+          onClick={() => dispatch(removeItem(item))}
         />
       </div>
       {/* End of information container */}
 
       <div className="cart_final_price_container">
-        <p className="cart_final_price">{item.finalPrice}</p>
+        <p className="cart_final_price">{item.finalPrice} تومان</p>
       </div>
 
       {/* button container */}
@@ -27,17 +33,24 @@ const CartCard = ({ item }) => {
           src="assets/images/icons/increase_icon.png"
           alt=""
           className="cart_increase_icon"
+          onClick={() => dispatch(increase(item))}
         />
-        <img
-          src="assets/images/icons/reduce_icon.png"
-          alt=""
-          className="cart_decrease_icon"
-        />
-        <img
-          src="assets/images/icons/trash_green.png"
-          alt=""
-          className="cart_trash_icon"
-        />
+        <span className="cart_card_quantity">{item.quantity}</span>
+        {item.quantity > 1 ? (
+          <img
+            src="assets/images/icons/reduce_icon.png"
+            alt=""
+            className="cart_decrease_icon"
+            onClick={() => dispatch(decrease(item))}
+          />
+        ) : (
+          <img
+            src="assets/images/icons/trash_green.png"
+            alt=""
+            className="cart_trash_icon"
+            onClick={() => dispatch(removeItem(item))}
+          />
+        )}
       </div>
       {/* End of button container */}
 

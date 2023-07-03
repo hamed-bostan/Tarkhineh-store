@@ -13,7 +13,8 @@ const sumItems = (item) => {
   }, 0);
   const totalPrice = item
     .reduce((total, currentPrice) => {
-      return total + currentPrice.quantity * currentPrice.price;
+      // return total + currentPrice.quantity * currentPrice.price;
+      return total + currentPrice.quantity * currentPrice.finalPrice;
     }, 0)
     .toFixed(2);
   return { itemsCounter, totalPrice };

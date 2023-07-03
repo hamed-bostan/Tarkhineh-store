@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import "./CartHeader.scss";
+import CartClear from "../cartClear/CartClear";
 
 const CartHeader = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div className="cart_header_container">
       <img
@@ -14,7 +17,9 @@ const CartHeader = () => {
         src="assets/images/icons/trash.png"
         alt=""
         className="cart_trash_icon"
+        onClick={() => setIsOpen(true)}
       />
+      {isOpen && <CartClear close={() => setIsOpen(false)} />}
     </div>
   );
 };

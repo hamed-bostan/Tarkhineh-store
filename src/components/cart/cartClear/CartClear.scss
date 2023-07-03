@@ -1,0 +1,133 @@
+@import "../../sassContainer/mixins";
+@import "../../sassContainer/variables";
+
+.cart_clear_background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(61, 61, 61, 0.6);
+  filter: blur(1px);
+}
+
+.cart_clear_container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  //
+  width: 20rem;
+  height: 11rem;
+  border-radius: 0.5rem;
+  background: $naturalWhite;
+
+  @include query(1100px) {
+    width: 22rem;
+    height: 13rem;
+  }
+}
+
+.cart_clear_header_container {
+  width: 100%;
+  height: 3rem;
+  border-radius: 0.5rem 0.5rem 0rem 0rem;
+  background: $greyColorTertiary;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1.5rem;
+
+  @include query(1100px) {
+    height: 3.5rem;
+  }
+
+  .cart_clear_title {
+    @include fontInformationDesktopSecondary;
+    color: $blackColor;
+    text-align: center;
+    width: 100%;
+
+    @include query(1100px) {
+      @include fontTitleDesktopTertiary;
+    }
+  }
+
+  .cart_clear_close_icon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
+.cart_clear_information_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  height: 100%;
+  height: calc(100% - 3rem);
+  // Fonts
+  @include fontTitleMobileSecondary;
+  font-weight: 400;
+  font-style: normal;
+
+  @include query(1100px) {
+    height: calc(100% - 3.5rem);
+    padding: 2rem 0 1.5rem 0;
+    // Fonts
+    @include fontInformationDesktopQuinary;
+    font-weight: 400;
+  }
+}
+
+.cart_clear_button_container {
+  display: flex;
+  column-gap: 1rem;
+
+  @include query(1100px) {
+  }
+
+  .cart_clear_back_button {
+    width: 8rem;
+    height: 2rem;
+    border-radius: 0.25rem;
+    background: transparent;
+    border: none;
+    border: 1px solid $primaryColor;
+    // Fonts
+    @include fontTitleMobileSecondary;
+    font-weight: 400;
+    font-style: normal;
+    color: $primaryColor;
+
+    @include query(1100px) {
+      height: 2.5rem;
+      // Fonts
+      @include fontInformationDesktopQuinary;
+      font-weight: 500;
+      color: $primaryColor;
+    }
+  }
+
+  .cart_clear_remove_button {
+    width: 8rem;
+    height: 2rem;
+    border-radius: 0.25rem;
+    background: $redColorLight;
+    border: none;
+    // Fonts
+    @include fontTitleMobileSecondary;
+    font-weight: 400;
+    font-style: normal;
+    color: $redColor;
+
+    @include query(1100px) {
+      height: 2.5rem;
+      // Fonts
+      @include fontInformationDesktopQuinary;
+      font-weight: 500;
+      color: $redColor;
+    }
+  }
+}
