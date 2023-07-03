@@ -1,8 +1,10 @@
 @import "../../sassContainer/mixins";
 
 .ContactUs_card_container {
-  min-width: 20rem;
+  // min-width: 20rem;
+  width: 20rem;
   height: 15.75rem;
+  margin: 0 auto;
   //
   border-radius: 0.25rem;
   border: 1px solid $greyColorSecondary;

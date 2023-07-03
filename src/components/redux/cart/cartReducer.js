@@ -8,12 +8,12 @@ const initialState = {
 };
 
 const sumItems = (item) => {
-  const itemsCounter = item.reduce((total, currenQuantity) => {
-    return total + currenQuantity.quantity;
+  const itemsCounter = item.reduce((total, currentQuantity) => {
+    return total + currentQuantity.quantity;
   }, 0);
   const totalPrice = item
-    .reduce((total, currenPrice) => {
-      return total + currenPrice.quantity * currenPrice.price;
+    .reduce((total, currentPrice) => {
+      return total + currentPrice.quantity * currentPrice.price;
     }, 0)
     .toFixed(2);
   return { itemsCounter, totalPrice };
