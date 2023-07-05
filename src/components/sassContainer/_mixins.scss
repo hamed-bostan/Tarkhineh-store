@@ -128,7 +128,6 @@
   color: $blackColor;
 }
 
-
 // no mobile
 @mixin fontInformationDesktopSenary {
   font-size: 0.75rem;
@@ -281,6 +280,12 @@
 // Query
 @mixin query($width) {
   @media (min-width: $width) {
+    @content;
+  }
+}
+
+@mixin max_query($width) {
+  @media (max-width: $width) {
     @content;
   }
 }

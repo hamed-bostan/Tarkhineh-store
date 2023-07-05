@@ -8,73 +8,81 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="navbar_container">
-      <div className="navbar_header">
-        {/* Header section */}
-        <div className="navbar_right_side_container">
+    <div className="navbar_header">
+      <div className="navbar_toggle_container">
+        {!isOpen && (
           <img
-            onClick={() => setIsOpen(!isOpen)}
-            className="navbar_icon"
+            onClick={() => setIsOpen(true)}
+            className="navbar_icon menu_icon"
             src="assets/images/icons/menu.png"
             alt=""
           />
-        </div>
-        <div className="navbar_center_container">
+        )}
+
+        {isOpen && (
           <img
-            className="navbar_logo"
-            src="assets/images/icons/Logo.png"
+            onClick={() => setIsOpen(false)}
+            className="navbar_icon close_icon"
+            src="assets/images/icons/Close icon.png"
             alt=""
           />
-        </div>
-        <div className="navbar_left_side_container">
-          <img
-            className="navbar_icon"
-            src="assets/images/icons/search-normal-01.png"
-            alt=""
-          />
-          <Link to="/cart">
-            <img
-              className="navbar_icon"
-              src="assets/images/icons/shopping-cart.png"
-              alt=""
-            />
-          </Link>
-          <img
-            className="navbar_icon"
-            src="assets/images/icons/user.png"
-            alt=""
-          />
-        </div>
-        {/* End of Header section */}
-        {/* Link section*/}
-        <div className="navbar_links_container ">
-          {navbarItems.map((link) => {
-            return (
-              <div
-                key={link.id}
-                className={`${
-                  isOpen
-                    ? "navbar_links_wrapper_show"
-                    : "navbar_links_wrapper_not_show"
-                }`}
-              >
-                <NavLink
-                  to={link?.path}
-                  className={({ isActive }) =>
-                    isActive ? "navbar_link_active" : "navbar_link_not_active"
-                  }
-                >
-                  <p className="navbar_link_item">{link.text}</p>
-                  {link?.icon && (
-                    <img src={link.icon} alt="" className="navbar_arrow_icon" />
-                  )}
-                </NavLink>
-              </div>
-            );
-          })}
-        </div>
-        {/* End of Link section */}
+        )}
       </div>
+      <div className="navbar_logo_container">
+        <img
+          className="navbar_logo"
+          src="assets/images/icons/Logo.png"
+          alt=""
+        />
+      </div>
+      {/* Link section*/}
+      <div
+        className={`${
+          isOpen
+            ? "navbar_links_container navbar_links_show"
+            : "navbar_links_container"
+        }`}
+      >
+        {navbarItems.map((link) => {
+          return (
+            <div key={link.id}>
+              <NavLink
+                to={link?.path}
+                className={({ isActive }) =>
+                  isActive ? "navbar_link_active" : "navbar_link_not_active"
+                }
+              >
+                <p className="navbar_link_item">{link.text}</p>
+                {/* {link?.icon && (
+                    <img src={link.icon} alt="" className="navbar_arrow_icon" />
+                  )} */}
+              </NavLink>
+            </div>
+          );
+        })}
+      </div>
+      {/* End of Link section */}
+      {/* Icons container */}
+      <div className="navbar_icons_container">
+        <img
+          className="navbar_icon search_icon"
+          src="assets/images/icons/search-normal-01.png"
+          alt=""
+        />
+        <Link to="/cart">
+          <img
+            className="navbar_icon"
+            src="assets/images/icons/shopping-cart.png"
+            alt=""
+          />
+        </Link>
+        <img
+          className="navbar_icon"
+          src="assets/images/icons/user.png"
+          alt=""
+        />
+      </div>
+      {/* End of Icons container */}
     </div>
   );
 };
