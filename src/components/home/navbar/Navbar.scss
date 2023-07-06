@@ -61,11 +61,15 @@
     @include iconDesktop;
   }
 
+  .arrow_icon_container {
+    display: flex;
+    align-items: center;
+    column-gap: 0.25rem;
+  }
+
   .navbar_arrow_icon {
-    display: inline-block;
     width: 1rem;
     height: 1rem;
-    margin-right: 0.5rem;
   }
   // End of icons and logo section
 
@@ -111,23 +115,33 @@
   font-weight: 400;
 }
 
-@include query(1100px) {
-  .navbar_link_active {
-    position: relative;
-    font-size: 0.96rem;
-    font-weight: 600;
-    line-height: 140%;
-  }
+.navbar_link_active {
+  position: relative;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 140%;
+}
 
-  .navbar_link_active::after {
-    content: "";
-    background: $primaryColor;
-    position: absolute;
-    top: 1.9rem;
-    right: 0;
-    height: 1.2px;
-    width: 80%;
-    border-radius: 1px;
-    transform: translate(-10%, 0);
+.navbar_link_active::after {
+  content: "";
+  background: $primaryColor;
+  position: absolute;
+  top: 1.9rem;
+  right: 0;
+  height: 1.2px;
+  width: 80%;
+  border-radius: 1px;
+  transform: translate(-10%, 0);
+
+  @include max_query(768px) {
+    display: none;
+  }
+}
+
+.navbar_link_item {
+  @include max_query(768px) {
+    position: relative;
+    border-bottom: 1px solid #cbcbcb;
+    width: 15rem;
   }
 }

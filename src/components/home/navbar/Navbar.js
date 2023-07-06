@@ -52,10 +52,12 @@ const Navbar = () => {
                   isActive ? "navbar_link_active" : "navbar_link_not_active"
                 }
               >
-                <p className="navbar_link_item">{link.text}</p>
-                {/* {link?.icon && (
+                <div className="arrow_icon_container">
+                  <p className="navbar_link_item">{link.text}</p>
+                  {link?.icon && (
                     <img src={link.icon} alt="" className="navbar_arrow_icon" />
-                  )} */}
+                  )}
+                </div>
               </NavLink>
             </div>
           );
