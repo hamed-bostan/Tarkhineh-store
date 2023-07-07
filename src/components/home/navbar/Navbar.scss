@@ -60,7 +60,12 @@
 
   .navbar_icon {
     @include iconDesktop;
+    // color: rgb(140, 140, 145);
   }
+
+// .navbar_icon_active{
+//   color: purple;
+// }
 
   .arrow_icon_container {
     display: flex;
@@ -186,16 +191,17 @@
   position: relative;
 
   .navbar_badge {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //
     position: absolute;
-    top: -0.3rem;
-    right: -0.3rem;
+    top: 0.2rem;
+    right: 0rem;
     width: 0.8rem;
     height: 0.8rem;
     border-radius: 50%;
     background: #61ae7b;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     // Fonts
     @include fontInformationMobile;
     color: $naturalWhite;
@@ -207,8 +213,24 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  //
   width: 2rem;
   height: 2rem;
   border-radius: 0.25rem;
   background: $primaryColorLight;
+  // Fonts
+  color: white;
+}
+
+.green_background_active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.25rem;
+  background: $primaryColor;
+  // Fonts
+  color: white;
 }

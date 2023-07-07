@@ -1,21 +1,13 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { useSelector } from "react-redux";
 // Components
 import "./Navbar.scss";
-import { navbarIcons, navbarItems } from "../../../data";
+import { navbarItems } from "../../../data";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const state = useSelector((state) => state.cartState);
-
-  //  set the buttons on active style
-  const [value, setValue] = useState(0);
-  const activeFunction = (index) => {
-    setValue(index);
-    console.log(index);
-  };
-  // End of set the buttons on active style
 
   return (
     <div className="navbar_header">
@@ -84,32 +76,28 @@ const Navbar = () => {
       {/* End of Link section */}
       {/* Icons container */}
       <div className="navbar_icons_container">
-        {navbarIcons.map((item, index) => {
-          return (
-            <div className="navbar_badge_container" key={item.id}>
-              <NavLink
-                to={item?.path}
-                className={({ isActive }) =>
-                  isActive ? "green_background_active" : "green_background"
-                }
-              >
-                <img className="navbar_icon" src={item.icons} alt="" />
-                {/* <span
-                  // className="navbar_icon"
-                  className={`${
-                    index === value ? "navbar_icon_active" : "navbar_icon"
-                  }`}
-                  onClick={() => activeFunction(index)}
-                >
-                  {item.icons}
-                </span> */}
-              </NavLink>
-              {item.path === "/cart" && (
-                <span className="navbar_badge">{state.itemsCounter}</span>
-              )}
-            </div>
-          );
-        })}
+        <img
+          className="navbar_icon search_icon"
+          src="assets/images/icons/search-normal-01.png"
+          alt=""
+        />
+        <div className="navbar_badge_container">
+          <Link to="/cart">
+            <img
+              className="navbar_icon"
+              src="assets/images/icons/shopping-cart.png"
+              alt=""
+            />
+          </Link>
+          <span className="navbar_badge">{state.itemsCounter}</span>
+        </div>
+        <div className="green_background">
+          <img
+            className="navbar_icon"
+            src="assets/images/icons/user.png"
+            alt=""
+          />
+        </div>
       </div>
       {/* End of Icons container */}
     </div>

@@ -1,3 +1,7 @@
+import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
+import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
+import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
+
 // Iranian Foods
 export const foodInformation = [
   {
@@ -513,6 +517,29 @@ export const navbarItems = [
     text: "تماس با ما",
     path: "/contact",
     image: "assets/images/icons/call-calling.png",
+  },
+];
+
+// navbar icons
+
+export const navbarIcons = [
+  {
+    id: 1,
+    icons: "assets/images/icons/search-normal-01.png",
+    iconsWhite: "assets/images/icons/shopping-cart_white.png",
+    path: "/search",
+  },
+  {
+    id: 2,
+    icons: "assets/images/icons/shopping-cart.png",
+    iconsWhite: "assets/images/icons/shopping-cart_white.png",
+    path: "/cart",
+  },
+  {
+    id: 3,
+    icons: "assets/images/icons/user.png",
+    iconsWhite: "assets/images/icons/user_02.png",
+    path: "/userProfile",
   },
 ];
 
