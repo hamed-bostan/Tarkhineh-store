@@ -1,11 +1,13 @@
 import React, { useState } from "react";
-import "./Navbar.scss";
-// Components
-import { navbarItems } from "../../../data";
 import { Link, NavLink } from "react-router-dom";
+import { useSelector } from "react-redux";
+// Components
+import "./Navbar.scss";
+import { navbarItems } from "../../../data";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const state = useSelector((state) => state.cartState);
 
   return (
     <div className="navbar_header">
@@ -53,12 +55,20 @@ const Navbar = () => {
                 }
               >
                 <div className="arrow_icon_container">
-                  <p className="navbar_link_item">{link.text}</p>
+                  <div className="navbar_mobile_icon_link_container">
+                    <img
+                      src={link.image}
+                      alt=""
+                      className="navbar_mobile_icon"
+                    />
+                    <p className="navbar_link_item">{link.text}</p>
+                  </div>
                   {link?.icon && (
                     <img src={link.icon} alt="" className="navbar_arrow_icon" />
                   )}
                 </div>
               </NavLink>
+              <hr className="navbar_horizontal_line" />
             </div>
           );
         })}
@@ -71,18 +81,23 @@ const Navbar = () => {
           src="assets/images/icons/search-normal-01.png"
           alt=""
         />
-        <Link to="/cart">
+        <div className="navbar_badge_container">
+          <Link to="/cart">
+            <img
+              className="navbar_icon"
+              src="assets/images/icons/shopping-cart.png"
+              alt=""
+            />
+          </Link>
+          <span className="navbar_badge">{state.itemsCounter}</span>
+        </div>
+        <div className="green_background">
           <img
             className="navbar_icon"
-            src="assets/images/icons/shopping-cart.png"
+            src="assets/images/icons/user.png"
             alt=""
           />
-        </Link>
-        <img
-          className="navbar_icon"
-          src="assets/images/icons/user.png"
-          alt=""
-        />
+        </div>
       </div>
       {/* End of Icons container */}
     </div>
