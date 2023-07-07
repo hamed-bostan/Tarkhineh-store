@@ -63,9 +63,9 @@
     // color: rgb(140, 140, 145);
   }
 
-// .navbar_icon_active{
-//   color: purple;
-// }
+  // .navbar_icon_active{
+  //   color: purple;
+  // }
 
   .arrow_icon_container {
     display: flex;
@@ -218,8 +218,6 @@
   height: 2rem;
   border-radius: 0.25rem;
   background: $primaryColorLight;
-  // Fonts
-  color: white;
 }
 
 .green_background_active {
@@ -230,7 +228,6 @@
   width: 2rem;
   height: 2rem;
   border-radius: 0.25rem;
-  background: $primaryColor;
-  // Fonts
-  color: white;
+  // background: $primaryColor;
+  background: $primaryColorLight;
 }

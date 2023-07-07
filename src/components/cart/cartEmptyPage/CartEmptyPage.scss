@@ -1,0 +1,72 @@
+@import "../../sassContainer/mixins";
+@import "../../sassContainer/variables";
+
+.cart_empty_page_container {
+  border: 1px solid $greyColorSecondary;
+  border-radius: 0.5rem;
+  width: 20rem;
+  height: 23.4rem;
+  background: $naturalWhite;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+  //
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  //
+  position: relative;
+
+  @include query(1100px) {
+    width: 60.5rem;
+    height: 26.375rem;
+  }
+}
+
+.cart_empty_page_image {
+  width: 12.5rem;
+  height: 12rem;
+
+  @include query(1100px) {
+    width: 16.5rem;
+    height: 16rem;
+  }
+}
+
+.cart_empty_page_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  // Fonts
+  @include fontInformationDesktopSenary;
+  color: $greyColorDark;
+
+  @include query(1100px) {
+    @include fontInformationDesktopQuaternary;
+    color: $greyColorDark;
+  }
+}
+
+.cart_restaurant_menu_button {
+  @include primaryButtonOutlinedMobile;
+  border: 1px solid $primaryColor;
+  color: $primaryColor;
+  font-weight: 400;
+  //
+  position: absolute;
+  top: 50%;
+  top: 62%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  @include query(1100px) {
+    width: 10rem;
+    height: 2rem;
+    // Fonts
+    @include fontInformationDesktopQuinary;
+    color: $primaryColor;
+  }
+}

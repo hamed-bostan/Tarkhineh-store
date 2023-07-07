@@ -19,6 +19,7 @@ const CartHeader = () => {
         className="cart_trash_icon"
         onClick={() => setIsOpen(true)}
       />
+
       {isOpen && <CartClear close={() => setIsOpen(false)} />}
     </div>
   );
