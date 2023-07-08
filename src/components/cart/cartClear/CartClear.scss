@@ -56,6 +56,10 @@
   .cart_clear_close_icon {
     width: 1.5rem;
     height: 1.5rem;
+
+    @include query(1100px) {
+      cursor: pointer;
+    }
   }
 }
 
@@ -102,6 +106,7 @@
     color: $primaryColor;
 
     @include query(1100px) {
+      cursor: pointer;
       height: 2.5rem;
       // Fonts
       @include fontInformationDesktopQuinary;
@@ -123,6 +128,7 @@
     color: $redColor;
 
     @include query(1100px) {
+      cursor: pointer;
       height: 2.5rem;
       // Fonts
       @include fontInformationDesktopQuinary;

@@ -41,6 +41,10 @@
 .cart_payment_trash_icon {
   width: 1.2rem;
   height: 1.2rem;
+
+  @include query(1100px) {
+    cursor: pointer;
+  }
 }
 
 .cart_horizontal_line {
