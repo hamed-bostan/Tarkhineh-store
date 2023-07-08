@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import "./CartHeader.scss";
 import CartClear from "../cartClear/CartClear";
+import { useSelector } from "react-redux";
 
 const CartHeader = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const state = useSelector((state) => state.cartState);
 
   return (
     <div className="cart_header_container">
@@ -16,11 +18,17 @@ const CartHeader = () => {
       <img
         src="assets/images/icons/trash.png"
         alt=""
-        className="cart_trash_icon"
+        className={`${
+          state.itemsCounter > 0
+            ? "cart_trash_icon"
+            : "cart_trash_icon cart_trash_icon_inactive"
+        }`}
         onClick={() => setIsOpen(true)}
       />
 
-      {isOpen && <CartClear close={() => setIsOpen(false)} />}
+      {isOpen && state.itemsCounter > 0 && (
+        <CartClear close={() => setIsOpen(false)} />
+      )}
     </div>
   );
 };

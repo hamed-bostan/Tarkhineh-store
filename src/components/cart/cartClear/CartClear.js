@@ -29,6 +29,7 @@ const CartClear = ({ close }) => {
               className="cart_clear_remove_button"
               onClick={() => {
                 dispatch(clear());
+                close();
               }}
             >
               حذف

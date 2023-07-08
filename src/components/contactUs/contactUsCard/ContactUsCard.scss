@@ -118,14 +118,13 @@
     height: 1.5rem;
     border-radius: 0.25rem;
     border: 1px solid $primaryColor;
-    cursor: pointer;
-
     // Fonts
     @include fontInformationMobile;
     font-weight: 400;
     color: $primaryColor;
 
     @include query(1100px) {
+      cursor: pointer;
       width: 7rem;
       height: 2rem;
     }
@@ -140,7 +139,6 @@
     height: 1.5rem;
     border-radius: 0.25rem;
     border: 1px solid $primaryColor;
-    cursor: pointer;
 
     // Fonts
     @include fontInformationMobile;
@@ -148,6 +146,7 @@
     color: $naturalWhite;
 
     @include query(1100px) {
+      cursor: pointer;
       width: 7rem;
       height: 2rem;
     }

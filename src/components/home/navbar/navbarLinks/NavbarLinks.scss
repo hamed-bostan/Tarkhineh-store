@@ -21,7 +21,7 @@
   }
 }
 
-.navbar_links_container.navbar_links_show {
+.navbar_links_show {
   @include max_query(768px) {
     transform: translateX(0%);
   }
