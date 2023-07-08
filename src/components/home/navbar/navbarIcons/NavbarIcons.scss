@@ -1,0 +1,57 @@
+@import "../../../sassContainer/mixins";
+@import "../../../sassContainer/variables";
+
+.navbar_icons_container {
+  display: flex;
+  column-gap: 0.5rem;
+
+  .search_icon {
+    @include max_query(768px) {
+      display: none;
+    }
+  }
+}
+
+.navbar_badge_container {
+  position: relative;
+
+  .navbar_badge {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //
+    position: absolute;
+    top: 0.2rem;
+    right: 0rem;
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    background: #61ae7b;
+    // Fonts
+    @include fontInformationMobile;
+    color: $naturalWhite;
+    font-weight: 400;
+  }
+}
+
+.navbar_green_background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.25rem;
+  background: $primaryColorLight;
+}
+
+.navbar_green_background_active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.25rem;
+  background: $primaryColorLight;
+}
