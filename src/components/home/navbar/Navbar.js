@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <div className="navbar_container">
       <div className="navbar_header">
-        <NavbarToggle open={() => setIsOpen(true)} isOpen={isOpen} />
+        <NavbarToggle open={() => setIsOpen(true)} />
         <NavbarLogo />
         <NavbarLinks isOpen={isOpen} close={() => setIsOpen(false)} />
         <NavbarIcons />

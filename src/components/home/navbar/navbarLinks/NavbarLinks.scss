@@ -109,7 +109,10 @@
 
 // Close Icon
 .close_icon {
+  display: none;
+
   @include max_query(768px) {
+    display: block;
     position: absolute;
     top: 1rem;
     right: 14rem;
