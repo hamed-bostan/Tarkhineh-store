@@ -1,9 +1,9 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import "./NavbarLinks.scss";
 import { navbarItems } from "../../../../data";
-import { NavLink } from "react-router-dom";
 
-const NavbarLinks = ({ isOpen }) => {
+const NavbarLinks = ({ isOpen, close }) => {
   return (
     <div
       className={`${
@@ -35,6 +35,15 @@ const NavbarLinks = ({ isOpen }) => {
           </div>
         );
       })}
+      {/* close Icon */}
+      {isOpen && (
+        <img
+          onClick={close}
+          className="navbar_icon close_icon"
+          src="assets/images/icons/Close icon.png"
+          alt=""
+        />
+      )}
     </div>
   );
 };

@@ -1,7 +1,7 @@
 import React from "react";
 import "./NavbarToggle.scss";
 
-const NavbarToggle = ({ close, open, isOpen }) => {
+const NavbarToggle = ({ open, isOpen }) => {
   return (
     <div className="navbar_toggle_container">
       {!isOpen && (
@@ -9,15 +9,6 @@ const NavbarToggle = ({ close, open, isOpen }) => {
           onClick={open}
           className="navbar_icon"
           src="assets/images/icons/menu.png"
-          alt=""
-        />
-      )}
-
-      {isOpen && (
-        <img
-          onClick={close}
-          className="navbar_icon close_icon"
-          src="assets/images/icons/Close icon.png"
           alt=""
         />
       )}

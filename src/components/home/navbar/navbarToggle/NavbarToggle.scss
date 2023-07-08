@@ -6,13 +6,4 @@
   @include max_query(768px) {
     display: block;
   }
-
-  .close_icon {
-    @include max_query(768px) {
-      position: absolute;
-      top: 1rem;
-      right: 14rem;
-      z-index: 900;
-    }
-  }
 }
