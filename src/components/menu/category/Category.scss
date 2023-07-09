@@ -11,11 +11,13 @@
   @include query(1100px) {
     margin-top: 0;
     justify-content: flex-start;
-    width: 70%;
+    // width: 70%;
+    width: 105%;
   }
 
   @include query(1320px) {
-    width: 50%;
+    // width: 50%;
+    width: 55%;
   }
 }
 
@@ -35,6 +37,7 @@
 
   .header_component_button {
     border: none;
+    background: transparent;
     // Fonts
     @include fontInformationMobile;
     color: $blackColor;
