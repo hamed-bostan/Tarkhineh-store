@@ -1,31 +1,31 @@
-const items =
+const selectedItems =
   localStorage.getItem("cartItems") !== null
     ? JSON.parse(localStorage.getItem("cartItems"))
     : [];
 
-const totalAmount =
+const totalPrice =
   localStorage.getItem("totalAmount") !== null
     ? JSON.parse(localStorage.getItem("totalAmount"))
     : 0;
 
-const totalQuantity =
+const itemsCounter =
   localStorage.getItem("totalQuantity") !== null
     ? JSON.parse(localStorage.getItem("totalQuantity"))
     : 0;
 
-const setItemsFunction = (item, totalAmount, totalQuantity) => {
-  localStorage.setItem("cartItems", JSON.stringify(item));
-  localStorage.setItem("totalAmount", JSON.stringify(totalAmount));
-  localStorage.setItem("totalQuantity", JSON.stringify(totalQuantity));
+const setItemsFunction = (selectedItems, totalPrice, itemsCounter) => {
+  localStorage.setItem("cartItems", JSON.stringify(selectedItems));
+  localStorage.setItem("totalAmount", JSON.stringify(totalPrice));
+  localStorage.setItem("totalQuantity", JSON.stringify(itemsCounter));
 };
 
 const initialState = {
   // selectedItems: [],
-  selectedItems: items,
+  selectedItems: selectedItems,
   // itemsCounter: 0,
-  itemsCounter: totalQuantity,
+  itemsCounter: itemsCounter,
   // totalPrice: 0,
-  totalPrice: totalAmount,
+  totalPrice: totalPrice,
   checkout: false,
 };
 
@@ -50,12 +50,13 @@ const cartReducer = (state = initialState, action) => {
           quantity: 1,
         });
       }
+
       return {
-        ...setItemsFunction(
-          state.selectedItems.map((item) => item),
-          state.totalPrice,
-          state.itemsCounter
-        ),
+        // ...setItemsFunction(
+        //   state.selectedItems.map((item) => item),
+        //   state.totalPrice,
+        //   state.itemsCounter
+        // ),
         ...state,
         selectedItems: [...state.selectedItems],
         ...sumItems(state.selectedItems),
@@ -66,12 +67,8 @@ const cartReducer = (state = initialState, action) => {
       const newSelectedItems = state.selectedItems.filter(
         (item) => item.id !== action.payload.id
       );
+
       return {
-        ...setItemsFunction(
-          state.selectedItems.map((item) => item),
-          state.totalPrice,
-          state.itemsCounter
-        ),
         ...state,
         selectedItems: [...newSelectedItems],
         ...sumItems(newSelectedItems),
@@ -103,11 +100,6 @@ const cartReducer = (state = initialState, action) => {
 
     case "CLEAR":
       return {
-        ...setItemsFunction(
-          state.selectedItems.map((item) => item),
-          state.totalPrice,
-          state.itemsCounter
-        ),
         selectedItems: [],
         itemsCounter: 0,
         totalPrice: 0,
