@@ -69,7 +69,8 @@ export const foodInformation = [
     highPrice: "۲۱۰٬۰۰۰",
     discount: "%۵",
     // finalPrice: "۲۰۳٬۰۰۰ تومان",
-    finalPrice: 203000,
+    // finalPrice: 203000,
+    finalPrice: 20300,
     star: "some star",
   },
   {

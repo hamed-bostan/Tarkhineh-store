@@ -1,9 +1,31 @@
-import React, { useReducer } from "react";
+const items =
+  localStorage.getItem("cartItems") !== null
+    ? JSON.parse(localStorage.getItem("cartItems"))
+    : [];
+
+const totalAmount =
+  localStorage.getItem("totalAmount") !== null
+    ? JSON.parse(localStorage.getItem("totalAmount"))
+    : 0;
+
+const totalQuantity =
+  localStorage.getItem("totalQuantity") !== null
+    ? JSON.parse(localStorage.getItem("totalQuantity"))
+    : 0;
+
+const setItemsFunction = (item, totalAmount, totalQuantity) => {
+  localStorage.setItem("cartItems", JSON.stringify(item));
+  localStorage.setItem("totalAmount", JSON.stringify(totalAmount));
+  localStorage.setItem("totalQuantity", JSON.stringify(totalQuantity));
+};
 
 const initialState = {
-  selectedItems: [],
-  itemsCounter: 0,
-  totalPrice: 0,
+  // selectedItems: [],
+  selectedItems: items,
+  // itemsCounter: 0,
+  itemsCounter: totalQuantity,
+  // totalPrice: 0,
+  totalPrice: totalAmount,
   checkout: false,
 };
 
@@ -13,7 +35,6 @@ const sumItems = (item) => {
   }, 0);
   const totalPrice = item
     .reduce((total, currentPrice) => {
-      // return total + currentPrice.quantity * currentPrice.price;
       return total + currentPrice.quantity * currentPrice.finalPrice;
     }, 0)
     .toFixed(2);
@@ -30,6 +51,11 @@ const cartReducer = (state = initialState, action) => {
         });
       }
       return {
+        ...setItemsFunction(
+          state.selectedItems.map((item) => item),
+          state.totalPrice,
+          state.itemsCounter
+        ),
         ...state,
         selectedItems: [...state.selectedItems],
         ...sumItems(state.selectedItems),
@@ -41,6 +67,11 @@ const cartReducer = (state = initialState, action) => {
         (item) => item.id !== action.payload.id
       );
       return {
+        ...setItemsFunction(
+          state.selectedItems.map((item) => item),
+          state.totalPrice,
+          state.itemsCounter
+        ),
         ...state,
         selectedItems: [...newSelectedItems],
         ...sumItems(newSelectedItems),
@@ -72,6 +103,11 @@ const cartReducer = (state = initialState, action) => {
 
     case "CLEAR":
       return {
+        ...setItemsFunction(
+          state.selectedItems.map((item) => item),
+          state.totalPrice,
+          state.itemsCounter
+        ),
         selectedItems: [],
         itemsCounter: 0,
         totalPrice: 0,
