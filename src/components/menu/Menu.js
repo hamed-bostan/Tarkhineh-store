@@ -35,7 +35,7 @@ const Menu = () => {
 
   // search function
   const search = () => {
-    if (query == "") {
+    if (query === "") {
       setData(foodInformation);
     } else {
       const newData = foodInformation.filter((item) =>
