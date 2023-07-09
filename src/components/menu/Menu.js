@@ -14,7 +14,6 @@ import Search from "./search/Search";
 const Menu = () => {
   const [data, setData] = useState(foodInformation);
   const [query, setQuery] = useState("");
-
   const categories = [
     "نمایش همه",
     ...new Set(foodInformation.map((item) => item.category)),
@@ -35,8 +34,15 @@ const Menu = () => {
   // End of categories function
 
   // search function
-  const search = (data) => {
-    return data.filter((item) => item.title.includes(query));
+  const search = () => {
+    if (query == "") {
+      setData(foodInformation);
+    } else {
+      const newData = foodInformation.filter((item) =>
+        item.title.includes(query)
+      );
+      setData(newData);
+    }
   };
   // End od search function
 
@@ -47,12 +53,15 @@ const Menu = () => {
       <div className="menu_component_container">
         <div className="menu_component_category_search_container">
           <Category categories={categories} productFiltered={productFiltered} />
-          <Search setQuery={setQuery} />
+          <Search setQuery={setQuery} search={search} />
         </div>
         <MenuTitle />
         {/* card section */}
         <div className="menu_card_main_container">
-          <MenuCard data={search(data)} />
+          {/* <MenuCard data={search(data)} /> */}
+          {data.map((item) => {
+            return <MenuCard data={item} key={item.id} />;
+          })}
         </div>
         {/* End of card section */}
       </div>

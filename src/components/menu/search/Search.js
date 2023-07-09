@@ -1,7 +1,11 @@
 import React from "react";
 import "./Search.scss";
 
-const Search = ({ setQuery }) => {
+const Search = ({ setQuery, search }) => {
+  const twoFunction = (e) => {
+    setQuery(e.target.value);
+    search();
+  };
   return (
     <div className="search_container">
       <div className="search_wrapper">
@@ -9,7 +13,7 @@ const Search = ({ setQuery }) => {
           type="text"
           placeholder="جستجو"
           className="search_input"
-          onChange={(e) => setQuery(e.target.value)}
+          onChange={(e) => twoFunction(e)}
         />
         <img
           src="assets/images/icons/search-normal-02.png"
