@@ -4,7 +4,6 @@
 .menu_component_container {
   max-width: 1500px;
   margin: 0 auto;
-  padding: 0 1.25rem;
 }
 
 .menu_component_title {
@@ -23,6 +22,7 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 3.5rem 1rem;
   margin-top: 0.75rem;
+  padding: 0 1.25rem;
 
   @include query(1100px) {
     grid-template-columns: repeat(4, 1fr);
