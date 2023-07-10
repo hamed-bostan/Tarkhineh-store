@@ -1,31 +1,7 @@
-const selectedItems =
-  localStorage.getItem("cartItems") !== null
-    ? JSON.parse(localStorage.getItem("cartItems"))
-    : [];
-
-const totalPrice =
-  localStorage.getItem("totalAmount") !== null
-    ? JSON.parse(localStorage.getItem("totalAmount"))
-    : 0;
-
-const itemsCounter =
-  localStorage.getItem("totalQuantity") !== null
-    ? JSON.parse(localStorage.getItem("totalQuantity"))
-    : 0;
-
-const setItemsFunction = (selectedItems, totalPrice, itemsCounter) => {
-  localStorage.setItem("cartItems", JSON.stringify(selectedItems));
-  localStorage.setItem("totalAmount", JSON.stringify(totalPrice));
-  localStorage.setItem("totalQuantity", JSON.stringify(itemsCounter));
-};
-
 const initialState = {
-  // selectedItems: [],
-  selectedItems: selectedItems,
-  // itemsCounter: 0,
-  itemsCounter: itemsCounter,
-  // totalPrice: 0,
-  totalPrice: totalPrice,
+  selectedItems: [],
+  itemsCounter: 0,
+  totalPrice: 0,
   checkout: false,
 };
 
@@ -33,6 +9,7 @@ const sumItems = (item) => {
   const itemsCounter = item.reduce((total, currentQuantity) => {
     return total + currentQuantity.quantity;
   }, 0);
+
   const totalPrice = item
     .reduce((total, currentPrice) => {
       return total + currentPrice.quantity * currentPrice.finalPrice;
@@ -52,11 +29,6 @@ const cartReducer = (state = initialState, action) => {
       }
 
       return {
-        // ...setItemsFunction(
-        //   state.selectedItems.map((item) => item),
-        //   state.totalPrice,
-        //   state.itemsCounter
-        // ),
         ...state,
         selectedItems: [...state.selectedItems],
         ...sumItems(state.selectedItems),
@@ -78,6 +50,7 @@ const cartReducer = (state = initialState, action) => {
       const increaseItem = state.selectedItems.find(
         (item) => item.id === action.payload.id
       );
+
       increaseItem.quantity++;
       return { ...state, ...sumItems(state.selectedItems) };
 
