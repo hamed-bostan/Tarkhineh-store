@@ -4,25 +4,25 @@ import { legacy_createStore as createStore } from "redux";
 // import thunk from "redux-thunk";
 import rootReducer from "./rootReducer";
 
-function saveToLocalStorage(state) {
+const saveToLocalStorage = (state) => {
   try {
-    const serialisedState = JSON.stringify(state);
-    localStorage.setItem("persistantState", serialisedState);
+    const serializedState = JSON.stringify(state);
+    localStorage.setItem("cartItems", serializedState);
   } catch (e) {
     console.warn(e);
   }
-}
+};
 
-function loadFromLocalStorage() {
+const loadFromLocalStorage = () => {
   try {
-    const serialisedState = localStorage.getItem("persistantState");
-    if (serialisedState === null) return undefined;
-    return JSON.parse(serialisedState);
+    const serializedState = localStorage.getItem("cartItems");
+    if (serializedState === null) return undefined;
+    return JSON.parse(serializedState);
   } catch (e) {
     console.warn(e);
     return undefined;
   }
-}
+};
 
 const store = createStore(
   rootReducer,
