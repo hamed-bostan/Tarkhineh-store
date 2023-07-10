@@ -9,7 +9,6 @@ const sumItems = (item) => {
   const itemsCounter = item.reduce((total, currentQuantity) => {
     return total + currentQuantity.quantity;
   }, 0);
-
   const totalPrice = item
     .reduce((total, currentPrice) => {
       return total + currentPrice.quantity * currentPrice.finalPrice;
@@ -27,7 +26,6 @@ const cartReducer = (state = initialState, action) => {
           quantity: 1,
         });
       }
-
       return {
         ...state,
         selectedItems: [...state.selectedItems],
@@ -39,7 +37,6 @@ const cartReducer = (state = initialState, action) => {
       const newSelectedItems = state.selectedItems.filter(
         (item) => item.id !== action.payload.id
       );
-
       return {
         ...state,
         selectedItems: [...newSelectedItems],
@@ -50,7 +47,6 @@ const cartReducer = (state = initialState, action) => {
       const increaseItem = state.selectedItems.find(
         (item) => item.id === action.payload.id
       );
-
       increaseItem.quantity++;
       return { ...state, ...sumItems(state.selectedItems) };
 
