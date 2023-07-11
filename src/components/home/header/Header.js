@@ -7,15 +7,9 @@ const Header = () => {
   const [width, setWidth] = useState(0);
   const carousel = useRef();
 
-  const [indexSlider, setIndexSlider] = useState(0);
-
   useEffect(() => {
     setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
   }, []);
-
-  const goToSlide = (index) => {
-    setIndexSlider(index);
-  };
 
   return (
     <div>

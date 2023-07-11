@@ -3,12 +3,13 @@
 
 .search_container {
   display: flex;
-  justify-content: center;
+  // justify-content: center;
   margin-top: 0.7rem;
+  padding: 0 1.25rem;
 
   @include query(1100px) {
     margin-top: 0;
-    justify-content: flex-start;
+    padding: 0;
     width: 100%;
   }
 }
@@ -23,6 +24,10 @@
   padding: 0 1rem;
 
   @include query(1100px) {
+    width: 100%;
+  }
+
+  @include query(1320px) {
     width: 50%;
   }
 }

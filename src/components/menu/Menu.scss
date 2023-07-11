@@ -15,8 +15,9 @@
   @include query(1100px) {
     display: flex;
     align-items: center;
-    column-gap: 1rem;
-    padding-right: 1.25rem;
+    // column-gap: 1rem;
+    column-gap: 7rem;
+    padding: 0 1.25rem;
     max-width: 1500px;
     margin: 0 auto;
     margin-top: 0.75rem;
@@ -71,5 +72,19 @@
       width: 8rem;
       height: 8rem;
     }
+  }
+}
+
+.hamed {
+  // cursor: grab;
+  overflow: hidden;
+
+  @include query(1100px) {
+    // overflow: hidden;
+    overflow: visible;
+  }
+
+  @include query(1320px) {
+    // overflow: visible;
   }
 }

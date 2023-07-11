@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import "./Menu.scss";
 import { useState } from "react";
+import { motion } from "framer-motion";
+
 // Components
 import { foodInformation } from "../../data";
 import Navbar from "../home/navbar/Navbar";
@@ -14,10 +16,19 @@ import Search from "./search/Search";
 const Menu = () => {
   const [data, setData] = useState(foodInformation);
   const [search, setSearch] = useState("");
+  const [width, setWidth] = useState(0);
+  const carousel = useRef();
+
   const categories = [
     "نمایش همه",
     ...new Set(foodInformation.map((item) => item.category)),
+    "پرفروش‌ترین",
+    "اقتصادی‌ترین",
   ];
+
+  useEffect(() => {
+    setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
+  }, []);
 
   // Categories function
   const productCategories = (category) => {
@@ -43,10 +54,14 @@ const Menu = () => {
       <Header />
       <div className="menu_component_container">
         <div className="menu_component_category_search_container">
-          <Category
-            categories={categories}
-            productCategories={productCategories}
-          />
+          <motion.div ref={carousel} className="hamed">
+            <Category
+              categories={categories}
+              productCategories={productCategories}
+              width={width}
+              setWidth={setWidth}
+            />
+          </motion.div>
           <Search setSearch={setSearch} search={search} />
         </div>
         {searchedProducts.length > 0 ? (
@@ -60,8 +75,12 @@ const Menu = () => {
           </>
         ) : (
           <div className="menu_component_match_not_found_container">
-            <p className="menu_component_match_not_found_text">موردی با این مشخصات پیدا نکردیم!</p>
-            <img src="assets/images/icons/match_not_found.png" alt="" 
+            <p className="menu_component_match_not_found_text">
+              موردی با این مشخصات پیدا نکردیم!
+            </p>
+            <img
+              src="assets/images/icons/match_not_found.png"
+              alt=""
               className="menu_component_match_not_found_image"
             />
           </div>
