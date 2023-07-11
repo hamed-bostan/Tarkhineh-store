@@ -7,8 +7,13 @@ const ContactUsCard = ({ data }) => {
   return (
     <div className="ContactUs_card_container">
       <div className="ContactUs_card_image_container">
-        <img src="assets/images/icons/gallery.png" alt="" className="ContactUs_card_gallery_icon" />
         <img src={image} alt="" className="ContactUs_card_image" />
+        <div className="ContactUs_card_image_overlay"></div>
+        <img
+          src="assets/images/icons/gallery.png"
+          alt=""
+          className="ContactUs_card_gallery_icon"
+        />
       </div>
       <div className="ContactUs_card_information_container">
         <span className="ContactUs_card_title">{title}</span>

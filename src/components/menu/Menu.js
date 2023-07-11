@@ -20,7 +20,7 @@ const Menu = () => {
   ];
 
   // Categories function
-  const productFiltered = (category) => {
+  const productCategories = (category) => {
     if (category === "نمایش همه") {
       setData(foodInformation);
       return;
@@ -43,20 +43,29 @@ const Menu = () => {
       <Header />
       <div className="menu_component_container">
         <div className="menu_component_category_search_container">
-          <Category categories={categories} productFiltered={productFiltered} />
-          <Search
-            setSearch={setSearch}
-            search={search}
+          <Category
+            categories={categories}
+            productCategories={productCategories}
           />
+          <Search setSearch={setSearch} search={search} />
         </div>
-        <MenuTitle />
-        {/* card section */}
-        <div className="menu_card_main_container">
-          {searchedProducts.map((item) => {
-            return <MenuCard data={item} key={item.id} />;
-          })}
-        </div>
-        {/* End of card section */}
+        {searchedProducts.length > 0 ? (
+          <>
+            <MenuTitle />
+            <div className="menu_card_main_container">
+              {searchedProducts.map((item) => {
+                return <MenuCard data={item} key={item.id} />;
+              })}
+            </div>
+          </>
+        ) : (
+          <div className="menu_component_match_not_found_container">
+            <p className="menu_component_match_not_found_text">موردی با این مشخصات پیدا نکردیم!</p>
+            <img src="assets/images/icons/match_not_found.png" alt="" 
+              className="menu_component_match_not_found_image"
+            />
+          </div>
+        )}
       </div>
       <Footer />
     </div>

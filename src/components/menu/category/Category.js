@@ -1,7 +1,7 @@
 import React from "react";
 import "./Category.scss";
 
-const Category = ({ categories, productFiltered }) => {
+const Category = ({ categories, productCategories }) => {
   return (
     <div className="header_component_container">
       {categories.map((category, index) => {
@@ -9,7 +9,7 @@ const Category = ({ categories, productFiltered }) => {
           <div key={index}>
             <div
               className="header_component_button_container"
-              onClick={() => productFiltered(category)}
+              onClick={() => productCategories(category)}
             >
               <button className="header_component_button">{category}</button>
               <img

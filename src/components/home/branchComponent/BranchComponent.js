@@ -15,6 +15,7 @@ const BranchComponent = () => {
               {/* image container */}
               <div className="branch_component_image_container">
                 <img src={image} alt="" className="branch_component_image" />
+                <div className="branch_component_image_overlay"></div>
                 <img
                   src="assets/images/icons/expand_01.png"
                   alt=""
