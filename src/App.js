@@ -26,9 +26,8 @@ function App() {
             <Route path="/franchise" element={<Franchise />} />
             <Route path="/menu" element={<Menu />} />
             <Route path="/cart" element={<Cart />} />
-            {/* <Route path="/:productId" element={<MenuModal />} /> */}
-            <Route path="/menuModal" element={<MenuModal />} />
             {/* <Route path="products/:productId" element={<MenuModal />} /> */}
+            <Route path="/:productId" element={<MenuModal />} />
             <Route path="*" element={<NoPage />} />
           </Routes>
         </BrowserRouter>

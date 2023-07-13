@@ -10,7 +10,7 @@ const MenuModal = ({ close }) => {
     (product) => parseInt(product.id) === parseInt(productId)
   );
 
-  const { image, title, description, star } = singleProduct;
+  const { image, title, description } = singleProduct;
 
   return (
     <>
@@ -29,7 +29,7 @@ const MenuModal = ({ close }) => {
         <div className="menu_modal_information_container">
           <div className="menu_modal_top_container">
             <span className="menu_modal_title">{title}</span>
-            <span className="start">{star}</span>
+            <span className="start">some star</span>
           </div>
           <div className="menu_modal_bottom_container">
             <p className="menu_modal_description">{description}</p>

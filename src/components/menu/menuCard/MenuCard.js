@@ -24,7 +24,6 @@ const MenuCard = ({ data, open }) => {
       <Link to={`/${id}`}>
         <img src={image} alt="" className="menu_image" onClick={open} />
       </Link>
-
       <div className="menu_card_information_container">
         {/* first div */}
         <div className="menu_card_single_item_container">

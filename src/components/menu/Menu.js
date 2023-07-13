@@ -93,8 +93,8 @@ const Menu = () => {
             />
           </div>
         )}
-        {isModalOpen && <MenuModal close={() => setIsModalOpen(false)} />}
       </div>
+      {isModalOpen && <MenuModal close={() => setIsModalOpen(false)} />}
       <Footer />
     </div>
   );
