@@ -1,0 +1,94 @@
+@import "../../sassContainer/mixins";
+@import "../../sassContainer/variables";
+
+.menu_modal_background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.452);
+}
+
+.menu_modal_container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: $naturalWhite;
+  //   width: 50.5rem;
+  width: 40rem;
+  z-index: 500;
+  border-radius: 0.5rem;
+}
+
+.menu_modal_header_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4rem;
+  padding: 0 1.25rem;
+  background: $greyColor;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+
+  .menu_modal_header_title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    // Fonts
+    @include fontTitleDesktopTertiary;
+  }
+
+  .menu_modal_close_icon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
+// Center section
+.menu_modal_main_image {
+  width: 100%;
+  //   height: 27.5625rem;
+  height: 23rem;
+  object-fit: cover;
+}
+// End of Center section
+
+.menu_modal_information_container {
+  padding: 0 1.25rem;
+  background: $naturalWhite;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  padding-bottom: 1rem;
+}
+
+.menu_modal_top_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .menu_modal_title {
+    // Fonts
+    @include fontTitleMobilePrimary;
+  }
+}
+
+.menu_modal_bottom_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  // Fonts
+  @include fontInformationDesktopSecondary;
+  font-weight: 400;
+
+  .menu_modal_description {
+    // Fonts
+    color: $blackColor;
+  }
+
+  .menu_modal_comment {
+    // Fonts
+    color: $greyColorSecondary;
+  }
+}

@@ -12,6 +12,7 @@ import AboutUs from "./components/aboutUs/AboutUs";
 import Franchise from "./components/franchise/Franchise";
 import Menu from "./components/menu/Menu";
 import Cart from "./components/cart/Cart";
+import MenuModal from "./components/menu/menuModal/MenuModal";
 
 function App() {
   return (
@@ -25,6 +26,9 @@ function App() {
             <Route path="/franchise" element={<Franchise />} />
             <Route path="/menu" element={<Menu />} />
             <Route path="/cart" element={<Cart />} />
+            {/* <Route path="/:productId" element={<MenuModal />} /> */}
+            <Route path="/menuModal" element={<MenuModal />} />
+            {/* <Route path="products/:productId" element={<MenuModal />} /> */}
             <Route path="*" element={<NoPage />} />
           </Routes>
         </BrowserRouter>

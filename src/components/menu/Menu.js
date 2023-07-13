@@ -12,12 +12,14 @@ import MenuCard from "./menuCard/MenuCard";
 import Footer from "../home/footer/Footer";
 import MenuTitle from "./menuTitle/MenuTitle";
 import Search from "./search/Search";
+import MenuModal from "./menuModal/MenuModal";
 
 const Menu = () => {
   const [data, setData] = useState(foodInformation);
   const [search, setSearch] = useState("");
   const [width, setWidth] = useState(0);
   const carousel = useRef();
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const categories = [
     "نمایش همه",
@@ -69,7 +71,13 @@ const Menu = () => {
             <MenuTitle />
             <div className="menu_card_main_container">
               {searchedProducts.map((item) => {
-                return <MenuCard data={item} key={item.id} />;
+                return (
+                  <MenuCard
+                    data={item}
+                    key={item.id}
+                    open={() => setIsModalOpen(true)}
+                  />
+                );
               })}
             </div>
           </>
@@ -85,6 +93,7 @@ const Menu = () => {
             />
           </div>
         )}
+        {isModalOpen && <MenuModal close={() => setIsModalOpen(false)} />}
       </div>
       <Footer />
     </div>

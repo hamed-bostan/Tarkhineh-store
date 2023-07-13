@@ -368,7 +368,7 @@ export const foodInformation = [
     id: 29,
     category: "ساندویچ‌ها",
     image: "assets/images/foodImages/sandwich/sandwich_01.png",
-    title: "ساندویچ کتلت مخصوص",
+    title: "ساندویچ کتلت",
     description:
       "سیب زمینی، لوبیا قرمز،  بلغور گندم، نعناع خشک، پودر زیره، پودر جوز هندی، گوجه فرنگی، روغن زیتون",
     highPrice: "۲۳۰٬۰۰۰",

@@ -30,8 +30,8 @@
     width: 5.75rem;
     height: 100%;
     @include query(1100px) {
-      // width: 8rem;
-      width: 30%;
+      width: 8rem;
+      // width: 30%;
       height: 100%;
     }
   }
