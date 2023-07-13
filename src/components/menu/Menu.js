@@ -20,6 +20,7 @@ const Menu = () => {
   const [width, setWidth] = useState(0);
   const carousel = useRef();
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [productId, setProductId] = useState();
 
   const categories = [
     "نمایش همه",
@@ -56,7 +57,7 @@ const Menu = () => {
       <Header />
       <div className="menu_component_container">
         <div className="menu_component_category_search_container">
-          <motion.div ref={carousel} className="hamed">
+          <motion.div ref={carousel} className="carousel">
             <Category
               categories={categories}
               productCategories={productCategories}
@@ -76,6 +77,7 @@ const Menu = () => {
                     data={item}
                     key={item.id}
                     open={() => setIsModalOpen(true)}
+                    setProductId={setProductId}
                   />
                 );
               })}
@@ -94,7 +96,7 @@ const Menu = () => {
           </div>
         )}
       </div>
-      {isModalOpen && <MenuModal close={() => setIsModalOpen(false)} />}
+      {isModalOpen && <MenuModal close={() => setIsModalOpen(false)} productId={productId} />}
       <Footer />
     </div>
   );

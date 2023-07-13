@@ -75,16 +75,11 @@
   }
 }
 
-.hamed {
-  // cursor: grab;
+.carousel {
   overflow: hidden;
 
   @include query(1100px) {
     // overflow: hidden;
     overflow: visible;
-  }
-
-  @include query(1320px) {
-    // overflow: visible;
   }
 }

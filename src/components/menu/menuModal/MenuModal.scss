@@ -1,6 +1,13 @@
 @import "../../sassContainer/mixins";
 @import "../../sassContainer/variables";
 
+.menu_modal_main_container {
+  display: none;
+  @include query(1100px) {
+    display: block;
+  }
+}
+
 .menu_modal_background {
   position: fixed;
   top: 0;
@@ -16,8 +23,9 @@
   left: 50%;
   transform: translate(-50%, -50%);
   background: $naturalWhite;
-  //   width: 50.5rem;
-  width: 40rem;
+
+  // width: 40rem;
+  width: 36rem;
   z-index: 500;
   border-radius: 0.5rem;
 }
@@ -43,21 +51,22 @@
   .menu_modal_close_icon {
     width: 1.5rem;
     height: 1.5rem;
+    cursor: pointer;
   }
 }
 
 // Center section
 .menu_modal_main_image {
   width: 100%;
-  //   height: 27.5625rem;
-  height: 23rem;
+  // height: 27.5625rem;
+  // height: 23rem;
+  height: 20rem;
   object-fit: cover;
 }
 // End of Center section
 
 .menu_modal_information_container {
   padding: 0 1.25rem;
-  background: $naturalWhite;
   border-bottom-left-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
   padding-bottom: 1rem;

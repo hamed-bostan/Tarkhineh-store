@@ -3,10 +3,14 @@ import "./MenuCard.scss";
 // Redux
 import { useDispatch } from "react-redux";
 import { addItem } from "../../redux/cart/cartAction";
-import { Link } from "react-router-dom";
 
-const MenuCard = ({ data, open }) => {
+const MenuCard = ({ data, open, setProductId }) => {
   const dispatch = useDispatch();
+
+  const functionHandler = () => {
+    open();
+    setProductId(id);
+  };
 
   const {
     id,
@@ -21,9 +25,12 @@ const MenuCard = ({ data, open }) => {
 
   return (
     <article className="menu_card_container">
-      <Link to={`/${id}`}>
-        <img src={image} alt="" className="menu_image" onClick={open} />
-      </Link>
+      <img
+        src={image}
+        alt=""
+        className="menu_image"
+        onClick={() => functionHandler()}
+      />
       <div className="menu_card_information_container">
         {/* first div */}
         <div className="menu_card_single_item_container">
