@@ -6,7 +6,7 @@ const NavbarToggle = ({ open }) => {
     <div className="navbar_toggle_container">
       <img
         onClick={open}
-        className="navbar_icon"
+        className="navbar_toggle"
         src="assets/images/icons/menu.png"
         alt=""
       />

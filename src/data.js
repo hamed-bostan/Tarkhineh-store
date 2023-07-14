@@ -517,29 +517,6 @@ export const navbarItems = [
   },
 ];
 
-// navbar icons
-
-export const navbarIcons = [
-  {
-    id: 1,
-    icons: "assets/images/icons/search-normal-01.png",
-    iconsWhite: "assets/images/icons/shopping-cart_white.png",
-    path: "/search",
-  },
-  {
-    id: 2,
-    icons: "assets/images/icons/shopping-cart.png",
-    iconsWhite: "assets/images/icons/shopping-cart_white.png",
-    path: "/cart",
-  },
-  {
-    id: 3,
-    icons: "assets/images/icons/user.png",
-    iconsWhite: "assets/images/icons/user_02.png",
-    path: "/userProfile",
-  },
-];
-
 // Banner
 export const bannerInformation = [
   {

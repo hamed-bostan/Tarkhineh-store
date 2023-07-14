@@ -22,5 +22,9 @@
 
   .navbar_icon {
     @include iconDesktop;
+
+    @include max_query(768px) {
+      @include iconMobile;
+    }
   }
 }

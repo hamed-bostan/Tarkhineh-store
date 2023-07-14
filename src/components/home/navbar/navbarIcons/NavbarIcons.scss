@@ -5,7 +5,7 @@
   display: flex;
   column-gap: 0.5rem;
 
-  .search_icon {
+  .search_icon_container {
     @include max_query(768px) {
       display: none;
     }
@@ -31,6 +31,11 @@
     @include fontInformationMobile;
     color: $naturalWhite;
     font-weight: 400;
+
+    @include max_query(768px) {
+      width: 0.7rem;
+      height: 0.7rem;
+    }
   }
 }
 
@@ -43,15 +48,23 @@
   height: 2rem;
   border-radius: 0.25rem;
   background: $primaryColorLight;
+
+  @include max_query(768px) {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
 }
 
 .navbar_green_background_active {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  //
-  width: 2rem;
-  height: 2rem;
-  border-radius: 0.25rem;
-  background: $primaryColorLight;
+  background: #d4fadf;
+}
+
+.navbar_icons_left_side {
+  width: 1.1rem;
+  height: 1.1rem;
+
+  @include max_query(768px) {
+    width: 1rem;
+    height: 1rem;
+  }
 }

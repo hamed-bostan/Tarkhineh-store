@@ -82,7 +82,9 @@
 
 // no mobile
 @mixin fontTitleDesktopQuaternary {
-  font-size: 1.25rem;
+  // font-size: 1.25rem;
+  // cause it was too big i changed to:
+  font-size: 0.9rem;
   font-weight: 700;
   line-height: 140%;
   color: $naturalWhite;
@@ -112,7 +114,7 @@
 @mixin fontInformationDesktopQuaternary {
   // font-size: 1.25rem;
   // cause it was too big i changed to:
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 400;
   line-height: 180%;
   font-style: normal;

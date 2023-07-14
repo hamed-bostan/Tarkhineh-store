@@ -7,6 +7,7 @@ import MenuComponent from "./menuComponent/MenuComponent";
 import Introduction from "./introduction/Introduction";
 import BranchComponent from "./branchComponent/BranchComponent";
 import Footer from "./footer/Footer";
+import CurrentLocation from "../location/CurrentLocation";
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <Introduction />
       <BranchComponent />
       <Footer />
+      <CurrentLocation />
     </div>
   );
 };
