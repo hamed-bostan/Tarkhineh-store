@@ -14,7 +14,8 @@
 @mixin fontTitleDesktopPrimary {
   // font-size: 1.5rem;
   // cause it was too big i changed to:
-  font-size: 1.1rem;
+  // font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 700;
   line-height: 140%;
   color: $blackColor;
@@ -53,7 +54,9 @@
 @mixin fontTitleDesktopTertiary {
   // font-size: 1.25rem;
   // cause it was too big i changed to:
-  font-size: 1.05rem;
+  // font-size: 1.05rem;
+  // font-size: 0.9rem;
+  font-size: 0.83rem;
   font-weight: 600;
   line-height: 180%;
   color: $blackColor;
@@ -93,7 +96,10 @@
 
 // no mobile
 @mixin fontInformationDesktopSecondary {
-  font-size: 0.875rem;
+  // font-size: 0.875rem;
+  // cause it was too big i changed to:
+  // font-size: 0.8rem;
+  font-size: 0.78rem;
   font-weight: 500;
   line-height: 180%;
   color: $greyColorDark;

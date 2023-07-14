@@ -6,9 +6,11 @@
   row-gap: 1.75rem;
   padding: 0 1.25rem;
   margin-top: 1.5rem;
+  padding-bottom: 1.5rem;
 
   @include query(1100px) {
     row-gap: 1.5rem;
     margin-top: 2.5rem;
+    padding-bottom: 2rem;
   }
 }

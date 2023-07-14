@@ -17,7 +17,8 @@
     position: relative;
 
     @include query(1100px) {
-      min-height: 17rem;
+      // min-height: 17rem;
+      min-height: 15rem;
     }
 
     .header_image {

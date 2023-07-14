@@ -52,7 +52,7 @@ const CartPayment = () => {
           alt=""
           className="cart_payment_logging_user_icon"
         />
-        <button className="cart_payment_logging_button">ورود/ثبت‌نام</button>
+        <button className="cart_payment_logging_button">ورود / ثبت‌نام</button>
       </div>
       {isOpen && <CartClear close={() => setIsOpen(false)} />}
     </div>

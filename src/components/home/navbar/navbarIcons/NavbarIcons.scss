@@ -52,6 +52,7 @@
   @include max_query(768px) {
     width: 1.5rem;
     height: 1.5rem;
+    cursor: unset;
   }
 }
 
@@ -62,9 +63,11 @@
 .navbar_icons_left_side {
   width: 1.1rem;
   height: 1.1rem;
+  cursor: pointer;
 
   @include max_query(768px) {
     width: 1rem;
     height: 1rem;
+    cursor: unset;
   }
 }

@@ -6,7 +6,11 @@
   max-width: 1500px;
   margin: 0 auto;
   margin-top: 1.5rem;
+  padding-bottom: 1.5rem;
 
+  @include query(1100px) {
+    padding-bottom: 2rem;
+  }
   .branch_component_main_title {
     @include fontTitleMobilePrimary;
     display: block;

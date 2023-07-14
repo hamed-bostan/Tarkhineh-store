@@ -145,6 +145,8 @@
 
     @include query(1100px) {
       cursor: pointer;
+      @include fontInformationDesktopQuinary;
+      color: $primaryColor;
       width: 7rem;
       height: 2rem;
     }
@@ -169,6 +171,9 @@
       cursor: pointer;
       width: 7rem;
       height: 2rem;
+      // Fonts
+      @include fontInformationDesktopQuinary;
+      color: $naturalWhite;
     }
   }
 }
