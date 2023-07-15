@@ -12,6 +12,16 @@
   // Fonts
   @include fontInformationMobile;
   color: $blackColor;
+
+  @include query(1100px) {
+    // width: 14rem;
+    min-width: 13rem;
+    height: 20rem;
+    // Fonts
+    @include fontInformationDesktopTertiary;
+    color: $blackColor;
+    color: red;
+  }
 }
 
 .branch_card_image {
@@ -32,6 +42,11 @@
   justify-content: center;
   // Fonts
   @include fontInformationDesktopSenary;
+
+  @include query(1100px) {
+    @include fontTitleDesktopSecondary;
+    font-weight: 600;
+  }
 }
 
 .branch_card_information_container {
@@ -78,4 +93,12 @@
   // Fonts
   @include fontInformationMobile;
   font-weight: 400;
+
+  @include query(1100px) {
+    width: 8rem;
+    height: 2rem;
+    // Fonts
+    @include fontInformationDesktopQuinary;
+    color: $naturalWhite;
+  }
 }

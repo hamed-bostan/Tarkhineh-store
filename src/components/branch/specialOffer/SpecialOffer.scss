@@ -7,6 +7,11 @@
 .branch_main_title {
   // Fonts
   @include fontTitleMobilePrimary;
+
+  @include query(1100px){
+    // Fonts
+    @include fontTitleDesktopPrimary;
+  }
 }
 
 .branch_card_container {
