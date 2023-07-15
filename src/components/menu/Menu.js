@@ -62,7 +62,6 @@ const Menu = () => {
               categories={categories}
               productCategories={productCategories}
               width={width}
-              setWidth={setWidth}
             />
           </motion.div>
           <Search setSearch={setSearch} search={search} />
@@ -96,7 +95,9 @@ const Menu = () => {
           </div>
         )}
       </div>
-      {isModalOpen && <MenuModal close={() => setIsModalOpen(false)} productId={productId} />}
+      {isModalOpen && (
+        <MenuModal close={() => setIsModalOpen(false)} productId={productId} />
+      )}
       <Footer />
     </div>
   );
