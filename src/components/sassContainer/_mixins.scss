@@ -3,7 +3,9 @@
 // Fonts section | Main page
 // Mobile version
 @mixin fontTitleMobilePrimary {
-  font-size: 1rem;
+  // font-size: 1rem;
+  // cause it was too big i changed to:
+  font-size: 0.75rem;
   font-weight: 700;
   line-height: 140%;
   color: $blackColor;
@@ -15,7 +17,7 @@
   // font-size: 1.5rem;
   // cause it was too big i changed to:
   // font-size: 1.1rem;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 700;
   line-height: 140%;
   color: $blackColor;

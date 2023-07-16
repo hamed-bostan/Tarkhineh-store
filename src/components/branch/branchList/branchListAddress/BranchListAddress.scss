@@ -1,0 +1,85 @@
+@import "../../../sassContainer/mixins";
+@import "../../../sassContainer/variables";
+
+.Branch_address_container {
+  width: 20rem;
+  height: 3.75rem;
+  border-radius: 0.25rem;
+  border: 1px solid $primaryColor;
+  background: $naturalWhite;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 1500px;
+  padding: 0.5rem 0.5rem;
+  row-gap: 0.5rem;
+  //
+  position: absolute;
+  top: 91%;
+  left: 50%;
+  transform: translate(-50%, 0);
+
+  @include query(1100px) {
+    width: 45rem;
+    height: 6rem;
+    border-radius: 0.5rem;
+    flex-direction: row;
+    column-gap: 1rem;
+    row-gap: 0;
+  }
+}
+
+.Branch_address_wrapper {
+  display: flex;
+  column-gap: 0.25rem;
+  align-items: center;
+  // Fonts
+  @include fontInformationMobile;
+  font-weight: 400;
+  color: $blackColor;
+
+  @include query(1100px) {
+    flex-direction: column;
+    flex: 1;
+    text-align: center;
+    // Fonts
+    @include fontInformationDesktopTertiary;
+    color: $blackColor;
+  }
+}
+
+.Branch_address_second_row {
+  display: flex;
+  justify-content: space-between;
+
+  @include query(1100px) {
+    column-gap: 1rem;
+    flex: 2;
+  }
+}
+
+.Branch_address_icon {
+  width: 1rem;
+  height: 1rem;
+
+  @include query(1100px) {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.Branch_address_phone_number {
+  display: none;
+
+  @include query(1100px) {
+    display: block;
+  }
+}
+
+.Branch_address_first_row {
+  @include query(1100px) {
+    display: flex;
+    flex: 1;
+  }
+}

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./BranchList.scss";
 import { branchesInformation } from "../../../data";
+import BranchListAddress from "./branchListAddress/BranchListAddress";
 const BranchList = () => {
   const [imageIndex, setImageIndex] = useState(0);
 
@@ -13,35 +14,49 @@ const BranchList = () => {
   };
 
   return (
-    <div>
-      <span className="carousel_title">شعبه اکباتان</span>
-      <div className="carousel_slider">
+    <div className="branch_list_container">
+      <span className="branch_list_carousel_title">شعبه اکباتان</span>
+      <div className="branch_list_carousel_slider">
         {/* Images section */}
         <div
-          className="carousel_image_container"
+          className="branch_list_carousel_image_container"
           style={{ transform: `translateX(${imageIndex * 100}vw)` }}
         >
-          <img className="carousel_image" src={branchesInformation[0].image} />
-          <img className="carousel_image" src={branchesInformation[1].image} />
-          <img className="carousel_image" src={branchesInformation[2].image} />
-          <img className="carousel_image" src={branchesInformation[3].image} />
+          <img
+            className="branch_list_carousel_image"
+            src={branchesInformation[0].image}
+          />
+          <img
+            className="branch_list_carousel_image"
+            src={branchesInformation[1].image}
+          />
+          <img
+            className="branch_list_carousel_image"
+            src={branchesInformation[2].image}
+          />
+          <img
+            className="branch_list_carousel_image"
+            src={branchesInformation[3].image}
+          />
         </div>
         {/* Icons section */}
-        <div className="carousel_icon_container">
+        <div className="branch_list_carousel_icon_container">
           <img
             src="assets/images/icons/arrow-right_white.png"
             alt=""
-            className="carousel_arrow_icon carousel_arrow_icon_right"
+            className="branch_list_carousel_arrow_icon branch_list_carousel_arrow_icon_right"
             onClick={() => slideHandler("left")}
           />
           <img
             src="assets/images/icons/arrow-left_white.png"
             alt=""
-            className="carousel_arrow_icon carousel_arrow_icon_left"
+            className="branch_list_carousel_arrow_icon branch_list_carousel_arrow_icon_left"
             onClick={() => slideHandler("right")}
           />
         </div>
       </div>
+      {/* Address section */}
+      <BranchListAddress />
     </div>
   );
 };
