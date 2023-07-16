@@ -1,4 +1,5 @@
 @import "../../sassContainer/mixins";
+@import "../../sassContainer/variables";
 
 .branch_card_main_container {
   padding: 1.5rem 1.25rem 1.5rem 0;
@@ -8,13 +9,19 @@
   }
 }
 
-.branch_main_title {
+.green_background {
+  background: $primaryColorMiddleDark;
+}
+
+.branch_main_title_white_color {
   // Fonts
   @include fontTitleMobilePrimary;
+  color: $naturalWhite;
 
   @include query(1100px) {
     // Fonts
     @include fontTitleDesktopPrimary;
+    color: $naturalWhite;
   }
 }
 

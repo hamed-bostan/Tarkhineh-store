@@ -1,0 +1,46 @@
+@import "../../sassContainer/variables";
+@import "../../sassContainer/mixins";
+
+.branch_full_menu_button_container {
+  width: 9.5rem;
+  height: 2rem;
+  border-radius: 0.25rem;
+  border: 1px solid $primaryColor;
+  column-gap: 0.25rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+
+  @include query(1100px) {
+    width: 10.5rem;
+    cursor: pointer;
+  }
+
+  .branch_note_icon {
+    width: 1rem;
+    height: 1rem;
+
+    @include query(1100px) {
+      width: 1.2rem;
+      height: 1.2rem;
+    }
+  }
+
+  .branch_full_menu_button {
+    background: transparent;
+    border: none;
+    // Fonts
+    @include fontTitleMobileSecondary;
+    font-weight: 400;
+    color: $primaryColor;
+
+    @include query(1100px) {
+      cursor: pointer;
+      // Fonts
+      @include fontInformationDesktopQuinary;
+      color: $primaryColor;
+    }
+  }
+}

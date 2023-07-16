@@ -34,7 +34,8 @@
 @mixin fontTitleDesktopSecondary {
   // font-size: 1.25rem;
   // cause it was too big i changed to:
-  font-size: 0.8rem;
+  // font-size: 0.8rem;
+  font-size: 0.9rem;
   ine-height: 180%;
   color: $blackColor;
   // done
@@ -109,7 +110,8 @@
 @mixin fontInformationDesktopTertiary {
   // font-size: 1rem;
   // cause it was too big i changed to:
-  font-size: 0.9rem;
+  // font-size: 0.9rem;
+  font-size: 0.84rem;
   font-weight: 400;
   line-height: 180%;
   font-style: normal;

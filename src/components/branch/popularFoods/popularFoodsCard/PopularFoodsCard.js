@@ -1,10 +1,10 @@
 import React from "react";
-import "./SpecialOfferCard.scss";
+import "./PopularFoodsCard.scss";
 // Redux
 import { useDispatch } from "react-redux";
 import { addItem } from "../../../redux/cart/cartAction";
 
-const SpecialOfferCard = ({ item }) => {
+const PopularFoodsCard = ({ item }) => {
   const dispatch = useDispatch();
 
   return (
@@ -47,4 +47,4 @@ const SpecialOfferCard = ({ item }) => {
   );
 };
 
-export default SpecialOfferCard;
+export default PopularFoodsCard;

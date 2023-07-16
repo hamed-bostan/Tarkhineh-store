@@ -4,6 +4,10 @@ import Navbar from "../home/navbar/Navbar";
 import Header from "../home/header/Header";
 import SpecialOffer from "./specialOffer/SpecialOffer";
 import { motion } from "framer-motion";
+import PopularFoods from "./popularFoods/PopularFoods";
+import NotIranianFoods from "./notIranianFoods/NotIranianFoods";
+import BranchFullMenuButton from "./branchFullMenuButton/BranchFullMenuButton";
+import BranchList from "./branchList/BranchList";
 
 const Branch = () => {
   const [width, setWidth] = useState(0);
@@ -19,6 +23,14 @@ const Branch = () => {
       <motion.div ref={carousel} className="branch_carousel">
         <SpecialOffer width={width} />
       </motion.div>
+      <motion.div ref={carousel} className="branch_carousel">
+        <PopularFoods width={width} />
+      </motion.div>
+      <motion.div ref={carousel} className="branch_carousel">
+        <NotIranianFoods width={width} />
+      </motion.div>
+      <BranchFullMenuButton />
+      <BranchList />
     </div>
   );
 };
