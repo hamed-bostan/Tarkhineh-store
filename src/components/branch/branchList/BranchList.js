@@ -14,7 +14,7 @@ const BranchList = () => {
 
   return (
     <div>
-      <span>شعبه اکباتان</span>
+      <span className="carousel_title">شعبه اکباتان</span>
       <div className="carousel_slider">
         {/* Images section */}
         <div
