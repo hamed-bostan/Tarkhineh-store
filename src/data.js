@@ -475,6 +475,25 @@ export const branchesInformation = [
   },
 ];
 
+export const branchCommentsInformation = [
+  {
+    id: 1,
+    image: "assets/images/branchImages/branch_05.png",
+    name: "آرزو محمدعلیزاده",
+    date: "۲۳ اسفند ۱۴۰۱",
+    comment:
+      "از با صفا بودن شعبه اکباتان هر چی بگم کم گفتم. بهترین غذاهای گیاهی عمرمو اینجا خوردم. از مدیریت شعبه اکباتان رستوران‌های ترخینه واقعا تشکر میکنم. ",
+  },
+  {
+    id: 2,
+    image: "assets/images/branchImages/branch_06.png",
+    name: "سردار وظیفه",
+    date: "۲۳ اسفند ۱۴۰۱",
+    comment:
+      "از با صفا بودن شعبه اکباتان هر چی بگم کم گفتم. بهترین غذاهای گیاهی عمرمو اینجا خوردم. از مدیریت شعبه اکباتان رستوران‌های ترخینه واقعا تشکر میکنم. ",
+  },
+];
+
 // Navbar
 export const navbarItems = [
   {

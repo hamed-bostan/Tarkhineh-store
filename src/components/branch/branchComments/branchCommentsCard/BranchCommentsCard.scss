@@ -1,0 +1,94 @@
+@import "../../../sassContainer/mixins";
+@import "../../../sassContainer/variables";
+
+.branch_comment_card_container {
+  width: 15.75rem;
+  height: 8.875rem;
+  border-radius: 0.25rem;
+  border: 1px solid $greyColorSecondary;
+  background: $naturalWhite;
+  //
+  display: flex;
+  column-gap: 0.5rem;
+  padding: 1.25rem 1rem;
+  margin-top: 0.75rem;
+
+  @include query(1100px) {
+    width: 25rem;
+    height: 10rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+  }
+}
+
+.branch_comment_card_first_container {
+  //   width: 100%;
+  display: flex;
+  flex: 1.05;
+  flex-direction: column;
+  align-items: center;
+  //   row-gap: 0.4rem;
+  //   position: relative;
+}
+
+.branch_comment_card_image {
+  width: 3.5rem;
+  height: 3.5rem;
+
+  @include query(1100px) {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+}
+
+.branch_comment_card_name {
+  //   position: absolute;
+  //   top: 50%;
+  //   left: 1rem;
+  // Fonts
+  @include fontInformationMobile;
+  font-weight: 400;
+  color: $greyColorDark;
+
+  @include query(1100px) {
+    // Fonts
+    @include fontInformationDesktopSecondary;
+  }
+}
+
+.branch_comment_card_date {
+  // Fonts
+  @include fontInformationMobile;
+  font-weight: 400;
+  color: $greyColorDark;
+
+  @include query(1100px) {
+    // Fonts
+    @include fontInformationDesktopSecondary;
+  }
+}
+
+.branch_comment_card_comment_container {
+  display: flex;
+  flex: 2;
+}
+
+.branch_comment_card_comment {
+  // Fonts
+  @include fontInformationMobile;
+  font-weight: 400;
+  color: $blackColor;
+  text-align: justify;
+
+  @include query(1100px) {
+    // Fonts
+    @include fontInformationDesktopTertiary;
+    color: $blackColor;
+  }
+}
+
+.branch_comment_card_name_date_container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 0.5rem;
+}

@@ -8,6 +8,7 @@ import PopularFoods from "./popularFoods/PopularFoods";
 import NotIranianFoods from "./notIranianFoods/NotIranianFoods";
 import BranchFullMenuButton from "./branchFullMenuButton/BranchFullMenuButton";
 import BranchList from "./branchList/BranchList";
+import BranchComments from "./branchComments/BranchComments";
 
 const Branch = () => {
   const [width, setWidth] = useState(0);
@@ -31,6 +32,7 @@ const Branch = () => {
       </motion.div>
       <BranchFullMenuButton />
       <BranchList />
+      <BranchComments />
     </div>
   );
 };
