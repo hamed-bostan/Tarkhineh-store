@@ -2,16 +2,19 @@ import React from "react";
 import "./BranchComments.scss";
 import { branchCommentsInformation } from "../../../data";
 import BranchCommentsCard from "./branchCommentsCard/BranchCommentsCard";
+import { motion } from "framer-motion";
 
-const BranchComments = () => {
+const BranchComments = ({ width }) => {
   return (
     <div className="branch_comment_main_container">
       <span className="branch_comment_main_title">نظرات کاربران</span>
-      <div className="branch_comment_card_main_container">
-        {branchCommentsInformation.map((item) => {
-          return <BranchCommentsCard data={item} />;
-        })}
-      </div>
+      <motion.div drag="x" dragConstraints={{ left: 0, right: width }}>
+        <motion.div className="branch_comment_card_main_container">
+          {branchCommentsInformation.map((item) => {
+            return <BranchCommentsCard data={item} />;
+          })}
+        </motion.div>
+      </motion.div>
     </div>
   );
 };

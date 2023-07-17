@@ -4,9 +4,11 @@
 .branch_comment_main_container {
   padding-top: 3.5rem;
   padding-right: 1.25rem;
+  padding-bottom: 1.5rem;
 
   @include query(1100px) {
     padding-top: 4.5rem;
+    padding-bottom: 2rem;
   }
 }
 
@@ -24,6 +26,6 @@
 
 .branch_comment_card_main_container {
   display: flex;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
   column-gap: 1rem;
 }

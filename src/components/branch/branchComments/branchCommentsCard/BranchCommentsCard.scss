@@ -2,7 +2,7 @@
 @import "../../../sassContainer/variables";
 
 .branch_comment_card_container {
-  width: 15.75rem;
+  min-width: 15.75rem;
   height: 8.875rem;
   border-radius: 0.25rem;
   border: 1px solid $greyColorSecondary;
@@ -14,7 +14,7 @@
   margin-top: 0.75rem;
 
   @include query(1100px) {
-    width: 25rem;
+    min-width: 25rem;
     height: 10rem;
     border-radius: 0.5rem;
     margin-top: 1rem;

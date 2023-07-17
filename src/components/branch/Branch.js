@@ -9,6 +9,7 @@ import NotIranianFoods from "./notIranianFoods/NotIranianFoods";
 import BranchFullMenuButton from "./branchFullMenuButton/BranchFullMenuButton";
 import BranchList from "./branchList/BranchList";
 import BranchComments from "./branchComments/BranchComments";
+import Footer from "../home/footer/Footer";
 
 const Branch = () => {
   const [width, setWidth] = useState(0);
@@ -32,7 +33,10 @@ const Branch = () => {
       </motion.div>
       <BranchFullMenuButton />
       <BranchList />
-      <BranchComments />
+      <motion.div ref={carousel} className="branch_carousel">
+        <BranchComments width={width} />
+      </motion.div>
+      <Footer />
     </div>
   );
 };
