@@ -1,0 +1,57 @@
+@import "../../sassContainer/mixins";
+@import "../../sassContainer/variables";
+
+.franchise_consultation_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+}
+
+.franchise_consultation_title {
+  text-align: center;
+  margin: 0 auto;
+  @include fontTitleDesktopPrimary;
+}
+
+.franchise_consultation_wrapper {
+  padding-top: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  column-gap: 1rem;
+}
+
+.franchise_consultation_input {
+  width: 25%;
+  height: 2rem;
+  padding-right: 0.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid $greyColorSecondary;
+  font-size: 4rem;
+  // Fonts
+  @include fontInformationDesktopSecondary;
+  color: $blackColor;
+  font-weight: 400;
+
+  &::placeholder {
+    color: $greyColorDark;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.franchise_consultation_button {
+  border-radius: 0.25rem;
+  background: $primaryColor;
+  border: none;
+  cursor: pointer;
+  width: 7rem;
+  height: 1.7rem;
+  margin-top: 1.5rem;
+  // Fonts
+  @include fontInformationDesktopQuinary;
+  color: $naturalWhite;
+}

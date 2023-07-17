@@ -11,7 +11,7 @@ const BranchComments = ({ width }) => {
       <motion.div drag="x" dragConstraints={{ left: 0, right: width }}>
         <motion.div className="branch_comment_card_main_container">
           {branchCommentsInformation.map((item) => {
-            return <BranchCommentsCard data={item} />;
+            return <BranchCommentsCard data={item} key={item.id} />;
           })}
         </motion.div>
       </motion.div>

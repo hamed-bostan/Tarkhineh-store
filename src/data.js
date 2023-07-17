@@ -664,3 +664,26 @@ export const footerInformation = [
     text: "حریم خصوصی",
   },
 ];
+
+export const FranchiseInformation = [
+  {
+    id: 1,
+    image: "assets/images/franchise/sign_01.png",
+    text: "بیش از 20 شعبه فعال در سراسر کشور",
+  },
+  {
+    id: 2,
+    image: "assets/images/franchise/sign_02.png",
+    text: "تسهیلات راه‌اندازی رستوران و تجهیز آن",
+  },
+  {
+    id: 3,
+    image: "assets/images/franchise/sign_03.png",
+    text: "طرح‌های تشویقی ارتقای فروش",
+  },
+  {
+    id: 4,
+    image: "assets/images/franchise/sign_04.png",
+    text: "اعطای دستورالعمل پخت غذاها",
+  },
+];

@@ -133,7 +133,9 @@
 
 // no mobile
 @mixin fontInformationDesktopQuinary {
-  font-size: 1rem;
+  // font-size: 1rem;
+  // cause it was too big i changed to:
+  font-size: 0.95rem;
   font-weight: 500;
   line-height: 180%;
   font-style: normal;

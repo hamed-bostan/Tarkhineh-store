@@ -1,0 +1,42 @@
+@import "../../sassContainer/mixins";
+@import "../../sassContainer/variables";
+
+.franchise_icons_main_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.franchise_icons_container {
+  display: flex;
+  column-gap: 6rem;
+  padding-top: 2rem;
+  justify-content: center;
+}
+
+.franchise_icons_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 0.75rem;
+}
+
+.franchise_icons_image {
+  width: 5rem;
+  height: 5rem;
+}
+
+.franchise_icons_text {
+  text-align: center;
+  width: 8rem;
+  // Fonts
+  @include fontInformationDesktopTertiary;
+  color: $blackColor;
+}
+
+.franchise_privilege_line {
+  color: $greyColorSecondary;
+  height: 1px;
+  width: 80%;
+  margin-top: 2rem;
+}
