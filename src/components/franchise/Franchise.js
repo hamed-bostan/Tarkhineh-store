@@ -1,4 +1,5 @@
 import React from "react";
+import "./Franchise.scss";
 import Navbar from "../home/navbar/Navbar";
 import FranchiseHeader from "./franchiseHeader/FranchiseHeader";
 import FranchiseIcons from "./franchiseIcons/FranchiseIcons";
@@ -8,14 +9,16 @@ import FranchiseRequestForm from "./franchiseRequestForm/FranchiseRequestForm";
 
 const Franchise = () => {
   return (
-    <div>
+    <>
       <Navbar />
       <FranchiseHeader />
-      <FranchiseIcons />
-      <FranchisePrivilege />
-      <FranchiseConsultation />
-      <FranchiseRequestForm />
-    </div>
+      <div className="franchise_container">
+        <FranchiseIcons />
+        <FranchisePrivilege />
+        <FranchiseConsultation />
+        <FranchiseRequestForm />
+      </div>
+    </>
   );
 };
 
