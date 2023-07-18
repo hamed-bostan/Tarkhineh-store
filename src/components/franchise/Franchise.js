@@ -14,8 +14,11 @@ const Franchise = () => {
       <FranchiseHeader />
       <div className="franchise_container">
         <FranchiseIcons />
+        <hr className="franchise_line" />
         <FranchisePrivilege />
+        <hr className="franchise_line" />
         <FranchiseConsultation />
+        <hr className="franchise_line" />
         <FranchiseRequestForm />
       </div>
     </>

@@ -1,0 +1,91 @@
+@import "../../../sassContainer/mixins";
+@import "../../../sassContainer/variables";
+
+.franchise_request_form_label_main_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.franchise_request_form_label_main_wrapper {
+  flex: 1;
+}
+
+.franchise_request_form_address_title {
+  // Fonts
+  @include fontInformationDesktopTertiary;
+  color: $greyColorDark;
+}
+
+.franchise_request_form_all_label_container {
+  display: flex;
+  width: 50%;
+}
+
+.franchise_request_form_label_container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.franchise_request_form_label_wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.franchise_request_form_checkbox {
+  appearance: none;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 0.125rem;
+  border: 1px solid $primaryColor;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f00c";
+    font-size: 1rem;
+    color: $primaryColor;
+    display: none;
+  }
+
+  &:checked::after {
+    display: block;
+  }
+}
+
+.franchise_request_form_label {
+  padding-right: 0.5rem;
+  // Fonts
+  @include fontInformationDesktopSecondary;
+  font-weight: 400;
+}
+
+.franchise_request_form_upload_container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.franchise_request_form_upload_wrapper {
+  // width: 20rem;
+  width: 60%;
+  height: 10rem;
+  border-radius: 0.25rem;
+  border: 1px solid $greyColorSecondary;
+  background: $naturalWhite;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 0.25rem;
+}
+
+.franchise_request_form_upload_icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  cursor: pointer;
+}

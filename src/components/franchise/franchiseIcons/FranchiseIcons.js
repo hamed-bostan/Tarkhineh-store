@@ -15,7 +15,6 @@ const FranchiseIcons = () => {
           );
         })}
       </div>
-      <hr className="franchise_privilege_line" />
     </div>
   );
 };

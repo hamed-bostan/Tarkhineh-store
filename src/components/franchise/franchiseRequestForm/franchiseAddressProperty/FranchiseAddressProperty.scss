@@ -1,0 +1,26 @@
+@import "../../../sassContainer/mixins";
+@import "../../../sassContainer/variables";
+
+.franchise_request_form_address_wrapper {
+  display: flex;
+  flex-direction: column;
+  // width: 25%;
+  // width: 100%;
+  row-gap: 0.5rem;
+  // background: red;
+}
+
+.franchise_request_form_address_text_area {
+  height: 4rem;
+  resize: none;
+}
+
+.franchise_request_form_map_image {
+  // width: 25rem;
+  width: 20rem;
+  height: 9rem;
+  height: 6.5rem;
+  object-fit: cover;
+  border-radius: 0.25rem;
+  border: 1px solid $greyColorSecondary;
+}
