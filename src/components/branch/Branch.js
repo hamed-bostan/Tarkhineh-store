@@ -12,29 +12,67 @@ import BranchComments from "./branchComments/BranchComments";
 import Footer from "../home/footer/Footer";
 
 const Branch = () => {
-  const [width, setWidth] = useState(0);
-  const carousel = useRef();
+  // SpecialOffer
+  const [widthSpecialOffer, setWidthSpecialOffer] = useState(0);
+  const carouselSpecialOffer = useRef();
   useEffect(() => {
-    setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
+    setWidthSpecialOffer(
+      carouselSpecialOffer.current.scrollWidth -
+        carouselSpecialOffer.current.offsetWidth
+    );
   }, []);
+  // End od SpecialOffer
+
+  // PopularFoods
+  const [widthPopularFoods, setWidthPopularFoods] = useState(0);
+  const carouselPopularFoods = useRef();
+  useEffect(() => {
+    setWidthPopularFoods(
+      carouselPopularFoods.current.scrollWidth -
+        carouselPopularFoods.current.offsetWidth
+    );
+  }, []);
+  // End of PopularFoods
+
+  // NotIranianFoods
+  const [widthNotIranianFoods, setWidthNotIranianFoods] = useState(0);
+  const carouselNotIranianFoods = useRef();
+  useEffect(() => {
+    setWidthNotIranianFoods(
+      carouselNotIranianFoods.current.scrollWidth -
+        carouselNotIranianFoods.current.offsetWidth
+    );
+  }, []);
+  // End of NotIranianFoods
+
+  // BranchComments
+  const [widthBranchComments, setWidthBranchComments] = useState(0);
+  const carouselBranchComments = useRef();
+  useEffect(() => {
+    setWidthBranchComments(
+      carouselBranchComments.current.scrollWidth -
+        carouselBranchComments.current.offsetWidth
+    );
+  }, []);
+  // End of BranchComments
 
   return (
     <div>
       <Navbar />
       <Header />
-      <motion.div ref={carousel} className="branch_carousel">
-        <SpecialOffer width={width} />
+      <motion.div ref={carouselSpecialOffer} className="branch_carousel">
+        <SpecialOffer width={widthSpecialOffer} />
       </motion.div>
-      <motion.div ref={carousel} className="branch_carousel">
-        <PopularFoods width={width} />
+      <motion.div ref={carouselPopularFoods} className="branch_carousel">
+        <PopularFoods width={widthPopularFoods} />
       </motion.div>
-      <motion.div ref={carousel} className="branch_carousel">
-        <NotIranianFoods width={width} />
+      <motion.div ref={carouselNotIranianFoods} className="branch_carousel">
+        <NotIranianFoods width={widthNotIranianFoods} />
       </motion.div>
       <BranchFullMenuButton />
       <BranchList />
-      <motion.div ref={carousel} className="branch_carousel">
-        <BranchComments width={width} />
+      <motion.div ref={carouselBranchComments} className="branch_carousel">
+        <BranchComments width={widthBranchComments} />
       </motion.div>
       <Footer />
     </div>
