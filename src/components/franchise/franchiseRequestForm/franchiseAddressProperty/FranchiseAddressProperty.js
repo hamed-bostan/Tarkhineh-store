@@ -10,23 +10,23 @@ const FranchiseAddressProperty = () => {
           <input
             type="text"
             placeholder="استان"
-            className="franchise_request_form_input"
+            className="franchise_request_form_address_input"
           />
           <input
             type="text"
             placeholder="منطقه"
-            className="franchise_request_form_input"
+            className="franchise_request_form_address_input"
           />
         </div>
         <div className="franchise_request_form_address_wrapper">
           <input
             type="text"
             placeholder="شهر"
-            className="franchise_request_form_input"
+            className="franchise_request_form_address_input"
           />
 
           <textarea
-            className="franchise_request_form_input franchise_request_form_address_text_area"
+            className="franchise_request_form_address_input franchise_request_form_address_text_area"
             name=""
             id=""
             cols="30"
@@ -34,7 +34,7 @@ const FranchiseAddressProperty = () => {
             placeholder="آدرس دقیق"
           ></textarea>
         </div>
-        <div>
+        <div className="franchise_request_form_map_image_container">
           <img
             src="assets/images/franchise/franchise_map.png"
             alt=""

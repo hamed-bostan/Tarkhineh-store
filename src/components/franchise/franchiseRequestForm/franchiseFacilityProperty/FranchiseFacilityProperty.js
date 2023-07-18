@@ -70,6 +70,7 @@ const FranchiseFacilityProperty = () => {
           </div>
         </div>
       </div>
+      <button className="franchise_request_form_confirm_button">ثبت اطلاعات</button>
     </>
   );
 };

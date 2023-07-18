@@ -8,7 +8,7 @@ const FranchiseIcons = () => {
       <div className="franchise_icons_container">
         {FranchiseInformation.map((item) => {
           return (
-            <div className="franchise_icons_wrapper">
+            <div className="franchise_icons_wrapper" key={item.id}>
               <img src={item.image} alt="" className="franchise_icons_image" />
               <span className="franchise_icons_text">{item.text}</span>
             </div>
