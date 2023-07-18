@@ -11,9 +11,10 @@
 
   @include query(1100px) {
     display: flex;
-    justify-content: space-evenly;
+    // justify-content: space-evenly;
     align-items: center;
-    height: 5rem;
+    // height: 5rem;
+    height: 4rem;
     padding: 1rem 1.25rem;
   }
 }
@@ -25,7 +26,8 @@
   margin: 0 auto;
 
   @include query(1100px) {
-    row-gap: 1rem;
+    // row-gap: 1rem;
+    row-gap: 0.5rem;
   }
 
   .footer_aboutUs_icon {

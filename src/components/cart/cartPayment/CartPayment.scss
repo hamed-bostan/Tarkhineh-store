@@ -102,6 +102,7 @@
 
   @include query(1100px) {
     width: 100%;
+    cursor: pointer;
   }
 
   .cart_payment_logging_button {
@@ -111,6 +112,7 @@
     color: $naturalWhite;
 
     @include query(1100px) {
+      cursor: pointer;
       // Fonts
       @include fontInformationDesktopSecondary;
       color: $naturalWhite;

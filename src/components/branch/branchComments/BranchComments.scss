@@ -2,13 +2,16 @@
 @import "../../sassContainer/variables";
 
 .branch_comment_main_container {
-  padding-top: 3.5rem;
+  // padding-top: 3.5rem;
+  padding-top: 2.5rem;
   padding-right: 1.25rem;
   padding-bottom: 1.5rem;
+  margin-top: 1.5rem;
 
   @include query(1100px) {
-    padding-top: 4.5rem;
+    padding-top: 4.3rem;
     padding-bottom: 2rem;
+    margin-top: 2rem;
   }
 }
 

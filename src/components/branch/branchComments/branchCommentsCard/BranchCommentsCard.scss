@@ -34,6 +34,7 @@
 .branch_comment_card_image {
   width: 3.5rem;
   height: 3.5rem;
+  pointer-events: none;
 
   @include query(1100px) {
     width: 4.5rem;

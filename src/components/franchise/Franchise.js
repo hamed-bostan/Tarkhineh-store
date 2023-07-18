@@ -6,6 +6,7 @@ import FranchiseIcons from "./franchiseIcons/FranchiseIcons";
 import FranchisePrivilege from "./franchisePrivilege/FranchisePrivilege";
 import FranchiseConsultation from "./franchiseConsultation/FranchiseConsultation";
 import FranchiseRequestForm from "./franchiseRequestForm/FranchiseRequestForm";
+import Footer from "../home/footer/Footer";
 
 const Franchise = () => {
   return (
@@ -21,6 +22,7 @@ const Franchise = () => {
         <hr className="franchise_line" />
         <FranchiseRequestForm />
       </div>
+      <Footer />
     </>
   );
 };
