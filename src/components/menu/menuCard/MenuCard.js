@@ -54,7 +54,7 @@ const MenuCard = ({ data, open, setProductId }) => {
             alt=""
             className="menu_heart_icon"
           />
-          <span>{star}</span>
+          {/* <span>{star}</span> */}
           <button
             className="menu_add_to_cart_button"
             onClick={() => dispatch(addItem(data))}

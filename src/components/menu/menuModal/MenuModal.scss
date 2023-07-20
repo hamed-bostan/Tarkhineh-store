@@ -70,6 +70,9 @@
   border-bottom-left-radius: 0.5rem;
   border-bottom-right-radius: 0.5rem;
   padding-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.3rem;
 }
 
 .menu_modal_top_container {

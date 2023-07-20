@@ -117,13 +117,15 @@
 
 // icons
 .cart_increase_icon {
-  width: 0.5rem;
-  height: 0.5rem;
+  // width: 0.5rem;
+  // height: 0.5rem;
+  width: 0.8rem;
+  height: 0.7rem;
 
   @include query(1100px) {
     cursor: pointer;
-    width: 0.6rem;
-    height: 0.6rem;
+    width: 0.8rem;
+    height: 0.8rem;
   }
 }
 
@@ -134,9 +136,10 @@
 }
 
 .cart_decrease_icon {
-  width: 0.7rem;
+  // width: 0.7rem;
+  width: 0.8rem;
   // height: 0.2rem;
-  height: 0.18rem;
+  height: 0.2rem;
 
   @include query(1100px) {
     cursor: pointer;

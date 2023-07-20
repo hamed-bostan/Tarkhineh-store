@@ -24,7 +24,7 @@ const MenuModal = ({ close, productId }) => {
         <div className="menu_modal_information_container">
           <div className="menu_modal_top_container">
             <span className="menu_modal_title">{information.title}</span>
-            <span className="start">{information.star}</span>
+            {/* <span className="start">{information.star}</span> */}
           </div>
           <div className="menu_modal_bottom_container">
             <p className="menu_modal_description">{information.description}</p>

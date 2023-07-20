@@ -19,6 +19,7 @@
   background: $naturalWhite;
   max-width: 1500px;
   margin: 0 auto;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
 
   .navbar_icon {
     @include iconDesktop;

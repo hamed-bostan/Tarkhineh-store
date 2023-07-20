@@ -35,6 +35,8 @@ export const foodInformation = [
     // finalPrice: "۱۴۲٬۵۰۰  تومان",
     finalPrice: 142500,
     star: "some star",
+    filter: "پیشنهاد ویژه",
+    mostSale: true,
   },
   {
     id: 4,
@@ -47,6 +49,8 @@ export const foodInformation = [
     // finalPrice: "۱۸۰٬۰۰۰ تومان",
     finalPrice: 180000,
     star: "some star",
+    filter: "پیشنهاد ویژه",
+    mostSale: true,
   },
   {
     id: 5,
@@ -59,6 +63,7 @@ export const foodInformation = [
     // finalPrice: "۸۰٬۰۰۰ تومان",
     finalPrice: 80000,
     star: "some star",
+    mostSale: true,
   },
   {
     id: 6,
@@ -72,6 +77,8 @@ export const foodInformation = [
     // finalPrice: 203000,
     finalPrice: 20300,
     star: "some star",
+    filter: "پیشنهاد ویژه",
+    mostSale: true,
   },
   {
     id: 7,
@@ -85,6 +92,8 @@ export const foodInformation = [
     finalPrice: 148000,
     star: "some star",
     score: "(۷۵ امتیاز)",
+    filter: "پیشنهاد ویژه",
+    mostSale: true,
   },
   {
     id: 8,
@@ -98,6 +107,8 @@ export const foodInformation = [
     finalPrice: 136000,
     star: "some star",
     score: "(۳۲ امتیاز)",
+    filter: "پیشنهاد ویژه",
+    mostSale: true,
   },
   {
     id: 9,
@@ -111,6 +122,7 @@ export const foodInformation = [
     finalPrice: 209000,
     star: "some star",
     score: "(۵۲ امتیاز)",
+    filter: "پیشنهاد ویژه",
   },
   {
     id: 10,
@@ -135,6 +147,7 @@ export const foodInformation = [
     // finalPrice: "۲۷۰٬۰۰۰ تومان",
     finalPrice: 270000,
     star: "some star",
+    filter: "پیشنهاد ویژه",
   },
   {
     id: 12,
@@ -147,6 +160,7 @@ export const foodInformation = [
     // finalPrice: "۱۰۵٬۰۰۰ تومان",
     finalPrice: 105000,
     star: "some star",
+    filter: "پیشنهاد ویژه",
   },
 
   // Not Iranian Foods
@@ -270,6 +284,7 @@ export const foodInformation = [
     // finalPrice: "۱۸۸٬۰۰۰ تومان",
     finalPrice: 188000,
     star: "some star",
+    filter: "غذاهای محبوب",
   },
   {
     id: 22,
@@ -283,6 +298,7 @@ export const foodInformation = [
     // finalPrice: "۱۵۰٬۰۰۰ تومان",
     finalPrice: 150000,
     star: "some star",
+    filter: "غذاهای محبوب",
   },
   {
     id: 23,
@@ -296,6 +312,7 @@ export const foodInformation = [
     // finalPrice: "۱۸۵٬۰۰۰ تومان",
     finalPrice: 185000,
     star: "some star",
+    filter: "غذاهای محبوب",
   },
   {
     id: 24,
@@ -310,6 +327,7 @@ export const foodInformation = [
     finalPrice: 175000,
     star: "some star",
     score: "(۳۳ امتیاز)",
+    filter: "غذاهای محبوب",
   },
   {
     id: 25,
@@ -324,6 +342,7 @@ export const foodInformation = [
     finalPrice: 100000,
     star: "some star",
     score: "(۵۱ امتیاز)",
+    filter: "غذاهای محبوب",
   },
   {
     id: 26,
@@ -336,6 +355,7 @@ export const foodInformation = [
     // finalPrice: "۲۵۲٬۰۰۰ تومان",
     finalPrice: 252000,
     star: "some star",
+    filter: "غذاهای محبوب",
   },
   {
     id: 27,
@@ -348,6 +368,7 @@ export const foodInformation = [
     // finalPrice: "۱۴۷٬۰۰۰ تومان",
     finalPrice: 147000,
     star: "some star",
+    filter: "غذاهای محبوب",
   },
   {
     id: 28,
@@ -361,6 +382,7 @@ export const foodInformation = [
     // finalPrice: "۱۰۵٬۰۰۰  تومان",
     finalPrice: 105000,
     star: "some star",
+    filter: "غذاهای محبوب",
   },
 
   // Sandwiches
@@ -376,6 +398,7 @@ export const foodInformation = [
     // finalPrice: "۲۰۵٬۰۰۰ تومان",
     finalPrice: 205000,
     star: "some star",
+    filter: "غذاهای محبوب",
   },
   {
     id: 30,
@@ -388,6 +411,7 @@ export const foodInformation = [
     // finalPrice: "۱۶۵٬۰۰۰ تومان",
     finalPrice: 165000,
     star: "some star",
+    filter: "غذاهای محبوب",
   },
   {
     id: 31,
@@ -414,6 +438,7 @@ export const foodInformation = [
     finalPrice: 190000,
     star: "some star",
     score: "(۲۰ امتیاز)",
+    filter: "پیشنهاد ویژه",
   },
   {
     id: 33,
