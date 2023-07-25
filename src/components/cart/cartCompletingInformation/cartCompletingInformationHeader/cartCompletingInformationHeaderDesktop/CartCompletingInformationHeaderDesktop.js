@@ -5,18 +5,18 @@ import { Link } from "react-router-dom";
 const CartCompletingInformationHeaderDesktop = () => {
   return (
     <div className="cart_completing_information_desktop_container">
-      <div className="cart_completing_information_desktop_wrapper">
-        <img
-          src="assets/images/icons/shopping-cart.png"
-          alt=""
-          className="cart_completing_information_desktop_icon"
-        />
-        <Link to="/cart">
+      <Link to="/cart">
+        <div className="cart_completing_information_desktop_wrapper">
+          <img
+            src="assets/images/icons/shopping-cart.png"
+            alt=""
+            className="cart_completing_information_desktop_icon"
+          />
           <span className="cart_completing_information_desktop_text">
             سبد خرید
           </span>
-        </Link>
-      </div>
+        </div>
+      </Link>
       <Link to="/cartCompletingInformation">
         <div className="cart_completing_information_desktop_wrapper">
           <img

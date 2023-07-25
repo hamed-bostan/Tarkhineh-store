@@ -1,7 +1,10 @@
 import React from "react";
 import "./CartCompletingInformationPayment.scss";
+import { useSelector } from "react-redux";
 
 const CartCompletingInformationPayment = () => {
+  const state = useSelector((state) => state.cartState);
+
   return (
     <div className="cart_Completing_Information_Payment_container">
       <div className="cart_Completing_Information_Payment_wrapper">
@@ -27,7 +30,7 @@ const CartCompletingInformationPayment = () => {
           مبلغ قابل پرداخت
         </span>
         <span className="cart_Completing_Information_Payment_text_green">
-          ۵۴۲٬۰۰۰ تومان
+          {state.totalPrice} تومان
         </span>
       </div>
       <div className="cart_Completing_Information_Payment_button_container">

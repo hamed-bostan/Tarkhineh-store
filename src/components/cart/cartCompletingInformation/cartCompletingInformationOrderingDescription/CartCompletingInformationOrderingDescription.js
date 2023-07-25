@@ -10,12 +10,14 @@ const CartCompletingInformationOrderingDescription = () => {
           alt=""
           className="cart_completing_information_icons"
         />
-        <span className="cart_Completing_Information_Ordering_Description_text">
-          توضیحات سفارش
-        </span>
-        <span className="cart_Completing_Information_Ordering_Description_text_optional">
-          (اختیاری)
-        </span>
+        <div className="cart_Completing_Information_Ordering_Description_text_container">
+          <span className="cart_Completing_Information_Ordering_Description_text">
+            توضیحات سفارش
+          </span>
+          <span className="cart_Completing_Information_Ordering_Description_text_optional">
+            (اختیاری)
+          </span>
+        </div>
       </div>
     </div>
   );

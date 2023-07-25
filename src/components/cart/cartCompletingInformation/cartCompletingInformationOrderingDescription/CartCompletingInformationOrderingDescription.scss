@@ -16,6 +16,12 @@
   column-gap: 0.25rem;
 }
 
+.cart_Completing_Information_Ordering_Description_text_container {
+  display: flex;
+  align-items: center;
+  column-gap: 0.25rem;
+}
+
 .cart_Completing_Information_Ordering_Description_text {
   // Fonts
   @include fontInformationDesktopSecondary;

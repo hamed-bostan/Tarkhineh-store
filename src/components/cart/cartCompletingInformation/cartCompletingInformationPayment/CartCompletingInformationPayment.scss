@@ -2,10 +2,10 @@
 @import "../../../sassContainer/variables";
 
 .cart_Completing_Information_Payment_container {
-  border-radius: 0.5rem;
-  border: 1px solid $greyColorSecondary;
-  background: $naturalWhite;
-  padding: 1.5rem;
+  // border-radius: 0.5rem;
+  // border: 1px solid $greyColorSecondary;
+  // background: $naturalWhite;
+  // padding: 1.5rem;
   // margin-top: 0.75rem;
   display: flex;
   flex-direction: column;
@@ -31,6 +31,10 @@
   border-radius: 0.25rem;
   background: $primaryColor;
   margin: 0 auto;
+
+  @include query(1100px) {
+    cursor: pointer;
+  }
 }
 
 .cart_Completing_Information_Payment_text_gray {
@@ -49,4 +53,8 @@
   // Fonts
   @include fontInformationDesktopSenary;
   color: $naturalWhite;
+
+  @include query(1100px) {
+    cursor: pointer;
+  }
 }

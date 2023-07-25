@@ -3,6 +3,7 @@
 .cart_completing_information_mobile_container {
   display: flex;
   align-items: center;
+  padding-top: 1.5rem;
 
   @include query(1100px) {
     display: none;

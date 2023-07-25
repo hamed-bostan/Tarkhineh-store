@@ -1,0 +1,58 @@
+@import "../../../../sassContainer/mixins";
+
+.cart_completing_information_payment_card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cart_card_mobile_top_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.cart_card_mobile_title {
+  @include fontTitleMobileSecondary;
+}
+
+.cart_card_mobile_final_price {
+  @include fontInformationMobile;
+  color: $greyColorDark;
+}
+
+.cart_card_button_container {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid $primaryColorLight;
+  background: $primaryColorLight;
+  height: 2rem;
+  padding: 0 0.25rem;
+}
+
+// icons
+.cart_increase_icon {
+  // width: 0.5rem;
+  // height: 0.5rem;
+  width: 0.8rem;
+  height: 0.7rem;
+}
+
+.cart_card_quantity {
+  @include fontInformationDesktopSecondary;
+  font-weight: 400;
+  color: $primaryColor;
+}
+
+.cart_decrease_icon {
+  // width: 0.7rem;
+  width: 0.8rem;
+  // height: 0.2rem;
+  height: 0.2rem;
+}
+
+.cart_trash_icon {
+  width: 1rem;
+  height: 1rem;
+}
