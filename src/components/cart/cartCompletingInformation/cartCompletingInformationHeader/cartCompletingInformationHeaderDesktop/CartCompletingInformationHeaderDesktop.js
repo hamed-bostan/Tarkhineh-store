@@ -29,14 +29,18 @@ const CartCompletingInformationHeaderDesktop = () => {
           </span>
         </div>
       </Link>
-      <div className="cart_completing_information_desktop_wrapper">
-        <img
-          src="assets/images/icons/wallet_gray.png"
-          alt=""
-          className="cart_completing_information_desktop_icon"
-        />
-        <span className="cart_completing_information_desktop_text">پرداخت</span>
-      </div>
+      <Link to="/CartPaymentPage">
+        <div className="cart_completing_information_desktop_wrapper">
+          <img
+            src="assets/images/icons/wallet_gray.png"
+            alt=""
+            className="cart_completing_information_desktop_icon"
+          />
+          <span className="cart_completing_information_desktop_text">
+            پرداخت
+          </span>
+        </div>
+      </Link>
     </div>
   );
 };

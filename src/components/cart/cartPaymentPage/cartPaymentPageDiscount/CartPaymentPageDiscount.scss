@@ -1,0 +1,62 @@
+@import "../../../sassContainer/mixins";
+@import "../../../sassContainer/variables";
+
+.cart_payment_page_discount_container {
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid $greyColorSecondary;
+  background: $naturalWhite;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+
+.cart_payment_page_discount_top_wrapper {
+  display: flex;
+  column-gap: 0.25rem;
+  align-items: center;
+}
+
+.cart_payment_page_discount_icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+.cart_payment_page_discount_text {
+  // Fonts
+  @include fontInformationDesktopSecondary;
+  font-weight: 400;
+  color: $blackColor;
+}
+
+.cart_payment_page_discount_placeholder_text {
+  border: 1px solid $greyColorSecondary;
+  height: 2rem;
+  border-radius: 0.25rem;
+  width: 80%;
+  width: 100%;
+
+  &::placeholder {
+    padding-right: 0.5rem;
+    // Fonts
+    @include fontInformationDesktopSenary;
+    color: $greyColorDark;
+  }
+}
+
+.cart_payment_page_discount_button_container {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+.cart_payment_page_discount_button {
+  border-radius: 0.25rem;
+  background: $greyColorSecondary;
+  border: none;
+  width: 3.1875rem;
+  height: 2rem;
+  // Fonts
+  @include fontInformationDesktopSenary;
+  color: $greyColor;
+}

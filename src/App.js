@@ -14,6 +14,7 @@ import Menu from "./components/menu/Menu";
 import Cart from "./components/cart/Cart";
 import Branch from "./components/branch/Branch";
 import CartCompletingInformation from "./components/cart/cartCompletingInformation/CartCompletingInformation";
+import CartPaymentPage from "./components/cart/cartPaymentPage/CartPaymentPage";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
             <Route path="/cart" element={<Cart />} />
             <Route path="/branch" element={<Branch />} />
             <Route path="/cartCompletingInformation" element={<CartCompletingInformation />} />
+            <Route path="/CartPaymentPage" element={<CartPaymentPage />} />
             <Route path="*" element={<NoPage />} />
           </Routes>
         </BrowserRouter>
