@@ -1,0 +1,54 @@
+@import "../../../../sassContainer/mixins";
+@import "../../../../sassContainer/variables";
+
+.cart_completing_information_delivery_bottom_container {
+  padding-top: 1rem;
+  padding-right: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+
+  @include query(1100px) {
+    display: flex;
+    flex-direction: row;
+    padding-top: 0;
+    flex: 2;
+    justify-content: space-between;
+    // align-items: center;
+  }
+}
+
+.cart_completing_information_delivery_bottom_wrapper {
+  display: flex;
+  align-items: center;
+  column-gap: 0.25rem;
+
+  @include query(1100px) {
+    column-gap: 0.5rem;
+  }
+}
+
+.cart_completing_information_delivery_label {
+  padding-right: 0.25rem;
+  // Fonts
+  @include fontInformationDesktopSenary;
+  color: $greyColorDark;
+
+  @include query(1100px) {
+    padding-right: 0;
+    @include fontInformationDesktopSecondary;
+    font-weight: 400;
+  }
+}
+
+.cart_completing_information_delivery_details {
+  display: none;
+
+  @include query(1100px) {
+    display: block;
+    // Fonts
+    @include fontInformationMobile;
+    font-weight: 400;
+    color: $greyColorDark;
+  }
+}

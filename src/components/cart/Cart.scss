@@ -1,6 +1,13 @@
 @import "../sassContainer/mixins";
 @import "../sassContainer/variables";
 
+.cart_information_main_container_with_header {
+  @include query(1100px) {
+    // padding-top: 1.5rem;
+    padding: 0.75rem 0;
+  }
+}
+
 // information section
 .cart_information_main_container {
   max-width: 20rem;
@@ -22,7 +29,8 @@
     column-gap: 2rem;
     // background: rgb(44, 209, 10);
     justify-content: center;
-    margin-top: 2.5rem;
+    // margin-top: 2.5rem;
+    padding-top: 1.25rem;
   }
 }
 

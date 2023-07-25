@@ -1,0 +1,52 @@
+@import "../../../sassContainer/mixins";
+@import "../../../sassContainer/variables";
+
+.cart_Completing_Information_Payment_container {
+  border-radius: 0.5rem;
+  border: 1px solid $greyColorSecondary;
+  background: $naturalWhite;
+  padding: 1.5rem;
+  // margin-top: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.75rem;
+}
+
+.cart_Completing_Information_Payment_wrapper {
+  display: flex;
+  justify-content: space-between;
+  // Fonts
+  @include fontInformationDesktopSecondary;
+  font-weight: 400;
+  color: $blackColor;
+}
+
+.cart_Completing_Information_Payment_button_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.25rem;
+  width: 17rem;
+  height: 2rem;
+  border-radius: 0.25rem;
+  background: $primaryColor;
+  margin: 0 auto;
+}
+
+.cart_Completing_Information_Payment_text_gray {
+  // Fonts
+  color: $greyColorDark;
+}
+
+.cart_Completing_Information_Payment_text_green {
+  // Fonts
+  color: $primaryColor;
+}
+
+.cart_Completing_Information_Payment_button {
+  border: none;
+  background: transparent;
+  // Fonts
+  @include fontInformationDesktopSenary;
+  color: $naturalWhite;
+}

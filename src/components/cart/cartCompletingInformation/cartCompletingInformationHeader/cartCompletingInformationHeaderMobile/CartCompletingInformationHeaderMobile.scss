@@ -1,0 +1,21 @@
+@import "../../../../sassContainer/mixins";
+
+.cart_completing_information_mobile_container {
+  display: flex;
+  align-items: center;
+
+  @include query(1100px) {
+    display: none;
+  }
+}
+
+.cart_completing_information_mobile_icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+.cart_completing_information_mobile_text {
+  margin: 0 auto;
+  // Fonts
+  @include fontInformationDesktopSeptenary;
+}

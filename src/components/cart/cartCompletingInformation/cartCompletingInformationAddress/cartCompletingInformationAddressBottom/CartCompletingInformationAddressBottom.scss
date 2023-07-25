@@ -1,0 +1,65 @@
+@import "../../../../sassContainer/mixins";
+@import "../../../../sassContainer/variables";
+
+.cart_completing_information_address_bottom_main_container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+  padding-top: 1rem;
+
+  @include query(1100px) {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+  }
+}
+
+.cart_completing_information_address_bottom_container {
+  padding: 1rem;
+  border-radius: 0.25rem;
+  border: 1px solid $greyColorSecondary;
+  background: $greyColorTertiary;
+
+  &:hover {
+    border: 1px solid $primaryColor;
+  }
+
+  @include query(1100px) {
+    cursor: pointer;
+    border-radius: 0.5rem;
+  }
+}
+
+.cart_completing_information_address_bottom_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart_completing_information_address_bottom_text {
+  // Fonts
+  @include fontInformationMobile;
+  color: $greyColorDark;
+  font-weight: 400;
+
+  @include query(1100px) {
+    // Fonts
+    @include fontInformationDesktopSecondary;
+    font-weight: 400;
+  }
+}
+
+.cart_completing_information_address_bottom_text_black_color {
+  width: 70%;
+  color: $blackColor;
+}
+
+.cart_completing_information_address_bottom_icon_container {
+  display: flex;
+  column-gap: 0.75rem;
+}
+
+.cart_completing_information_address_name_phoneNumber_container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.5rem;
+}

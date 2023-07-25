@@ -1,0 +1,45 @@
+@import "../../../../sassContainer/mixins";
+@import "../../../../sassContainer/variables";
+
+.cart_completing_information_address_header_container {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0.5rem;
+}
+
+.cart_completing_information_address_wrapper {
+  display: flex;
+  align-items: center;
+  column-gap: 0.25rem;
+}
+
+.cart_completing_information_address_icon {
+  width: 1.5rem;
+  height: 1.5rem;
+
+  @include query(1100px) {
+    cursor: pointer;
+  }
+}
+
+.cart_completing_information_address_text {
+  // Fonts
+  @include fontInformationDesktopSecondary;
+  font-weight: 400;
+  color: $blackColor;
+
+  @include query(1100px) {
+    // Fonts
+    @include fontInformationDesktopTertiary;
+    color: $blackColor;
+  }
+}
+
+.cart_completing_information_address_text_add {
+  // Fonts
+  color: $primaryColor;
+
+  @include query(1100px) {
+    cursor: pointer;
+  }
+}

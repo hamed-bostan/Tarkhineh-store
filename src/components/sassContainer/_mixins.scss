@@ -152,6 +152,16 @@
   color: $blackColor;
 }
 
+
+// no mobile
+@mixin fontInformationDesktopSeptenary {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 140%;
+  font-style: normal;
+  color: $blackColor;
+}
+
 // End of Fonts section
 // End of Fonts section
 

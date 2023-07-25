@@ -13,6 +13,7 @@ import Franchise from "./components/franchise/Franchise";
 import Menu from "./components/menu/Menu";
 import Cart from "./components/cart/Cart";
 import Branch from "./components/branch/Branch";
+import CartCompletingInformation from "./components/cart/cartCompletingInformation/CartCompletingInformation";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
             <Route path="/menu" element={<Menu />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/branch" element={<Branch />} />
+            <Route path="/cartCompletingInformation" element={<CartCompletingInformation />} />
             <Route path="*" element={<NoPage />} />
           </Routes>
         </BrowserRouter>

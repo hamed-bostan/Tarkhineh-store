@@ -1,0 +1,26 @@
+@import "../../../../sassContainer/mixins";
+@import "../../../../sassContainer/variables";
+
+.cart_completing_information_delivery_wrapper_top {
+  padding-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+
+  @include query(1100px) {
+    display: flex;
+    flex: 1;
+  }
+}
+
+.cart_completing_information_delivery_title {
+  // Fonts
+  @include fontInformationDesktopSecondary;
+  color: $blackColor;
+
+  @include query(1100px) {
+    // Fonts
+    @include fontInformationDesktopTertiary;
+    color: $blackColor;
+  }
+}

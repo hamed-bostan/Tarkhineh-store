@@ -1,0 +1,34 @@
+@import "../../../../sassContainer/mixins";
+@import "../../../../sassContainer/variables";
+
+.cart_completing_information_desktop_container {
+  display: none;
+
+  @include query(1100px) {
+    display: flex;
+    column-gap: 4rem;
+    justify-content: center;
+    align-items: center;
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+}
+
+.cart_completing_information_desktop_wrapper {
+  display: flex;
+  column-gap: 0.25rem;
+  align-items: center;
+  cursor: pointer;
+}
+
+.cart_completing_information_desktop_icon {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.cart_completing_information_desktop_text {
+  // Fonts
+  @include fontInformationDesktopSecondary;
+  font-weight: 400;
+  color: $greyColorSecondary;
+}
