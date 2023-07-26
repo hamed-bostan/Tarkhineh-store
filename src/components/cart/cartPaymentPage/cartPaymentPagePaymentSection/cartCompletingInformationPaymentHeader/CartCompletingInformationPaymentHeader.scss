@@ -1,0 +1,23 @@
+@import "../../../../sassContainer/mixins";
+@import "../../../../sassContainer/variables";
+
+.cart_completing_information_payment_header_container {
+  display: none;
+  @include query(1100px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.cart_completing_information_payment_header_text {
+  // Fonts
+  @include fontInformationDesktopTertiary;
+  color: $blackColor;
+}
+
+.cart_completing_information_payment_header_trash_icon {
+  width: 1.1rem;
+  height: 1.1rem;
+  cursor: pointer;
+}

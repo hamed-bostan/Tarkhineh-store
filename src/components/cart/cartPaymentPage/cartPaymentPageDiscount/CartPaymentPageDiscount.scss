@@ -9,12 +9,23 @@
   display: flex;
   flex-direction: column;
   row-gap: 0.5rem;
+
+  @include query(1100px) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 .cart_payment_page_discount_top_wrapper {
   display: flex;
   column-gap: 0.25rem;
   align-items: center;
+
+  @include query(1100px) {
+    flex: 1;
+  }
 }
 
 .cart_payment_page_discount_icon {
@@ -29,11 +40,26 @@
   color: $blackColor;
 }
 
+.cart_payment_page_discount_line_hidden {
+  @include query(1100px) {
+    display: none;
+  }
+}
+
+.cart_payment_page_discount_button_container {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+
+  @include query(1100px) {
+    flex: 5;
+  }
+}
+
 .cart_payment_page_discount_placeholder_text {
   border: 1px solid $greyColorSecondary;
   height: 2rem;
   border-radius: 0.25rem;
-  width: 80%;
   width: 100%;
 
   &::placeholder {
@@ -42,12 +68,10 @@
     @include fontInformationDesktopSenary;
     color: $greyColorDark;
   }
-}
 
-.cart_payment_page_discount_button_container {
-  display: flex;
-  align-items: center;
-  column-gap: 1rem;
+  @include query(1100px) {
+    width: 80%;
+  }
 }
 
 .cart_payment_page_discount_button {
@@ -59,4 +83,8 @@
   // Fonts
   @include fontInformationDesktopSenary;
   color: $greyColor;
+
+  @include query(1100px) {
+    width: 4.5rem;
+  }
 }

@@ -12,7 +12,7 @@ const CartPaymentPageDiscount = () => {
         />
         <span className="cart_payment_page_discount_text">ثبت کد تخفیف</span>
       </div>
-      <hr className="cart_completing_information_line" />
+      <hr className="cart_completing_information_line cart_payment_page_discount_line_hidden" />
       <div className="cart_payment_page_discount_button_container">
         <input
           type="text"
