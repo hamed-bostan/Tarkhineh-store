@@ -5,7 +5,10 @@ import { Link } from "react-router-dom";
 const CartCompletingInformationHeaderDesktop = () => {
   return (
     <div className="cart_completing_information_desktop_container">
-      <Link to="/cart">
+      <Link
+        to="/cart"
+        className="cart_completing_information_desktop_removing_link"
+      >
         <div className="cart_completing_information_desktop_wrapper">
           <img
             src="assets/images/icons/shopping-cart.png"
@@ -17,7 +20,10 @@ const CartCompletingInformationHeaderDesktop = () => {
           </span>
         </div>
       </Link>
-      <Link to="/cartCompletingInformation">
+      <Link
+        to="/cartCompletingInformation"
+        className="cart_completing_information_desktop_removing_link"
+      >
         <div className="cart_completing_information_desktop_wrapper">
           <img
             src="assets/images/icons/tick_square_gray.png"
@@ -29,7 +35,10 @@ const CartCompletingInformationHeaderDesktop = () => {
           </span>
         </div>
       </Link>
-      <Link to="/CartPaymentPage">
+      <Link
+        to="/CartPaymentPage"
+        className="cart_completing_information_desktop_removing_link"
+      >
         <div className="cart_completing_information_desktop_wrapper">
           <img
             src="assets/images/icons/wallet_gray.png"

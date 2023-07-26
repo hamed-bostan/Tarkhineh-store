@@ -33,7 +33,7 @@ const CartCompletingInformationDeliveryOptionBottom = () => {
             تحویل حضوری
           </label>
           <span className="cart_completing_information_delivery_details">
-            دریافت حضوری در رستوران
+            دریافت حضوری در رستوران.
           </span>
         </div>
         <img

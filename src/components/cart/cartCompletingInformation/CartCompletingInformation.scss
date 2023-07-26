@@ -10,7 +10,6 @@
   margin: 0 auto;
 
   @include query(1100px) {
-    padding: 2rem 1.25rem;
     display: flex;
     flex-direction: row;
     justify-content: center;

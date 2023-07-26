@@ -25,6 +25,7 @@
 
   @include query(1100px) {
     flex: 1;
+    column-gap: 0.5rem;
   }
 }
 
@@ -38,6 +39,12 @@
   @include fontInformationDesktopSecondary;
   font-weight: 400;
   color: $blackColor;
+
+  @include query(1100px) {
+    // Fonts
+    @include fontInformationDesktopQuinary;
+    font-weight: 400;
+  }
 }
 
 .cart_payment_page_discount_line_hidden {
@@ -61,16 +68,24 @@
   height: 2rem;
   border-radius: 0.25rem;
   width: 100%;
+  padding-right: 0.5rem;
+
+  // Fonts
+  @include fontInformationDesktopSenary;
 
   &::placeholder {
-    padding-right: 0.5rem;
-    // Fonts
-    @include fontInformationDesktopSenary;
     color: $greyColorDark;
+  }
+
+  &:focus {
+    outline: none;
   }
 
   @include query(1100px) {
     width: 80%;
+    // Fonts
+    @include fontInformationDesktopSecondary;
+    font-weight: 400;
   }
 }
 
@@ -86,5 +101,9 @@
 
   @include query(1100px) {
     width: 4.5rem;
+    cursor: pointer;
+    // Fonts
+    @include fontInformationDesktopQuinary;
+    color: $greyColor;
   }
 }

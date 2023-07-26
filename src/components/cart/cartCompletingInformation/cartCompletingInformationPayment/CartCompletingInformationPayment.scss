@@ -56,5 +56,8 @@
 
   @include query(1100px) {
     cursor: pointer;
+    // Fonts
+    @include fontInformationDesktopQuinary;
+    color: $naturalWhite;
   }
 }
