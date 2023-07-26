@@ -1,5 +1,6 @@
 import React from "react";
 import "./Footer.scss";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -7,9 +8,15 @@ const Footer = () => {
       {/* sidebar section */}
       <div className="footer_sidebar">
         <span className="footer_title">دسترسی آسان</span>
-        <span className="footer_text">پرسش‌های متداول</span>
-        <span className="footer_text">قوانین ترخینه</span>
-        <span className="footer_text">حریم خصوصی</span>
+        <Link to="/faq" className="footer_link_underline_hidden">
+          <span className="footer_text">پرسش‌های متداول</span>
+        </Link>
+        <Link to="/rules" className="footer_link_underline_hidden">
+          <span className="footer_text">قوانین ترخینه</span>
+        </Link>
+        <Link to="/privacy" className="footer_link_underline_hidden">
+          <span className="footer_text">حریم خصوصی</span>
+        </Link>
         <div className="footer_icon_container">
           <img
             src="assets/images/icons/twitter.png"

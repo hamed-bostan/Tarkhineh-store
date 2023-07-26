@@ -1,0 +1,25 @@
+@import "../../../sassContainer/mixins";
+@import "../../../sassContainer/variables";
+
+.questions_container {
+  border: 1px solid $greyColorSecondary;
+  background: $naturalWhite;
+  border-radius: 0.25rem;
+}
+
+.questions_wrapper {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid $greyColorSecondary;
+  padding: 0.5rem 1rem;
+}
+
+.questions_text {
+  // Fonts
+  @include fontInformationDesktopSenary;
+}
+
+.questions_icon {
+  width: 1rem;
+  height: 1rem;
+}
