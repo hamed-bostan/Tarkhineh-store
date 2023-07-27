@@ -1,7 +1,7 @@
 import React from "react";
-import "./FaqHeader.scss";
+import "./FaqHeaderBanner.scss";
 
-const FaqHeader = () => {
+const FaqHeaderBanner = () => {
   return (
     <div className="Contact_header_container">
       <img
@@ -14,4 +14,4 @@ const FaqHeader = () => {
   );
 };
 
-export default FaqHeader;
+export default FaqHeaderBanner;

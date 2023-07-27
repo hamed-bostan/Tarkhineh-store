@@ -2,5 +2,10 @@
 @import "../../sassContainer/variables";
 
 .faq_main_container {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.faq_main_wrapper {
   padding: 0.75rem 1.25rem 1.5rem 1.25rem;
 }

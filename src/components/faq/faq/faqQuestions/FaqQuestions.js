@@ -1,27 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 import "./FaqQuestions.scss";
+import { faqQuestions } from "../../../../data";
+import FaqQuestionsCard from "./faqQuestionsCard/FaqQuestionsCard";
 
 const FaqQuestions = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
   return (
     <div className="questions_container">
-      <div className="questions_wrapper">
-        <span className="questions_text">ترخینه چه امکانات متفاوتی داره؟</span>
-        <img
-          src="assets/images/icons/arrow_down_black.png"
-          alt=""
-          className="questions_icon"
-        />
-      </div>
-      <div className="questions_wrapper">
-        <span className="questions_text">حساب کاربری در ترخینه</span>
-        <img
-          src="assets/images/icons/arrow_down_black.png"
-          alt=""
-          className="questions_icon"
-        />
-      </div>
+      {faqQuestions.map((questions) => {
+        return <FaqQuestionsCard key={questions.id} {...questions} />;
+      })}
     </div>
   );
 };

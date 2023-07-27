@@ -8,6 +8,10 @@
   height: 2.5rem;
   align-items: center;
   padding-right: 1.25rem;
+
+  @include query(1100px) {
+    height: 3rem;
+  }
 }
 
 .faq_links_underline_hidden {
@@ -20,5 +24,7 @@
 
   @include query(1100px) {
     cursor: pointer;
+    @include fontInformationDesktopQuaternary;
+    color: $greyColorDark;
   }
 }
