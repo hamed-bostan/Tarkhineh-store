@@ -11,11 +11,8 @@
 
   @include query(1100px) {
     height: 3rem;
+    column-gap: 1.5rem;
   }
-}
-
-.faq_links_underline_hidden {
-  text-decoration: none;
 }
 
 .faq_links_text {
@@ -26,5 +23,32 @@
     cursor: pointer;
     @include fontInformationDesktopQuaternary;
     color: $greyColorDark;
+  }
+}
+
+.faq_links_text_active {
+  position: relative;
+  // Fonts
+  @include fontInformationDesktopSecondary;
+  color: $primaryColor;
+
+  @include query(1100px) {
+    // Fonts
+    @include fontTitleDesktopQuaternary;
+    color: $primaryColor;
+  }
+
+  &::after {
+    content: "";
+    background: $primaryColor;
+    position: absolute;
+    top: 1.9rem;
+    right: 0;
+    height: 1px;
+    width: 80%;
+
+    @include query(1100px) {
+      top: 2rem;
+    }
   }
 }

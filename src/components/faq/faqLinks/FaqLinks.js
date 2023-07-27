@@ -1,19 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
 import "./FaqLinks.scss";
-import { Link } from "react-router-dom";
+import { faqQuestionsLinks } from "../../../data";
 
-const FaqLinks = () => {
+const FaqLinks = ({ setActiveTabIndex }) => {
+  //  set the buttons on active style
+  const [value, setValue] = useState(0);
+  const activeFunction = (index) => {
+    setValue(index);
+  };
+  // End of set the buttons on active style
+
   return (
     <div className="faq_links_container">
-      <Link to="/faq" className="faq_links_underline_hidden">
-        <span className="faq_links_text">سوالات متداول</span>
-      </Link>
-      <Link to="/rules" className="faq_links_underline_hidden">
-        <span className="faq_links_text">قوانین ترخینه</span>
-      </Link>
-      <Link to="/privacy" className="faq_links_underline_hidden">
-        <span className="faq_links_text">حریم خصوصی</span>
-      </Link>
+      {faqQuestionsLinks.map((link, index) => {
+        return (
+          <span
+            key={link.id}
+            className={`faq_links_text ${
+              index == value && "faq_links_text_active"
+            }`}
+            onClick={() => {
+              setActiveTabIndex(index);
+              activeFunction(index);
+            }}
+          >
+            {link.link}
+          </span>
+        );
+      })}
     </div>
   );
 };

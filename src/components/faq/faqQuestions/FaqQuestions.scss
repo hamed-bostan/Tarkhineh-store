@@ -1,9 +1,8 @@
-@import "../../../sassContainer/mixins";
-@import "../../../sassContainer/variables";
+@import "../../sassContainer/mixins";
+@import "../../sassContainer/variables";
 
 .questions_container {
   border: 1px solid $greyColorSecondary;
   background: $naturalWhite;
   border-radius: 0.25rem;
 }
-

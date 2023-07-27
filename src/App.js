@@ -15,9 +15,7 @@ import Cart from "./components/cart/Cart";
 import Branch from "./components/branch/Branch";
 import CartCompletingInformation from "./components/cart/cartCompletingInformation/CartCompletingInformation";
 import CartPaymentPage from "./components/cart/cartPaymentPage/CartPaymentPage";
-import Rules from "./components/faq/rules/Rules";
-import Faq from "./components/faq/faq/Faq";
-import Privacy from "./components/faq/privacy/Privacy";
+import Faq from "./components/faq/Faq";
 
 function App() {
   return (
@@ -32,11 +30,12 @@ function App() {
             <Route path="/menu" element={<Menu />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/branch" element={<Branch />} />
-            <Route path="/cartCompletingInformation" element={<CartCompletingInformation />} />
+            <Route
+              path="/cartCompletingInformation"
+              element={<CartCompletingInformation />}
+            />
             <Route path="/CartPaymentPage" element={<CartPaymentPage />} />
-            <Route path="/rules" element={<Rules />} />
             <Route path="/faq" element={<Faq />} />
-            <Route path="/privacy" element={<Privacy />} />
             <Route path="*" element={<NoPage />} />
           </Routes>
         </BrowserRouter>

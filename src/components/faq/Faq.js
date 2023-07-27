@@ -1,24 +1,22 @@
 import React, { useState } from "react";
 import "./Faq.scss";
-import Navbar from "../../home/navbar/Navbar";
-import FaqLinks from "../faqLinks/FaqLinks";
-import FaqQuestions from "./faqQuestions/FaqQuestions";
 import FaqHeaderBanner from "./faqHeaderBanner/FaqHeaderBanner";
-import Footer from "../../home/footer/Footer";
+import FaqLinks from "./faqLinks/FaqLinks";
+import FaqQuestions from "./faqQuestions/FaqQuestions";
+import Footer from "../home/footer/Footer";
+import Navbar from "../home/navbar/Navbar";
 
 const Faq = () => {
-  const [jobs, setJobs] = useState([]); // data
-  const [value, setValue] = useState(0);
-  const { title, information } = jobs[value];
+  const [activeTabIndex, setActiveTabIndex] = useState(0);
 
   return (
     <div>
       <Navbar />
       <FaqHeaderBanner />
       <div className="faq_main_container">
-        <FaqLinks />
+        <FaqLinks setActiveTabIndex={setActiveTabIndex} />
         <div className="faq_main_wrapper">
-          <FaqQuestions />
+          <FaqQuestions activeTabIndex={activeTabIndex} />
         </div>
       </div>
       <Footer />

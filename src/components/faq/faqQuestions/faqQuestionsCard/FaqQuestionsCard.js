@@ -7,7 +7,10 @@ const FaqQuestionsCard = ({ title, information }) => {
   return (
     <article>
       <div className="questions_wrapper">
-        <header className="questions_header_container">
+        <header
+          className="questions_header_container"
+          onClick={() => setIsInformationOpen(!isInformationOpen)}
+        >
           <span
             className={`${
               isInformationOpen
@@ -22,14 +25,14 @@ const FaqQuestionsCard = ({ title, information }) => {
               src="assets/images/icons/arrow_down_green.png"
               alt=""
               className="questions_icon"
-              onClick={() => setIsInformationOpen(!isInformationOpen)}
+              // onClick={() => setIsInformationOpen(!isInformationOpen)}
             />
           ) : (
             <img
               src="assets/images/icons/arrow_down_black.png"
               alt=""
               className="questions_icon"
-              onClick={() => setIsInformationOpen(!isInformationOpen)}
+              // onClick={() => setIsInformationOpen(!isInformationOpen)}
             />
           )}
         </header>

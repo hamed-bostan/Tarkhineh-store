@@ -1,5 +1,5 @@
-@import "../../../../sassContainer/mixins";
-@import "../../../../sassContainer/variables";
+@import "../../../sassContainer/mixins";
+@import "../../../sassContainer/variables";
 
 .questions_wrapper {
   padding: 0.5rem 1rem;
@@ -11,6 +11,10 @@
 .questions_header_container {
   display: flex;
   justify-content: space-between;
+
+  @include query(1100px) {
+    cursor: pointer;
+  }
 }
 
 .questions_title {
@@ -32,8 +36,8 @@
   height: 1rem;
 
   @include query(1100px) {
-    width: 1.2rem;
-    height: 1.2rem;
+    width: 1.1rem;
+    height: 1.1rem;
   }
 }
 

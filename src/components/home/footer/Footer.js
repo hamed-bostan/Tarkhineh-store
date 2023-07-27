@@ -11,10 +11,10 @@ const Footer = () => {
         <Link to="/faq" className="footer_link_underline_hidden">
           <span className="footer_text">پرسش‌های متداول</span>
         </Link>
-        <Link to="/rules" className="footer_link_underline_hidden">
+        <Link to="/faq" className="footer_link_underline_hidden">
           <span className="footer_text">قوانین ترخینه</span>
         </Link>
-        <Link to="/privacy" className="footer_link_underline_hidden">
+        <Link to="/faq" className="footer_link_underline_hidden">
           <span className="footer_text">حریم خصوصی</span>
         </Link>
         <div className="footer_icon_container">
