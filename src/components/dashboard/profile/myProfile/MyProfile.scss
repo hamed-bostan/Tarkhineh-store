@@ -3,14 +3,15 @@
 
 .my_profile_container {
   display: none;
+
   @include query(1100px) {
     display: block;
     border-radius: 0.5rem;
     border: 1px solid $greyColorSecondary;
     background: $naturalWhite;
     padding: 1.5rem;
-    width: 200rem;
     width: 80%;
+    height: 21rem;
   }
 }
 
@@ -18,12 +19,17 @@
   @include fontTitleDesktopTertiary;
 }
 
+.my_profile_horizontal_line {
+  border: none;
+  border-bottom: 1px solid $greyColorSecondary;
+  padding-top: 0.5rem;
+}
+
 .my_profile_bottom_container {
   display: flex;
   flex-direction: column;
   row-gap: 1rem;
-  background: red;
-  align-items: center;
+  padding: 2rem 2rem 1.5rem 2rem;
 }
 
 .my_profile_wrapper {
@@ -40,6 +46,8 @@
   justify-content: center;
   align-items: center;
   column-gap: 0.5rem;
+  margin: 0 auto;
+  cursor: pointer;
 }
 
 .my_profile_edit_icon {
@@ -50,14 +58,25 @@
 .my_profile_button {
   background: transparent;
   border: none;
+  cursor: pointer;
   // Fonts
   @include fontInformationDesktopQuinary;
   color: $primaryColor;
 }
 
 .my_profile_placeholder_text {
+  width: 40%;
+  height: 2.4rem;
+  border: 1px solid $greyColorSecondary;
+  border-radius: 0.25rem;
+  margin: 0 auto;
+  padding-right: 1rem;
   // Fonts
   @include fontInformationDesktopSecondary;
+
+  &:focus {
+    outline: none;
+  }
 
   &::placeholder {
     color: $greyColorSecondary;

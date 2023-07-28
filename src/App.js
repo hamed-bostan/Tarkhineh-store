@@ -17,6 +17,7 @@ import CartCompletingInformation from "./components/cart/cartCompletingInformati
 import CartPaymentPage from "./components/cart/cartPaymentPage/CartPaymentPage";
 import Faq from "./components/faq/Faq";
 import Dashboard from "./components/dashboard/Dashboard";
+import OrderTracking from "./components/dashboard/orderTracking/OrderTracking";
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
             <Route path="/CartPaymentPage" element={<CartPaymentPage />} />
             <Route path="/faq" element={<Faq />} />
             <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/orderTracking" element={<OrderTracking />} />
             <Route path="*" element={<NoPage />} />
           </Routes>
         </BrowserRouter>

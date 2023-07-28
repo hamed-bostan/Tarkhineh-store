@@ -2,9 +2,10 @@
 @import "../../sassContainer/variables";
 
 .profile_main_container {
-  display: flex;
-  column-gap: 1rem;
-  justify-content: center;
+  @include query(1100px) {
+    display: flex;
+    column-gap: 1rem;
+  }
 }
 
 .profile_container {
@@ -16,12 +17,7 @@
     border: 1px solid $greyColorSecondary;
     background: $naturalWhite;
     padding: 1rem 0.5rem;
-    // width: 14rem;
     width: 20%;
+    height: 16rem;
   }
-}
-
-.dashboard_horizontal_line {
-  border: none;
-  border-bottom: 1px solid #757575;
 }

@@ -869,26 +869,31 @@ export const faqQuestionsLinks = [
 export const dashboardLinks = [
   {
     id: 1,
+    to: "",
     icon: "assets/images/icons/user_filled.png",
     link: "پروفایل",
   },
   {
     id: 2,
+    to: "/orderTracking",
     icon: "assets/images/icons/wallet_black.png",
     link: "پیگیری سفارشات",
   },
   {
     id: 3,
+    to: "",
     icon: "assets/images/icons/heart_black.png",
     link: "علاقمندی‌ها",
   },
   {
     id: 4,
+    to: "",
     icon: "assets/images/icons/location.png",
     link: "آدرس‌های من",
   },
   {
     id: 5,
+    to: "",
     icon: "assets/images/icons/logout.png",
     link: "خروج",
   },

@@ -1,6 +1,6 @@
 import React from "react";
 import "./ProfileLinks.scss";
-import { dashboardLinks } from "../../../../data";
+import { dashboardLinks } from "../../../../../data";
 
 const ProfileLinks = () => {
   return (

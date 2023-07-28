@@ -5,7 +5,7 @@ const MyProfile = () => {
   return (
     <div className="my_profile_container">
       <span className="my_profile_title">پروفایل من</span>
-      <hr />
+      <hr className="my_profile_horizontal_line"/>
       <div className="my_profile_bottom_container">
         <div className="my_profile_wrapper">
           <input
