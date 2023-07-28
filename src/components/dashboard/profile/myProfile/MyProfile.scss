@@ -1,0 +1,71 @@
+@import "../../../sassContainer/mixins";
+@import "../../../sassContainer/variables";
+
+.my_profile_container {
+  display: none;
+  @include query(1100px) {
+    display: block;
+    border-radius: 0.5rem;
+    border: 1px solid $greyColorSecondary;
+    background: $naturalWhite;
+    padding: 1.5rem;
+    width: 200rem;
+    width: 80%;
+  }
+}
+
+.my_profile_title {
+  @include fontTitleDesktopTertiary;
+}
+
+.my_profile_bottom_container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  background: red;
+  align-items: center;
+}
+
+.my_profile_wrapper {
+  display: flex;
+  column-gap: 1rem;
+}
+
+.my_profile_button_container {
+  width: 14rem;
+  height: 2rem;
+  border-radius: 0.25rem;
+  border: 1px solid $primaryColor;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+
+.my_profile_edit_icon {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.my_profile_button {
+  background: transparent;
+  border: none;
+  // Fonts
+  @include fontInformationDesktopQuinary;
+  color: $primaryColor;
+}
+
+.my_profile_placeholder_text {
+  // Fonts
+  @include fontInformationDesktopSecondary;
+
+  &::placeholder {
+    color: $greyColorSecondary;
+  }
+}
+
+.my_profile_placeholder_text_phoneNumber {
+  &::placeholder {
+    color: $greyColorDark;
+  }
+}

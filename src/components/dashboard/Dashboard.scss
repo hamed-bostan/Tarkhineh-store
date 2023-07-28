@@ -1,0 +1,9 @@
+@import "../sassContainer/mixins";
+
+.dashboard_container {
+  padding: 1rem 1.25rem;
+
+  @include query(1100px) {
+    padding-top: 2rem;
+  }
+}

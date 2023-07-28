@@ -1,0 +1,27 @@
+@import "../../sassContainer/mixins";
+@import "../../sassContainer/variables";
+
+.profile_main_container {
+  display: flex;
+  column-gap: 1rem;
+  justify-content: center;
+}
+
+.profile_container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+  @include query(1100px) {
+    border-radius: 0.5rem;
+    border: 1px solid $greyColorSecondary;
+    background: $naturalWhite;
+    padding: 1rem 0.5rem;
+    // width: 14rem;
+    width: 20%;
+  }
+}
+
+.dashboard_horizontal_line {
+  border: none;
+  border-bottom: 1px solid #757575;
+}

@@ -864,3 +864,32 @@ export const faqQuestionsLinks = [
     link: "حریم خصوصی",
   },
 ];
+
+// Dashboard
+export const dashboardLinks = [
+  {
+    id: 1,
+    icon: "assets/images/icons/user_filled.png",
+    link: "پروفایل",
+  },
+  {
+    id: 2,
+    icon: "assets/images/icons/wallet_black.png",
+    link: "پیگیری سفارشات",
+  },
+  {
+    id: 3,
+    icon: "assets/images/icons/heart_black.png",
+    link: "علاقمندی‌ها",
+  },
+  {
+    id: 4,
+    icon: "assets/images/icons/location.png",
+    link: "آدرس‌های من",
+  },
+  {
+    id: 5,
+    icon: "assets/images/icons/logout.png",
+    link: "خروج",
+  },
+];
