@@ -9,6 +9,11 @@
   border: 1px solid $greyColorSecondary;
   background: $naturalWhite;
   padding: 0.5rem 0.75rem 1rem 0.75rem;
+
+  @include query(1100px) {
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+  }
 }
 
 .order_tracking_status_text {
@@ -16,4 +21,10 @@
   @include fontInformationMobile;
   font-weight: 400;
   color: $greyColorDark;
+
+  @include query(1100px) {
+    // Fonts
+    @include fontInformationDesktopSenary;
+    color: $greyColorDark;
+  }
 }

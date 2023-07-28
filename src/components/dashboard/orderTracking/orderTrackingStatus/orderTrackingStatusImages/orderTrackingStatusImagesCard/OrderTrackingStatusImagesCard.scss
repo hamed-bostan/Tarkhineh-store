@@ -7,20 +7,25 @@
   border-radius: 0.5rem;
   border: 1px solid $greyColorSecondary;
   background: $naturalWhite;
-  // display: flex;
-  // flex-direction: column;
-  // align-items: center;
+
+  @include query(1100px) {
+    width: 7.3rem;
+    height: 7.3rem;
+  }
 }
 
 .order_tracking_status_images_card_image_container {
   position: relative;
   width: 100%;
   height: 3rem;
+
+  @include query(1100px) {
+    height: 4.2rem;
+  }
 }
 
 .order_tracking_status_images_card_image {
   width: 100%;
-  // height: 3rem;
   height: 100%;
   border-top-right-radius: 0.5rem;
   border-top-left-radius: 0.5rem;
@@ -33,7 +38,7 @@
   left: 0.25rem;
   border-radius: 0.125rem;
   background: $naturalWhite;
-  width: 1.06rem;
+  width: 0.81rem;
   height: 0.75rem;
   display: flex;
   justify-content: center;
@@ -42,6 +47,15 @@
   @include fontInformationMobile;
   font-weight: 400;
   color: $primaryColor;
+
+  @include query(1100px) {
+    border-radius: 0.25rem;
+    width: 1.12rem;
+    height: 1rem;
+    // Fonts
+    @include fontInformationDesktopSenary;
+    color: $primaryColor;
+  }
 }
 
 .order_tracking_status_images_card_information_container {
@@ -56,4 +70,9 @@
   @include fontInformationMobile;
   font-weight: 400;
   color: $blackColor;
+
+  @include query(1100px) {
+    // Fonts
+    @include fontInformationDesktopSenary;
+  }
 }

@@ -11,6 +11,12 @@
   // Fonts
   @include fontInformationDesktopSenary;
   color: $greyColorDark;
+
+  @include query(1100px) {
+    // Fonts
+    @include fontInformationDesktopSecondary;
+    font-weight: 400;
+  }
 }
 
 .order_tracking_status_header_giving {

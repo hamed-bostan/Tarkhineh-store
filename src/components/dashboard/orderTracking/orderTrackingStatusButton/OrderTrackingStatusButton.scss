@@ -15,11 +15,7 @@
   align-items: center;
   height: 1.5rem;
   column-gap: 0.25rem;
-  // pointer-events: none;
-  // test
   min-width: fit-content;
-  // min-width: 100%;
-  // background: red;
 
   @include query(1100px) {
     height: 1.75rem;

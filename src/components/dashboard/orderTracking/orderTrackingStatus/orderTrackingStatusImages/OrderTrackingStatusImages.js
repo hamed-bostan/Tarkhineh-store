@@ -9,9 +9,11 @@ const OrderTrackingStatusImages = () => {
   return (
     <>
       <div className="order_tracking_status_images_container">
-        {state.selectedItems.map((item) => {
-          return <OrderTrackingStatusImagesCard key={item.id} item={item} />;
-        })}
+        <div className="order_tracking_status_images_wrapper">
+          {state.selectedItems.map((item) => {
+            return <OrderTrackingStatusImagesCard key={item.id} item={item} />;
+          })}
+        </div>
         <span className="order_tracking_status_images_text">
           مشاهده همه سفارشات
         </span>
