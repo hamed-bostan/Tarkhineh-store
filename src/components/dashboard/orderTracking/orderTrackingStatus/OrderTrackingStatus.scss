@@ -1,0 +1,19 @@
+@import "../../../sassContainer/mixins";
+@import "../../../sassContainer/variables";
+
+.order_tracking_status_container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  border-radius: 0.25rem;
+  border: 1px solid $greyColorSecondary;
+  background: $naturalWhite;
+  padding: 0.5rem 0.75rem 1rem 0.75rem;
+}
+
+.order_tracking_status_text {
+  // Fonts
+  @include fontInformationMobile;
+  font-weight: 400;
+  color: $greyColorDark;
+}

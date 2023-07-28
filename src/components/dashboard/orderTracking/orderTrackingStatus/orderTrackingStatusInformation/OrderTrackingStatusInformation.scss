@@ -1,0 +1,33 @@
+@import "../../../../sassContainer/mixins";
+@import "../../../../sassContainer/variables";
+
+.order_tracking_status_information_container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+
+.order_tracking_status_first_row_wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.order_tracking_status_information_wrapper {
+  display: flex;
+  align-items: center;
+  column-gap: 0.25rem;
+}
+
+.order_tracking_status_icons {
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.order_tracking_status_clock_icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+.order_tracking_status_time_green {
+  color: $primaryColor;
+}

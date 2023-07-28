@@ -898,3 +898,23 @@ export const dashboardLinks = [
     link: "خروج",
   },
 ];
+
+// order status
+export const orderStatus = [
+  {
+    id: 1,
+    status: "همه",
+  },
+  {
+    id: 2,
+    status: "جاری",
+  },
+  {
+    id: 3,
+    status: "تحویل‌شده",
+  },
+  {
+    id: 4,
+    status: "لغو‌شده",
+  },
+];

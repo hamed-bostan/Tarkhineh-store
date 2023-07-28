@@ -1,0 +1,33 @@
+@import "../../../../sassContainer/mixins";
+@import "../../../../sassContainer/variables";
+
+.order_tracking_status_header_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order_tracking_status_branch_text {
+  // Fonts
+  @include fontInformationDesktopSenary;
+  color: $greyColorDark;
+}
+
+.order_tracking_status_header_giving {
+  display: flex;
+  column-gap: 0.5rem;
+}
+
+.order_tracking_status_text_black {
+  color: $blackColor;
+  border-radius: 0.25rem;
+  background: $greyColor;
+  padding: 0.125rem 0.25rem;
+}
+
+.order_tracking_status_text_yellow {
+  color: #a9791c;
+  border-radius: 0.25rem;
+  background: #fff8e1;
+  padding: 0.125rem 1rem;
+}
