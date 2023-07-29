@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./FaqQuestionsCard.scss";
 
-const FaqQuestionsCard = ({ title, information }) => {
+const FaqQuestionsCard = ({ title, information, length, index }) => {
   const [isInformationOpen, setIsInformationOpen] = useState(false);
 
   return (
@@ -25,14 +25,12 @@ const FaqQuestionsCard = ({ title, information }) => {
               src="assets/images/icons/arrow_down_green.png"
               alt=""
               className="questions_icon"
-              // onClick={() => setIsInformationOpen(!isInformationOpen)}
             />
           ) : (
             <img
               src="assets/images/icons/arrow_down_black.png"
               alt=""
               className="questions_icon"
-              // onClick={() => setIsInformationOpen(!isInformationOpen)}
             />
           )}
         </header>
@@ -40,7 +38,13 @@ const FaqQuestionsCard = ({ title, information }) => {
           <p className="questions_information">{information}</p>
         )}
       </div>
-      <hr className="questions_horizontal_line" />
+      <hr
+        className={`${
+          index === length - 1
+            ? "questions_horizontal_line_hiding"
+            : "questions_horizontal_line"
+        }`}
+      />
     </article>
   );
 };

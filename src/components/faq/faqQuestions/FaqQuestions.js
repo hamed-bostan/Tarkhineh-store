@@ -17,7 +17,14 @@ const FaqQuestions = ({ activeTabIndex }) => {
   return (
     <div className="questions_container">
       {singleQuestion[0].map((questions, index) => {
-        return <FaqQuestionsCard key={questions.id} {...questions} />;
+        return (
+          <FaqQuestionsCard
+            key={questions.id}
+            {...questions}
+            length={singleQuestion[0].length}
+            index={index}
+          />
+        );
       })}
     </div>
   );
