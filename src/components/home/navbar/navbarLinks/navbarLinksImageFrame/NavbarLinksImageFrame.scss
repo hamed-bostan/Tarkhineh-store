@@ -1,0 +1,35 @@
+@import "../../../../sassContainer/mixins";
+@import "../../../../sassContainer/variables";
+
+.close_icon {
+  display: none;
+
+  @include max_query(768px) {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 14rem;
+    z-index: 1000;
+  }
+}
+
+.navbar_icon {
+  @include iconDesktop;
+
+  @include max_query(768px) {
+    @include iconMobile;
+  }
+}
+
+.navbar_top_frame_image {
+  display: none;
+  @include max_query(768px) {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 900;
+    width: 100%;
+    height: 6rem;
+  }
+}
