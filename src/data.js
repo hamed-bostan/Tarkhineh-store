@@ -881,7 +881,7 @@ export const dashboardLinks = [
   },
   {
     id: 3,
-    to: "",
+    to: "/favorites",
     icon: "assets/images/icons/heart_black.png",
     link: "علاقمندی‌ها",
   },

@@ -18,6 +18,7 @@ import CartPaymentPage from "./components/cart/cartPaymentPage/CartPaymentPage";
 import Faq from "./components/faq/Faq";
 import Dashboard from "./components/dashboard/Dashboard";
 import OrderTracking from "./components/dashboard/orderTracking/OrderTracking";
+import Favorites from "./components/dashboard/favorites/Favorites";
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
             <Route path="/faq" element={<Faq />} />
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/orderTracking" element={<OrderTracking />} />
+            <Route path="/favorites" element={<Favorites />} />
             <Route path="*" element={<NoPage />} />
           </Routes>
         </BrowserRouter>

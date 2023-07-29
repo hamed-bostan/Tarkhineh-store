@@ -8,7 +8,7 @@ const ProfileLinks = () => {
     <div className="profile_bottom_container">
       {dashboardLinks.map((link) => {
         return (
-          <div className="profile_bottom_wrapper">
+          <div className="profile_bottom_wrapper" key={link.id}>
             <img src={link.icon} alt="" className="profile_icons" />
             <Link to={link?.to}>
               <span
