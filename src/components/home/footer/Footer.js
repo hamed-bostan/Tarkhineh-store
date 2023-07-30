@@ -17,6 +17,9 @@ const Footer = () => {
         <Link to="/faq" className="footer_link_underline_hidden">
           <span className="footer_text">حریم خصوصی</span>
         </Link>
+        <Link to="/dashboard" className="footer_link_underline_hidden">
+          <span className="footer_text">دشبورد</span>
+        </Link>
         <div className="footer_icon_container">
           <img
             src="assets/images/icons/twitter.png"

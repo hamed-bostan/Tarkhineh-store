@@ -40,7 +40,7 @@ const CartCardDesktop = ({ item }) => {
         {/* End of second row */}
         {/* third row */}
         <div className="cart_card_desktop_wrapper">
-          <span>{item.star}</span>
+          {/* <span>{item.star}</span> */}
           {/* button section */}
           <div className="cart_card_button_container">
             <img
