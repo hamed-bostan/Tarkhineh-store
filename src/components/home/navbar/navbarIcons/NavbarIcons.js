@@ -17,7 +17,7 @@ const NavbarIcons = () => {
       </div>
       <div className="navbar_badge_container">
         <NavLink
-          to="/cart"
+          to="/cartInformation"
           className={({ isActive }) =>
             isActive
               ? "navbar_green_background navbar_green_background_active"

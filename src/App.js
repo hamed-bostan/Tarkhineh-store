@@ -11,14 +11,12 @@ import NoPage from "./components/noPage/NoPage";
 import AboutUs from "./components/aboutUs/AboutUs";
 import Franchise from "./components/franchise/Franchise";
 import Menu from "./components/menu/Menu";
-import Cart from "./components/cart/Cart";
 import Branch from "./components/branch/Branch";
-import CartCompletingInformation from "./components/cart/cartCompletingInformation/CartCompletingInformation";
-import CartPaymentPage from "./components/cart/cartPaymentPage/CartPaymentPage";
 import Faq from "./components/faq/Faq";
 import Dashboard from "./components/dashboard/Dashboard";
 import OrderTracking from "./components/dashboard/orderTracking/OrderTracking";
 import Favorites from "./components/dashboard/favorites/Favorites";
+import CartInformation from "./components/cartInformation/CartInformation";
 
 function App() {
   return (
@@ -31,13 +29,8 @@ function App() {
             <Route path="/aboutUs" element={<AboutUs />} />
             <Route path="/franchise" element={<Franchise />} />
             <Route path="/menu" element={<Menu />} />
-            <Route path="/cart" element={<Cart />} />
+            <Route path="/cartInformation" element={<CartInformation />} />
             <Route path="/branch" element={<Branch />} />
-            <Route
-              path="/cartCompletingInformation"
-              element={<CartCompletingInformation />}
-            />
-            <Route path="/CartPaymentPage" element={<CartPaymentPage />} />
             <Route path="/faq" element={<Faq />} />
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/orderTracking" element={<OrderTracking />} />
