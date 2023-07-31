@@ -1,11 +1,20 @@
 import React from "react";
 import "./CartCompletingInformationDeliveryOptionBottom.scss";
 
-const CartCompletingInformationDeliveryOptionBottom = () => {
+const CartCompletingInformationDeliveryOptionBottom = ({
+  content,
+  onOptionChange,
+}) => {
   return (
     <div className="cart_completing_information_delivery_bottom_container">
       <div className="cart_completing_information_delivery_bottom_wrapper">
-        <input type="radio" />
+        <input
+          type="radio"
+          name="content"
+          value="Delivery"
+          checked={content === "Delivery"}
+          onChange={onOptionChange}
+        />
         <div>
           <label
             htmlFor=""
@@ -24,7 +33,13 @@ const CartCompletingInformationDeliveryOptionBottom = () => {
         />
       </div>
       <div className="cart_completing_information_delivery_bottom_wrapper">
-        <input type="radio" />
+        <input
+          type="radio"
+          name="content"
+          value="InPerson"
+          checked={content === "InPerson"}
+          onChange={onOptionChange}
+        />
         <div>
           <label
             htmlFor=""
