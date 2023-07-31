@@ -2,11 +2,6 @@
 @import "../../../../sassContainer/variables";
 
 .cart_Completing_Information_Payment_container {
-  // border-radius: 0.5rem;
-  // border: 1px solid $greyColorSecondary;
-  // background: $naturalWhite;
-  // padding: 1.5rem;
-  // margin-top: 0.75rem;
   display: flex;
   flex-direction: column;
   row-gap: 0.75rem;
@@ -35,6 +30,7 @@
   @include query(1100px) {
     cursor: pointer;
     margin-top: 1rem;
+    column-gap: 0.25rem;
   }
 }
 

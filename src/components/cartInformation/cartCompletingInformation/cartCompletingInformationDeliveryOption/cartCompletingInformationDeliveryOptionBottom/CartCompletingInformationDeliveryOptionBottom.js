@@ -4,6 +4,7 @@ import "./CartCompletingInformationDeliveryOptionBottom.scss";
 const CartCompletingInformationDeliveryOptionBottom = ({
   content,
   onOptionChange,
+  setContent,
 }) => {
   return (
     <div className="cart_completing_information_delivery_bottom_container">
@@ -14,11 +15,13 @@ const CartCompletingInformationDeliveryOptionBottom = ({
           value="Delivery"
           checked={content === "Delivery"}
           onChange={onOptionChange}
+          className="cart_completing_information_delivery_bottom_button"
         />
         <div>
           <label
             htmlFor=""
-            className="cart_completing_information_delivery_label"
+            className="cart_completing_information_delivery_label cart_completing_information_delivery_bottom_button"
+            onClick={() => setContent("Delivery")}
           >
             ارسال توسط پیک
           </label>
@@ -39,11 +42,13 @@ const CartCompletingInformationDeliveryOptionBottom = ({
           value="InPerson"
           checked={content === "InPerson"}
           onChange={onOptionChange}
+          className="cart_completing_information_delivery_bottom_button"
         />
         <div>
           <label
             htmlFor=""
-            className="cart_completing_information_delivery_label"
+            className="cart_completing_information_delivery_label cart_completing_information_delivery_bottom_button"
+            onClick={() => setContent("InPerson")}
           >
             تحویل حضوری
           </label>

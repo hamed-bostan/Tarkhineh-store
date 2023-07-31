@@ -14,12 +14,12 @@ const CartCompletingInformationAddressBottom = () => {
             <img
               src="assets/images/icons/edit.png"
               alt=""
-              className="cart_completing_information_icons"
+              className="cart_completing_information_icons cart_completing_information_address_trash_edit_icon"
             />
             <img
               src="assets/images/icons/trash.png"
               alt=""
-              className="cart_completing_information_icons"
+              className="cart_completing_information_icons cart_completing_information_address_trash_edit_icon"
             />
           </div>
         </div>
@@ -45,12 +45,12 @@ const CartCompletingInformationAddressBottom = () => {
             <img
               src="assets/images/icons/edit.png"
               alt=""
-              className="cart_completing_information_icons"
+              className="cart_completing_information_icons cart_completing_information_address_trash_edit_icon"
             />
             <img
               src="assets/images/icons/trash.png"
               alt=""
-              className="cart_completing_information_icons"
+              className="cart_completing_information_icons cart_completing_information_address_trash_edit_icon"
             />
           </div>
         </div>

@@ -24,7 +24,7 @@
   align-items: center;
 
   @include query(1100px) {
-    flex: 1;
+    flex: 1.5;
     column-gap: 0.5rem;
   }
 }

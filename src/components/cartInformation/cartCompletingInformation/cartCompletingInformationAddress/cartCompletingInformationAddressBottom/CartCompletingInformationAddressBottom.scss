@@ -11,6 +11,7 @@
     display: flex;
     flex-direction: row;
     column-gap: 1rem;
+    justify-content: space-between;
   }
 }
 
@@ -62,4 +63,11 @@
   display: flex;
   justify-content: space-between;
   padding-top: 0.5rem;
+}
+
+.cart_completing_information_address_trash_edit_icon {
+  @include query(1100px) {
+    width: 1.1rem;
+    height: 1.1rem;
+  }
 }

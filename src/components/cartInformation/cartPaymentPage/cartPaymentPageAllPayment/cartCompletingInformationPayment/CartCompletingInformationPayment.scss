@@ -1,5 +1,5 @@
-@import "../../../sassContainer/mixins";
-@import "../../../sassContainer/variables";
+@import "../../../../sassContainer/mixins";
+@import "../../../../sassContainer/variables";
 
 .cart_Completing_Information_Payment_container {
   // border-radius: 0.5rem;
@@ -35,6 +35,7 @@
   @include query(1100px) {
     cursor: pointer;
     margin-top: 1rem;
+    column-gap: 0.5rem;
   }
 }
 
@@ -60,5 +61,12 @@
     // Fonts
     @include fontInformationDesktopQuinary;
     color: $naturalWhite;
+  }
+}
+
+.cart_completing_information_payment_card_icon {
+  @include query(1100px) {
+    width: 1.1rem;
+    height: 1.1rem;
   }
 }

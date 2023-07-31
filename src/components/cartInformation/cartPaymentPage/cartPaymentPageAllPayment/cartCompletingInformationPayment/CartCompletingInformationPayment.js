@@ -37,7 +37,7 @@ const CartCompletingInformationPayment = () => {
         <img
           src="assets/images/icons/card_white.png"
           alt=""
-          className="cart_completing_information_icons"
+          className="cart_completing_information_icons cart_completing_information_payment_card_icon"
         />
         <button className="cart_Completing_Information_Payment_button">
           تایید و پرداخت

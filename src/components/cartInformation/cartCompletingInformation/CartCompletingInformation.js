@@ -19,6 +19,7 @@ const CartCompletingInformation = () => {
         <CartCompletingInformationDeliveryOption
           content={content}
           onOptionChange={onOptionChange}
+          setContent={setContent}
         />
         {/* changeable section */}
         {content === "Delivery" && <CartCompletingInformationAddress />}

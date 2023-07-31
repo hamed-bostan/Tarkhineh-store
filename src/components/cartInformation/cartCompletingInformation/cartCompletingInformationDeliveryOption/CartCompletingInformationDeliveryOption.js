@@ -6,6 +6,7 @@ import CartCompletingInformationDeliveryOptionBottom from "./cartCompletingInfor
 const CartCompletingInformationDeliveryOption = ({
   content,
   onOptionChange,
+  setContent,
 }) => {
   return (
     <div className="cart_completing_information_delivery_option_container">
@@ -14,6 +15,7 @@ const CartCompletingInformationDeliveryOption = ({
       <CartCompletingInformationDeliveryOptionBottom
         content={content}
         onOptionChange={onOptionChange}
+        setContent={setContent}
       />
     </div>
   );
