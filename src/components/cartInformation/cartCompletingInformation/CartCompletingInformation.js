@@ -20,20 +20,9 @@ const CartCompletingInformation = () => {
           content={content}
           onOptionChange={onOptionChange}
         />
-        {/* <CartCompletingInformationAddress /> */}
         {/* changeable section */}
-        {content === "Delivery" && (
-          <CartCompletingInformationAddress
-            onOptionChange={onOptionChange}
-            content={content}
-          />
-        )}
-        {content === "InPerson" && (
-          <CartCompletingInformationInPerson
-            onOptionChange={onOptionChange}
-            content={content}
-          />
-        )}
+        {content === "Delivery" && <CartCompletingInformationAddress />}
+        {content === "InPerson" && <CartCompletingInformationInPerson />}
         {/* End of changeable section */}
         <CartCompletingInformationOrderingDescription />
       </div>

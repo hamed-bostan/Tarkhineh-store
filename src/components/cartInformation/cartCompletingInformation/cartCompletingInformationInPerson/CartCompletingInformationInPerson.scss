@@ -1,13 +1,23 @@
 @import "../../../sassContainer/mixins";
 @import "../../../sassContainer/variables";
 
-.cart_completing_information_in_person_container {
-  width: 20rem;
-  height: 9.875rem;
-  flex-shrink: 0;
+.cart_completing_information_in_person_main_container {
   border-radius: 0.5rem;
   border: 1px solid $greyColorSecondary;
   padding: 1rem;
+
+  @include query(1100px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.cart_completing_information_in_person_container {
+  @include query(1100px) {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.55rem;
+  }
 }
 
 .cart_completing_information_in_person_wrapper {
@@ -19,6 +29,11 @@
 .cart_completing_information_in_person_location_icon {
   width: 1rem;
   height: 1rem;
+
+  @include query(1100px) {
+    width: 1.3rem;
+    height: 1.3rem;
+  }
 }
 
 .cart_completing_information_in_person_title {
@@ -26,6 +41,12 @@
   @include fontInformationDesktopSecondary;
   font-weight: 400;
   color: $blackColor;
+
+  @include query(1100px) {
+    // Fonts
+    @include fontInformationDesktopTertiary;
+    color: $blackColor;
+  }
 }
 
 .cart_completing_information_in_person_horizontal_line {
@@ -33,6 +54,12 @@
   border-bottom: 1px solid $greyColorSecondary;
   margin-top: 0.5rem;
   margin-bottom: 1rem;
+}
+
+.cart_completing_information_in_person_horizontal_line_hiding {
+  @include query(1100px) {
+    display: none;
+  }
 }
 
 .cart_completing_information_in_person_information {
@@ -43,4 +70,45 @@
   @include fontInformationMobile;
   font-weight: 400;
   color: $greyColorDark;
+
+  @include query(1100px) {
+    padding-right: 0;
+    // Fonts
+    @include fontInformationDesktopSenary;
+    color: $greyColorDark;
+  }
+}
+
+.cart_completing_information_in_person_button {
+  display: none;
+
+  @include query(1100px) {
+    display: block;
+    border-radius: 0.25rem;
+    border: 1px solid $greyColorDark;
+    width: 9.5rem;
+    height: 2rem;
+    background: transparent;
+    // Fonts
+    @include fontInformationDesktopSenary;
+    color: $greyColorDark;
+  }
+}
+
+.cart_completing_information_in_person_image_container {
+  display: none;
+  width: 14rem;
+  height: 10rem;
+
+  @include query(1100px) {
+    display: block;
+  }
+}
+
+.cart_completing_information_in_person_image_map {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.25rem;
+  border: 1px solid $greyColorSecondary;
 }
