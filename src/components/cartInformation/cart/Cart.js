@@ -12,7 +12,7 @@ const Cart = () => {
   const state = useSelector((state) => state.cartState);
 
   return (
-    <>
+    <div className="cart_all_data_main_container">
       <CartHeader />
       {state.itemsCounter > 0 ? (
         <div className="cart_information_main_container">
@@ -33,7 +33,7 @@ const Cart = () => {
       ) : (
         <CartEmptyPage />
       )}
-    </>
+    </div>
   );
 };
 

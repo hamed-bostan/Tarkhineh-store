@@ -3,15 +3,14 @@
 
 .cart_completing_information_payment_all_data_container {
   border-radius: 0.5rem;
-//   border: 1px solid $greyColorSecondary;
+  border: 1px solid $greyColorSecondary;
   background: $naturalWhite;
   padding: 1.5rem;
   display: flex;
   flex-direction: column;
   row-gap: 0.75rem;
-  // height: 26.5rem;
 
   @include query(1100px) {
-    // height: 26.5rem;
+    height: 26.5rem;
   }
 }
