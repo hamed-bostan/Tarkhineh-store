@@ -2,7 +2,6 @@ import React from "react";
 import "./Cart.scss";
 import { useSelector } from "react-redux";
 // Components
-// import CartHeader from "./cartHeader/CartHeader";
 import CartCardMobile from "./cartCard/cartCardMobile/CartCardMobile";
 import CartCardDesktop from "./cartCard/cartCardDesktop/CartCardDesktop";
 import CartPayment from "./cartPayment/CartPayment";
@@ -13,7 +12,6 @@ const Cart = () => {
 
   return (
     <div className="cart_all_data_main_container">
-      {/* <CartHeader /> */}
       {state.itemsCounter > 0 ? (
         <div className="cart_information_main_container">
           {/* card section */}

@@ -4,13 +4,14 @@
 // information section
 .cart_information_main_container {
   max-width: 20rem;
-  height: 29.5rem;
+  // height: 29.5rem;
+  height: 28rem;
   border-radius: 8px;
   border: 1px solid $greyColorSecondary;
   background: $naturalWhite;
   padding: 1.5rem;
   margin: 0 auto;
-  margin-top: 1.5rem;
+  // margin-top: 1.5rem;
 
   @include query(1100px) {
     all: unset;

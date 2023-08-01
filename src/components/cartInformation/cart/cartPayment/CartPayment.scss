@@ -19,8 +19,8 @@
     border: 1px solid $greyColorSecondary;
     background: $naturalWhite;
     padding: 1.5rem 1.5rem 0 1.5rem;
-    width: 31rem;
     width: 25rem;
+    // width: 17rem;
     height: 20rem;
   }
 }
@@ -50,7 +50,9 @@
 }
 
 .cart_horizontal_line {
-  color: $greyColorSecondary;
+  border: none;
+  border-bottom: 1px solid $greyColorSecondary;
+  // color: $greyColorSecondary;
 }
 
 .cart_payment_discount {
@@ -96,12 +98,11 @@
 
 .cart_payment_logging_button_container {
   @include primaryButtonMobile;
-  width: 17rem;
+  width: 100%;
   height: 2rem;
   column-gap: 0.25rem;
 
   @include query(1100px) {
-    width: 100%;
     cursor: pointer;
   }
 
