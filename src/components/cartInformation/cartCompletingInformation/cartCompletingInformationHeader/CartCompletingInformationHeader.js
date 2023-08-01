@@ -3,10 +3,19 @@ import "./CartCompletingInformationHeader.scss";
 import CartCompletingInformationHeaderMobile from "./cartCompletingInformationHeaderMobile/CartCompletingInformationHeaderMobile";
 import CartCompletingInformationHeaderDesktop from "./cartCompletingInformationHeaderDesktop/CartCompletingInformationHeaderDesktop";
 
-const CartCompletingInformationHeader = ({ setStep }) => {
+const CartCompletingInformationHeader = ({
+  step = { step },
+  setStep,
+  nextStep,
+  previousStep,
+}) => {
   return (
     <>
-      <CartCompletingInformationHeaderMobile />
+      <CartCompletingInformationHeaderMobile
+        step={step}
+        nextStep={nextStep}
+        previousStep={previousStep}
+      />
       <CartCompletingInformationHeaderDesktop setStep={setStep} />
     </>
   );

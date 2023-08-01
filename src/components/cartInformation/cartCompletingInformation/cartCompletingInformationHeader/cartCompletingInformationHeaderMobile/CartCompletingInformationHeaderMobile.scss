@@ -1,8 +1,11 @@
 @import "../../../../sassContainer/mixins";
 
-.cart_completing_information_mobile_container {
+.cart_header_container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 20rem;
   padding-top: 1.5rem;
 
   @include query(1100px) {
@@ -10,13 +13,20 @@
   }
 }
 
-.cart_completing_information_mobile_icon {
+.cart_arrow_icon {
   width: 1rem;
   height: 1rem;
 }
 
-.cart_completing_information_mobile_text {
-  margin: 0 auto;
-  // Fonts
-  @include fontInformationDesktopSeptenary;
+.cart_header_title {
+  @include fontTitleMobilePrimary;
+}
+
+.cart_trash_icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+.cart_trash_icon_inactive {
+  opacity: 0.3;
 }

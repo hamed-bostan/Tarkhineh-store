@@ -10,6 +10,18 @@ import Footer from "../home/footer/Footer";
 const CartInformation = () => {
   const [step, setStep] = useState(1);
 
+  const nextStep = () => {
+    if (step < 3) {
+      setStep(step + 1);
+    }
+  };
+
+  const previousStep = () => {
+    if (step > 1) {
+      setStep(step - 1);
+    }
+  };
+
   const switchFunction = (step) => {
     switch (step) {
       case 1:
@@ -24,7 +36,12 @@ const CartInformation = () => {
   return (
     <div>
       <Navbar />
-      <CartCompletingInformationHeader setStep={setStep} />
+      <CartCompletingInformationHeader
+        step={step}
+        setStep={setStep}
+        nextStep={nextStep}
+        previousStep={previousStep}
+      />
       {switchFunction(step)}
       <Footer />
     </div>
