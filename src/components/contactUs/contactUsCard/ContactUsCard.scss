@@ -143,6 +143,10 @@
     font-weight: 400;
     color: $primaryColor;
 
+    &:focus {
+      outline: none;
+    }
+
     @include query(1100px) {
       cursor: pointer;
       @include fontInformationDesktopQuinary;
@@ -166,6 +170,10 @@
     @include fontInformationMobile;
     font-weight: 400;
     color: $naturalWhite;
+
+    &:focus {
+      outline: none;
+    }
 
     @include query(1100px) {
       cursor: pointer;

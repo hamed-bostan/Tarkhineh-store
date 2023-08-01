@@ -51,6 +51,10 @@
     @include primaryButtonOutlinedMobile;
     margin-top: 0.5rem;
 
+    &:focus {
+      outline: none;
+    }
+
     @include query(1100px) {
       @include primaryButtonOutlinedDesktop;
       margin-top: 1rem;

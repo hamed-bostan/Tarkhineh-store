@@ -112,6 +112,10 @@
     @include fontTitleMobileSecondary;
     color: $naturalWhite;
 
+    &:focus {
+      outline: none;
+    }
+
     @include query(1100px) {
       cursor: pointer;
       // Fonts

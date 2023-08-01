@@ -81,6 +81,10 @@
     width: 6rem;
     height: 1.8rem;
 
+    &:focus {
+      outline: none;
+    }
+
     @include query(1100px) {
       // width: 15rem;
       // width: 9rem;

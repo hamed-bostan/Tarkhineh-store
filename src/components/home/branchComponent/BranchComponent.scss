@@ -194,6 +194,10 @@
     line-height: 170%;
     font-family: estedad;
     cursor: pointer;
+
+    &:focus {
+      outline: none;
+    }
   }
 }
 

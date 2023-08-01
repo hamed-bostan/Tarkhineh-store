@@ -36,6 +36,10 @@
     font-weight: 400;
     color: $primaryColor;
 
+    &:focus {
+      outline: none;
+    }
+
     @include query(1100px) {
       cursor: pointer;
       // Fonts

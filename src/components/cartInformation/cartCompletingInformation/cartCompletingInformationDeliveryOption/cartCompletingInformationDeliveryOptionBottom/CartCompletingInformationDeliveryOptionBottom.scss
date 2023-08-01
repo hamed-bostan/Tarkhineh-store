@@ -28,6 +28,9 @@
 }
 
 .cart_completing_information_delivery_bottom_button {
+  &:focus {
+    outline: none;
+  }
   @include query(1100px) {
     cursor: pointer;
   }

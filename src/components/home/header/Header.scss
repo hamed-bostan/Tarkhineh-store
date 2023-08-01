@@ -49,6 +49,9 @@
       left: 50%;
       bottom: 2.5rem;
       transform: translateX(-50%);
+      &:focus {
+        outline: none;
+      }
       //
       @include primaryButtonMobile;
 

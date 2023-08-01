@@ -99,6 +99,10 @@
   @include fontInformationDesktopSenary;
   color: $greyColor;
 
+  &:focus {
+    outline: none;
+  }
+
   @include query(1100px) {
     width: 4.5rem;
     cursor: pointer;

@@ -92,6 +92,10 @@
     // Fonts
     @include fontInformationDesktopSenary;
     color: $greyColorDark;
+
+    &:focus {
+      outline: none;
+    }
   }
 }
 

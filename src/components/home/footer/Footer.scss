@@ -47,6 +47,10 @@
 
 .footer_link_underline_hidden {
   text-decoration: none;
+
+  &:focus {
+    outline: none;
+  }
 }
 
 .footer_icon_container {
@@ -151,5 +155,9 @@
     // Fonts
     @include fontTitleMobileTertiary;
     color: #f9f9f9;
+
+    &:focus {
+      outline: none;
+    }
   }
 }

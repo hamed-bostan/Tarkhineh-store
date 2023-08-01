@@ -49,6 +49,10 @@
   border-radius: 0.25rem;
   background: $primaryColorLight;
 
+  &:focus {
+    outline: none;
+  }
+
   @include max_query(768px) {
     width: 1.5rem;
     height: 1.5rem;
@@ -58,6 +62,10 @@
 
 .navbar_green_background_active {
   background: #d4fadf;
+
+  &:focus {
+    outline: none;
+  }
 }
 
 .navbar_icons_left_side {
