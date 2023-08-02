@@ -1,18 +1,40 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Dashboard.scss";
-import Profile from "./profile/Profile";
 import Navbar from "../home/navbar/Navbar";
 import Footer from "../home/footer/Footer";
+import OrderTracking from "./orderTracking/OrderTracking";
+import Favorites from "./favorites/Favorites";
+import MyAddress from "./myAddress/MyAddress";
+import ProfileLinksComponent from "./profile/profileLinksComponent/ProfileLinksComponent";
+import MyProfile from "./profile/myProfile/MyProfile";
 
 const Dashboard = () => {
+  const [step, setStep] = useState(1);
+
+  const switchesFunction = () => {
+    switch (step) {
+      case 1:
+        return <MyProfile />;
+      case 2:
+        return <OrderTracking />;
+      case 3:
+        return <Favorites />;
+      case 4:
+        return <MyAddress />;
+    }
+  };
+
   return (
-    <div>
+    <>
       <Navbar />
-      <div className="dashboard_container">
-        <Profile />
+      <div className="dashboard_all_data_container">
+        <ProfileLinksComponent setStep={setStep} />
+        {/* changeable section */}
+        {switchesFunction(step)}
+        {/* End of changeable section */}
       </div>
       {/* <Footer /> */}
-    </div>
+    </>
   );
 };
 

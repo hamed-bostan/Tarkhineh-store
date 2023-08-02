@@ -918,3 +918,49 @@ export const orderStatus = [
     status: "لغو‌شده",
   },
 ];
+
+// Favourites
+export const favouriteInformation = [
+  {
+    id: 1,
+    image: "assets/images/foodImages/not_iranian_food/not_iranian_food_02.png",
+    title: "پاستا سبزیجات ",
+    rate: 4,
+    finalPrice: "۱۵۰٬۰۰۰ تومان",
+  },
+  {
+    id: 2,
+    image: "assets/images/foodImages/not_iranian_food/not_iranian_food_02.png",
+    title: "پاستا سبزیجات ",
+    rate: 4,
+    finalPrice: "۱۵۰٬۰۰۰ تومان",
+  },
+  {
+    id: 3,
+    image: "assets/images/foodImages/not_iranian_food/not_iranian_food_02.png",
+    title: "پاستا سبزیجات ",
+    rate: 4,
+    finalPrice: "۱۵۰٬۰۰۰ تومان",
+  },
+  {
+    id: 4,
+    image: "assets/images/foodImages/not_iranian_food/not_iranian_food_02.png",
+    title: "پاستا سبزیجات ",
+    rate: 4,
+    finalPrice: "۱۵۰٬۰۰۰ تومان",
+  },
+  {
+    id: 5,
+    image: "assets/images/foodImages/not_iranian_food/not_iranian_food_02.png",
+    title: "پاستا سبزیجات ",
+    rate: 4,
+    finalPrice: "۱۵۰٬۰۰۰ تومان",
+  },
+  {
+    id: 6,
+    image: "assets/images/foodImages/not_iranian_food/not_iranian_food_02.png",
+    title: "پاستا سبزیجات ",
+    rate: 4,
+    finalPrice: "۱۵۰٬۰۰۰ تومان",
+  },
+];

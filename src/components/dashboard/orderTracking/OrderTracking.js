@@ -1,17 +1,16 @@
 import React from "react";
 import "./OrderTracking.scss";
-import Navbar from "../../home/navbar/Navbar";
 import OrderTrackingStatusButton from "./orderTrackingStatusButton/OrderTrackingStatusButton";
 import OrderTrackingStatus from "./orderTrackingStatus/OrderTrackingStatus";
+import OrderTrackingTitle from "./orderTrackingTitle/OrderTrackingTitle";
 
 const OrderTracking = () => {
   return (
-    <div>
-      <Navbar />
-      <div className="order_tracking_main_container">
-        <OrderTrackingStatusButton />
-        <OrderTrackingStatus />
-      </div>
+    <div className="order_tracking_main_container">
+      <OrderTrackingTitle />
+      <hr className="order_tracking_horizontal_line" />
+      <OrderTrackingStatusButton />
+      <OrderTrackingStatus />
     </div>
   );
 };
