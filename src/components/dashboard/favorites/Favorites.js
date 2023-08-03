@@ -10,8 +10,10 @@ const Favorites = () => {
     <div className="order_tracking_main_container">
       <FavoritesTitle />
       <hr className="order_tracking_horizontal_line" />
-      <FavoritesButton />
-      <Search />
+      <div className="favorites_button_search_container">
+        <FavoritesButton />
+        <Search />
+      </div>
       <FavoritesInformation />
     </div>
   );

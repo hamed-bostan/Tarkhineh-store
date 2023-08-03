@@ -1,6 +1,7 @@
-@import "../../../../sassContainer/mixins";
+@import "../../sassContainer/mixins";
+@import "../../sassContainer/variables";
 
-.cart_header_container {
+.dashboard_mobile_header_container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -20,11 +21,6 @@
 
 .cart_header_title {
   @include fontTitleMobilePrimary;
-}
-
-.cart_trash_icon {
-  width: 1rem;
-  height: 1rem;
 }
 
 .cart_trash_icon_inactive {

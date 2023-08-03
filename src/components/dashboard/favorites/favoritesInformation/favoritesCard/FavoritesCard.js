@@ -30,9 +30,9 @@ const FavoritesCard = ({ item }) => {
               alt=""
               className="favorites_star_icon"
             />
-            <span className="favorites_text">{item.rate}</span>
+            <span className="favorites_text favorites_text_rate">{item.rate}</span>
           </div>
-          <span className="favorites_text">{item.finalPrice}</span>
+          <span className="favorites_text favorites_text_final_price">{item.finalPrice}</span>
         </div>
         {/* End of second row */}
         <div className="favorites_button_container">

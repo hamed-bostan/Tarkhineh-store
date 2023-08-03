@@ -1,8 +1,12 @@
 @import "../sassContainer/mixins";
 
 .dashboard_all_data_container {
-  width: 100%;
-  display: flex;
-  column-gap: 1.5rem;
-  padding: 2rem;
+  @include query(1100px) {
+    width: 100%;
+    display: flex;
+    column-gap: 1.5rem;
+    padding: 2rem;
+    max-width: 1500px;
+    margin: 0 auto;
+  }
 }

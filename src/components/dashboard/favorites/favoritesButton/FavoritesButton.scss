@@ -1,10 +1,14 @@
 @import "../../../sassContainer/mixins";
 @import "../../../sassContainer/variables";
 
-.order_tracking_status_button_header_container {
-  display: flex;
-  flex-direction: row;
-  column-gap: 0.5rem;
+.favorites_button_header_container {
+  display: none;
+  @include query(1100px) {
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.5rem;
+    // width: 60%;
+  }
 }
 
 .header_component_button_container {

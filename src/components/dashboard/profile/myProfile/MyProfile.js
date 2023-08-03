@@ -28,7 +28,7 @@ const MyProfile = () => {
           <input
             type="text"
             placeholder="۰۹۱۴ ۸۶۴ ۳۳۵۰"
-            className="my_profile_placeholder_text my_profile_placeholder_text_phoneNumber"
+            className="my_profile_placeholder_text"
           />
         </div>
         <div className="my_profile_wrapper">

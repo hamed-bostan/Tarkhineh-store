@@ -4,7 +4,7 @@ import { foodCategoryInformation } from "../../../../data";
 
 const FavoritesButton = () => {
   return (
-    <div className="order_tracking_status_button_header_container">
+    <div className="favorites_button_header_container">
       {foodCategoryInformation.map((item, index) => {
         const { foodCategory } = item;
         return (
