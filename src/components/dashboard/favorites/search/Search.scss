@@ -1,0 +1,60 @@
+@import "../../../sassContainer/mixins";
+@import "../../../sassContainer/variables";
+
+.search_container {
+  display: flex;
+  // justify-content: center;
+  margin-top: 0.7rem;
+  padding: 0 1.25rem;
+
+  @include query(1100px) {
+    margin-top: 0;
+    padding: 0;
+    width: 100%;
+  }
+}
+
+.search_wrapper {
+  display: flex;
+  align-items: center;
+  width: 20rem;
+  height: 2rem;
+  border-radius: 4px;
+  border: 1px solid $greyColorSecondary;
+  padding: 0 1rem;
+
+  @include query(1100px) {
+    width: 100%;
+  }
+
+  @include query(1320px) {
+    width: 50%;
+  }
+}
+
+.search_input {
+  border: none;
+  width: 18rem;
+  @include fontInformationMobile;
+  color: $blackColor;
+
+  &:focus {
+    outline: none;
+  }
+
+  &::placeholder {
+    color: $blackColor;
+  }
+
+  @include query(1100px) {
+    width: 100%;
+    @include fontInformationDesktopSenary;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+}
+
+.search_icon {
+  width: 1rem;
+  height: 1rem;
+}

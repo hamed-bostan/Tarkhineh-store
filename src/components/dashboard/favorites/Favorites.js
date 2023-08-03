@@ -1,14 +1,18 @@
 import React from "react";
 import "./Favorites.scss";
-import { favouriteInformation } from "../../../data";
-import FavoritesCard from "./favoritesCard/FavoritesCard";
+import FavoritesInformation from "./favoritesInformation/FavoritesInformation";
+import FavoritesTitle from "./favoritesTitle/FavoritesTitle";
+import FavoritesButton from "./favoritesButton/FavoritesButton";
+import Search from "./search/Search";
 
 const Favorites = () => {
   return (
-    <div className="favorites_main_container">
-      {favouriteInformation.map((item) => {
-        return <FavoritesCard item={item} key={item.id} />;
-      })}
+    <div className="order_tracking_main_container">
+      <FavoritesTitle />
+      <hr className="order_tracking_horizontal_line" />
+      <FavoritesButton />
+      <Search />
+      <FavoritesInformation />
     </div>
   );
 };

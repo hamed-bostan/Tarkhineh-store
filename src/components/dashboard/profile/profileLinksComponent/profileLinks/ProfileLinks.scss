@@ -18,6 +18,7 @@
   @include fontInformationDesktopSenary;
 
   @include query(1100px) {
+    cursor: pointer;
     // Fonts
     @include fontInformationDesktopSecondary;
     font-weight: 400;

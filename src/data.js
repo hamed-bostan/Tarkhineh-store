@@ -964,3 +964,26 @@ export const favouriteInformation = [
     finalPrice: "۱۵۰٬۰۰۰ تومان",
   },
 ];
+
+export const foodCategoryInformation = [
+  {
+    id: 1,
+    foodCategory: "همه",
+  },
+  {
+    id: 2,
+    foodCategory: "غذای اصلی",
+  },
+  {
+    id: 3,
+    foodCategory: "پیش غذا",
+  },
+  {
+    id: 4,
+    foodCategory: "دسر",
+  },
+  {
+    id: 5,
+    foodCategory: "نوشیدنی",
+  },
+];
