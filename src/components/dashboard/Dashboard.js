@@ -11,32 +11,47 @@ import DashboardHeaderMobile from "./dashboardHeaderMobile/DashboardHeaderMobile
 import DashboardLogout from "./dashboardLogout/DashboardLogout";
 
 const Dashboard = () => {
-  const [step, setStep] = useState(1);
+  const [step, setStep] = useState(0);
 
   const nextStep = () => {
-    if (step < 5) {
+    if (step < 4) {
       setStep(step + 1);
     }
   };
 
   const previousStep = () => {
-    if (step > 1) {
+    if (step > 0) {
       setStep(step - 1);
     }
   };
 
+  // const switchesFunction = (step) => {
+  //   switch (step) {
+  //     case 1:
+  //       return <MyProfile />;
+  //     case 2:
+  //       return <OrderTracking />;
+  //     case 3:
+  //       return <Favorites />;
+  //     case 4:
+  //       return <MyAddress />;
+  //       case 5:
+  //         return <DashboardLogout />;
+  //   }
+  // };
+
   const switchesFunction = (step) => {
     switch (step) {
-      case 1:
+      case 0:
         return <MyProfile />;
-      case 2:
+      case 1:
         return <OrderTracking />;
-      case 3:
+      case 2:
         return <Favorites />;
-      case 4:
+      case 3:
         return <MyAddress />;
-        case 5:
-          return <DashboardLogout />;
+      case 4:
+        return <DashboardLogout />;
     }
   };
 

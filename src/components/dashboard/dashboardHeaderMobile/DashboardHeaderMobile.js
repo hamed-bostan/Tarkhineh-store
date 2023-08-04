@@ -8,20 +8,20 @@ const DashboardHeaderMobile = ({ step, nextStep, previousStep }) => {
         src="assets/images/icons/arrow_right.png"
         alt=""
         className={`${
-          step < 5
+          step < 4
             ? "cart_arrow_icon"
             : "cart_arrow_icon cart_trash_icon_inactive"
         }`}
         onClick={() => nextStep()}
       />
 
-      {step === 1 ? (
+      {step === 0 ? (
         <span className="cart_header_title">پروفایل</span>
-      ) : step === 2 ? (
+      ) : step === 1 ? (
         <span className="cart_header_title">پیگیری سفارشات</span>
-      ) : step === 3 ? (
+      ) : step === 2 ? (
         <span className="cart_header_title">علاقمندی‌ها</span>
-      ) : step === 4 ? (
+      ) : step === 3 ? (
         <span className="cart_header_title">آدرس‌های من</span>
       ) : (
         <span className="cart_header_title">خروج</span>
@@ -31,7 +31,7 @@ const DashboardHeaderMobile = ({ step, nextStep, previousStep }) => {
         src="assets/images/icons/arrow_left_grey.png"
         alt=""
         className={`${
-          step > 1
+          step > 0
             ? "cart_arrow_icon"
             : "cart_arrow_icon cart_trash_icon_inactive"
         }`}
