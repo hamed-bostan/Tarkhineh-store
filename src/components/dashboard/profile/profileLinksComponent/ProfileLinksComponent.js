@@ -3,12 +3,12 @@ import "./ProfileLinksComponent.scss";
 import ProfileHeader from "./profileHeader/ProfileHeader";
 import ProfileLinks from "./profileLinks/ProfileLinks";
 
-const ProfileLinksComponent = ({ setStep }) => {
+const ProfileLinksComponent = ({ step, setStep }) => {
   return (
     <div className="profile_mobile_container">
       <ProfileHeader />
       <hr className="dashboard_horizontal_line" />
-      <ProfileLinks setStep={setStep} />
+      <ProfileLinks step={step} setStep={setStep} />
     </div>
   );
 };

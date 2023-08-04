@@ -2,8 +2,6 @@ import React from "react";
 import "./DashboardHeaderMobile.scss";
 
 const DashboardHeaderMobile = ({ step, nextStep, previousStep }) => {
-  console.log(step);
-
   return (
     <div className="dashboard_mobile_header_container">
       <img

@@ -85,6 +85,7 @@
   font-weight: 400;
 
   @include query(1100px) {
+    cursor: pointer;
     // Fonts
     @include fontInformationDesktopQuinary;
     color: $naturalWhite;

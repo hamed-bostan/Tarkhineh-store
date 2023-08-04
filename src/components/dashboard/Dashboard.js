@@ -8,6 +8,7 @@ import MyAddress from "./myAddress/MyAddress";
 import ProfileLinksComponent from "./profile/profileLinksComponent/ProfileLinksComponent";
 import MyProfile from "./profile/myProfile/MyProfile";
 import DashboardHeaderMobile from "./dashboardHeaderMobile/DashboardHeaderMobile";
+import DashboardLogout from "./dashboardLogout/DashboardLogout";
 
 const Dashboard = () => {
   const [step, setStep] = useState(1);
@@ -34,6 +35,8 @@ const Dashboard = () => {
         return <Favorites />;
       case 4:
         return <MyAddress />;
+        case 5:
+          return <DashboardLogout />;
     }
   };
 
@@ -46,7 +49,7 @@ const Dashboard = () => {
         previousStep={previousStep}
       />
       <div className="dashboard_all_data_container">
-        <ProfileLinksComponent setStep={setStep} />
+        <ProfileLinksComponent step={step} setStep={setStep} />
         {/* changeable section */}
         {switchesFunction(step)}
         {/* End of changeable section */}

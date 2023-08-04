@@ -1,21 +1,41 @@
-import React from "react";
+import React, { useState } from "react";
 import "./ProfileLinks.scss";
 import { dashboardLinks } from "../../../../../data";
 
-const ProfileLinks = ({ setStep }) => {
+const ProfileLinks = ({ step, setStep }) => {
+  //  set the buttons on active style
+  const [value, setValue] = useState(1);
+  const activeFunction = (step) => {
+    setValue(step);
+    console.log(step);
+  };
+  // End of set the buttons on active style
+
   return (
     <div className="profile_bottom_container">
-      {dashboardLinks.map((link) => {
+      {dashboardLinks.map((link, index) => {
         return (
           <div className="profile_bottom_wrapper" key={link.id}>
             <img src={link.icon} alt="" className="profile_icons" />
             <span
+              // className={`${
+              //   step === value && step < 4
+              //     ? "profile_bottom_text_active"
+              //     : link.link === "خروج"
+              //     ? "profile_bottom_text_logout"
+              //     : "profile_bottom_text"
+              // }`}
               className={`${
-                link.link === "خروج"
-                  ? "profile_bottom_text profile_bottom_text_logout"
+                step === index && step < 4
+                  ? "profile_bottom_text_active"
+                  : link.link === "خروج"
+                  ? "profile_bottom_text_logout"
                   : "profile_bottom_text"
               }`}
-              onClick={() => setStep(link.id)}
+              onClick={() => {
+                setStep(link.id);
+                // activeFunction(step);
+              }}
             >
               {link.link}
             </span>

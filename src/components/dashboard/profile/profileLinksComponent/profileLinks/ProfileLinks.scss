@@ -27,7 +27,29 @@
   }
 }
 
+.profile_bottom_text_active {
+  cursor: pointer;
+  position: relative;
+  // Fonts
+  @include fontInformationDesktopTertiary;
+  color: green;
+}
+
+.profile_bottom_text_active::after {
+  content: "";
+  background: $primaryColor;
+  position: absolute;
+  top: 0.2rem;
+  right: -1.6rem;
+  height: 75%;
+  width: 2px;
+}
+
 .profile_bottom_text_logout {
+  cursor: pointer;
+  // Fonts
+  @include fontInformationDesktopSecondary;
+  font-weight: 400;
   color: $redColor;
 }
 
