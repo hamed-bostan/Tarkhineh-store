@@ -1,46 +1,57 @@
 import React from "react";
 import "./CartCompletingInformationHeaderDesktop.scss";
+import CartHeaderDesktopCartIcon from "./cartHeaderDesktopIcons/CartHeaderDesktopCartIcon";
+import CartHeaderDesktopCompletingIcon from "./cartHeaderDesktopIcons/CartHeaderDesktopCompletingIcon";
+import CartHeaderDesktopPaymentIcon from "./cartHeaderDesktopIcons/CartHeaderDesktopPaymentIcon";
 
-const CartCompletingInformationHeaderDesktop = ({ setStep }) => {
+const CartCompletingInformationHeaderDesktop = ({ step, setStep }) => {
   return (
     <div className="cart_completing_information_desktop_container">
       <div
-        className="cart_completing_information_desktop_wrapper"
+        className={`${
+          step >= 1
+            ? "cart_completing_information_desktop_wrapper cart_completing_information_desktop_wrapper_active"
+            : "cart_completing_information_desktop_wrapper"
+        }`}
         onClick={() => setStep(1)}
       >
-        <img
-          src="assets/images/icons/shopping-cart.png"
-          alt=""
-          className="cart_completing_information_desktop_icon"
-        />
+        <span className="cart_completing_information_desktop_icon">
+          <CartHeaderDesktopCartIcon />
+        </span>
         <span className="cart_completing_information_desktop_text">
           سبد خرید
         </span>
       </div>
 
       <div
-        className="cart_completing_information_desktop_wrapper"
+        className={`${
+          step >= 2
+            ? "cart_completing_information_desktop_wrapper_active"
+            : "cart_completing_information_desktop_wrapper"
+        }`}
         onClick={() => setStep(2)}
       >
-        <img
-          src="assets/images/icons/tick_square_gray.png"
-          alt=""
-          className="cart_completing_information_desktop_icon"
-        />
+        <span className="cart_completing_information_desktop_icon">
+          <CartHeaderDesktopCompletingIcon />
+        </span>
         <span className="cart_completing_information_desktop_text">
           تکمیل اطلاعات
         </span>
       </div>
 
       <div
-        className="cart_completing_information_desktop_wrapper"
-        onClick={() => setStep(3)}
+        className={`${
+          step >= 3
+            ? "cart_completing_information_desktop_wrapper_active"
+            : "cart_completing_information_desktop_wrapper"
+        }`}
+        onClick={() => {
+          setStep(3);
+        }}
       >
-        <img
-          src="assets/images/icons/wallet_gray.png"
-          alt=""
-          className="cart_completing_information_desktop_icon"
-        />
+        <span className="cart_completing_information_desktop_icon">
+          <CartHeaderDesktopPaymentIcon />
+        </span>
         <span className="cart_completing_information_desktop_text">پرداخت</span>
       </div>
     </div>

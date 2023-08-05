@@ -4,7 +4,7 @@ import CartCompletingInformationHeaderMobile from "./cartCompletingInformationHe
 import CartCompletingInformationHeaderDesktop from "./cartCompletingInformationHeaderDesktop/CartCompletingInformationHeaderDesktop";
 
 const CartCompletingInformationHeader = ({
-  step = { step },
+  step,
   setStep,
   nextStep,
   previousStep,
@@ -16,7 +16,7 @@ const CartCompletingInformationHeader = ({
         nextStep={nextStep}
         previousStep={previousStep}
       />
-      <CartCompletingInformationHeaderDesktop setStep={setStep} />
+      <CartCompletingInformationHeaderDesktop step={step} setStep={setStep} />
     </>
   );
 };

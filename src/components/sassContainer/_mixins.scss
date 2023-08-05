@@ -155,7 +155,9 @@
 
 // no mobile
 @mixin fontInformationDesktopSeptenary {
-  font-size: 1rem;
+  // font-size: 1rem;
+  // cause it was too big i changed to:
+  font-size: 0.82rem;
   font-weight: 700;
   line-height: 140%;
   font-style: normal;

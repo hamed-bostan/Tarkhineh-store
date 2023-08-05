@@ -17,19 +17,37 @@
 
 .cart_completing_information_desktop_wrapper {
   display: flex;
-  column-gap: 0.25rem;
   align-items: center;
+  column-gap: 0.25rem;
   cursor: pointer;
-}
-
-.cart_completing_information_desktop_icon {
-  width: 1.2rem;
-  height: 1.2rem;
-}
-
-.cart_completing_information_desktop_text {
   // Fonts
   @include fontInformationDesktopSecondary;
   font-weight: 400;
   color: $greyColorSecondary;
+}
+
+.cart_completing_information_desktop_wrapper_active {
+  display: flex;
+  align-items: center;
+  column-gap: 0.25rem;
+  cursor: pointer;
+  // Fonts
+  @include fontInformationDesktopSeptenary;
+  color: $primaryColor;
+}
+
+.cart_completing_information_desktop_icon {
+  display: flex;
+  align-items: center;
+}
+
+// .cart_completing_information_desktop_icon_active {
+//   color: $primaryColor;
+// }
+
+.cart_completing_information_desktop_text {
+  // Fonts
+  // @include fontInformationDesktopSecondary;
+  // font-weight: 400;
+  // color: $greyColorSecondary;
 }
