@@ -76,8 +76,7 @@
 }
 
 .cart_completing_information_delivery_bottom_button:checked + label::before {
-  border: 2px solid rgb(255, 255, 255);
-  // box-shadow: 0 0 0 2px $primaryColor;
+  border: 1.6px solid rgb(255, 255, 255);
   background-color: $primaryColor;
 }
 //*****************
