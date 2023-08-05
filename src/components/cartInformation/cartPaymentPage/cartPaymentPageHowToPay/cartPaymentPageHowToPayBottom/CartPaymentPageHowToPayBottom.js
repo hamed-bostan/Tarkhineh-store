@@ -1,5 +1,7 @@
 import React from "react";
 import "./CartPaymentPageHowToPayBottom.scss";
+import CartDeliveryOptionBottomIconFilled from "../../../cartCompletingInformation/cartCompletingInformationDeliveryOption/cartCompletingInformationDeliveryOptionBottom/cartCompletingInformationDeliveryOptionBottomIcon/CartDeliveryOptionBottomIconFilled";
+import CartDeliveryOptionBottomIconVoid from "../../../cartCompletingInformation/cartCompletingInformationDeliveryOption/cartCompletingInformationDeliveryOptionBottom/cartCompletingInformationDeliveryOptionBottomIcon/CartDeliveryOptionBottomIconVoid";
 
 const CartPaymentPageHowToPayBottom = ({
   content,
@@ -8,7 +10,10 @@ const CartPaymentPageHowToPayBottom = ({
 }) => {
   return (
     <div className="cart_completing_information_delivery_bottom_container">
-      <div className="cart_completing_information_delivery_bottom_wrapper">
+      <div
+        onClick={() => setContent("PayingOnline")}
+        className="cart_completing_information_delivery_bottom_wrapper"
+      >
         <input
           type="radio"
           name="content"
@@ -17,11 +22,15 @@ const CartPaymentPageHowToPayBottom = ({
           onChange={onOptionChange}
           className="cart_completing_information_delivery_bottom_button"
         />
+        {content === "PayingOnline" ? (
+          <CartDeliveryOptionBottomIconFilled />
+        ) : (
+          <CartDeliveryOptionBottomIconVoid />
+        )}
         <div>
           <label
             htmlFor=""
             className="cart_completing_information_delivery_label cart_completing_information_delivery_bottom_button"
-            onClick={() => setContent("PayingOnline")}
           >
             پرداخت اینترنتی
           </label>
@@ -35,7 +44,10 @@ const CartPaymentPageHowToPayBottom = ({
           className="cart_completing_information_icons"
         />
       </div>
-      <div className="cart_completing_information_delivery_bottom_wrapper">
+      <div
+        onClick={() => setContent("PayingInMyLocation")}
+        className="cart_completing_information_delivery_bottom_wrapper"
+      >
         <input
           type="radio"
           value="PayingInMyLocation"
@@ -43,11 +55,15 @@ const CartPaymentPageHowToPayBottom = ({
           onChange={onOptionChange}
           className="cart_completing_information_delivery_bottom_button"
         />
+        {content === "PayingInMyLocation" ? (
+          <CartDeliveryOptionBottomIconFilled />
+        ) : (
+          <CartDeliveryOptionBottomIconVoid />
+        )}
         <div>
           <label
             htmlFor=""
             className="cart_completing_information_delivery_label cart_completing_information_delivery_bottom_button"
-            onClick={() => setContent("PayingInMyLocation")}
           >
             پرداخت در محل
           </label>

@@ -24,19 +24,9 @@
 
   @include query(1100px) {
     column-gap: 0.5rem;
+    cursor: pointer;
   }
 }
-
-// .cart_completing_information_delivery_bottom_button {
-//   display: none;
-
-//   &:focus {
-//     outline: none;
-//   }
-//   @include query(1100px) {
-//     cursor: pointer;
-//   }
-// }
 
 // ****************
 // ****************
@@ -59,26 +49,6 @@
   }
 }
 
-.cart_completing_information_delivery_label::before {
-  position: absolute;
-  content: "";
-  top: 0;
-  right: -1.2rem;
-  width: 0.6rem;
-  height: 0.6rem;
-  border-radius: 50%;
-  box-shadow: 0 0 0 2px $greyColorSecondary;
-}
-
-.cart_completing_information_delivery_bottom_button:checked + label {
-  // border: 3px solid rgb(77, 207, 17);
-  // color: rgb(50, 14, 207);
-}
-
-.cart_completing_information_delivery_bottom_button:checked + label::before {
-  border: 1.6px solid rgb(255, 255, 255);
-  background-color: $primaryColor;
-}
 //*****************
 //*****************
 

@@ -24,6 +24,7 @@
   column-gap: 0.25rem;
 
   @include query(1100px) {
+    cursor: pointer;
     column-gap: 0.5rem;
     flex: 1;
   }
