@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import "./NavbarIcons.scss";
 import { NavLink } from "react-router-dom";
 import { useSelector } from "react-redux";
+import NavbarCartIcon from "./navbarCartIcon/NavbarCartIcon";
 
 const NavbarIcons = () => {
   const state = useSelector((state) => state.cartState);
@@ -24,11 +25,9 @@ const NavbarIcons = () => {
               : "navbar_green_background"
           }
         >
-          <img
-            className="navbar_icons_left_side"
-            src="assets/images/icons/shopping-cart.png"
-            alt=""
-          />
+          <span className="navbar_cart_icon">
+            <NavbarCartIcon />
+          </span>
         </NavLink>
         <span className="navbar_badge">{state.itemsCounter}</span>
       </div>

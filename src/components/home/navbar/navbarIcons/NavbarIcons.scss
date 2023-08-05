@@ -13,6 +13,9 @@
 }
 
 .navbar_badge_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
 
   .navbar_badge {
@@ -48,6 +51,7 @@
   height: 2rem;
   border-radius: 0.25rem;
   background: $primaryColorLight;
+  color: $primaryColor;
 
   &:focus {
     outline: none;
@@ -61,7 +65,8 @@
 }
 
 .navbar_green_background_active {
-  background: #d4fadf;
+  background: $primaryColor;
+  color: $naturalWhite;
 
   &:focus {
     outline: none;
@@ -78,4 +83,10 @@
     height: 1rem;
     cursor: unset;
   }
+}
+
+.navbar_cart_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

@@ -1,3 +1,9 @@
+import HeartIcon from "./components/dashboard/profile/profileLinksComponent/profileLinks/profileLinksIcon/heartIcon/HeartIcon";
+import LocationIcon from "./components/dashboard/profile/profileLinksComponent/profileLinks/profileLinksIcon/locationIcon/LocationIcon";
+import LogoutIcon from "./components/dashboard/profile/profileLinksComponent/profileLinks/profileLinksIcon/logoutIcon/LogoutIcon";
+import OrderTrackingIcon from "./components/dashboard/profile/profileLinksComponent/profileLinks/profileLinksIcon/orderTrackingIcon/OrderTrackingIcon";
+import ProfileIcon from "./components/dashboard/profile/profileLinksComponent/profileLinks/profileLinksIcon/profileIcon/ProfileIcon";
+
 // Iranian Foods
 export const foodInformation = [
   {
@@ -870,31 +876,39 @@ export const dashboardLinks = [
   {
     id: 1,
     to: "",
-    icon: "assets/images/icons/user_filled.png",
+    // icon: "assets/images/icons/user_filled.png",
+    icon: <ProfileIcon />,
     link: "پروفایل",
   },
   {
     id: 2,
     to: "/orderTracking",
-    icon: "assets/images/icons/wallet_black.png",
+    // icon: "assets/images/icons/wallet_black.png",
+    icon: <OrderTrackingIcon />,
     link: "پیگیری سفارشات",
   },
   {
     id: 3,
     to: "/favorites",
-    icon: "assets/images/icons/heart_black.png",
+    // icon: "assets/images/icons/heart_black.png",
+    icon: <HeartIcon />,
+
     link: "علاقمندی‌ها",
   },
   {
     id: 4,
     to: "",
-    icon: "assets/images/icons/location.png",
+    // icon: "assets/images/icons/location.png",
+    icon: <LocationIcon />,
+
     link: "آدرس‌های من",
   },
   {
     id: 5,
     to: "",
-    icon: "assets/images/icons/logout.png",
+    // icon: "assets/images/icons/logout.png",
+    icon: <LogoutIcon />,
+
     link: "خروج",
   },
 ];

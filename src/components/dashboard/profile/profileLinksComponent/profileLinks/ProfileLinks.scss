@@ -7,13 +7,13 @@
   @include query(1100px) {
     display: flex;
     flex-direction: column;
-    row-gap: 0.5rem;
+    row-gap: 0.15rem;
   }
 }
 
 .profile_bottom_wrapper {
   display: flex;
-  align-items: center;
+  // align-items: center;
   column-gap: 0.25rem;
 }
 
@@ -54,6 +54,13 @@
 }
 
 .profile_icons {
-  width: 1rem;
-  height: 1rem;
+  color: $blackColor;
+}
+
+.profile_icons_active {
+  color: $primaryColor;
+}
+
+.profile_logout_icon {
+  color: $redColor;
 }

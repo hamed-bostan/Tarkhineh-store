@@ -8,7 +8,17 @@ const ProfileLinks = ({ step, setStep }) => {
       {dashboardLinks.map((link, index) => {
         return (
           <div className="profile_bottom_wrapper" key={link.id}>
-            <img src={link.icon} alt="" className="profile_icons" />
+            <span
+              className={`${
+                step === index && step < 4
+                  ? "profile_icons_active"
+                  : link.link === "خروج"
+                  ? "profile_logout_icon"
+                  : "profile_icons"
+              }`}
+            >
+              {link?.icon}
+            </span>
             <span
               className={`${
                 step === index && step < 4
