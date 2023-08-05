@@ -13,18 +13,24 @@
 
 .profile_bottom_wrapper {
   display: flex;
-  // align-items: center;
   column-gap: 0.25rem;
 }
 
-.profile_bottom_text {
-  @include query(1100px) {
-    cursor: pointer;
-    // Fonts
-    @include fontInformationDesktopSecondary;
-    font-weight: 400;
-    color: $blackColor;
-  }
+.profile_icons_active {
+  color: $primaryColor;
+  height: 1.3rem;
+}
+
+.profile_logout_icon {
+  display: flex;
+  align-items: center;
+  color: $redColor;
+}
+
+.profile_icons {
+  display: flex;
+  align-items: center;
+  color: $blackColor;
 }
 
 .profile_bottom_text_active {
@@ -53,14 +59,12 @@
   color: $redColor;
 }
 
-.profile_icons {
-  color: $blackColor;
-}
-
-.profile_icons_active {
-  color: $primaryColor;
-}
-
-.profile_logout_icon {
-  color: $redColor;
+.profile_bottom_text {
+  @include query(1100px) {
+    cursor: pointer;
+    // Fonts
+    @include fontInformationDesktopSecondary;
+    font-weight: 400;
+    color: $blackColor;
+  }
 }

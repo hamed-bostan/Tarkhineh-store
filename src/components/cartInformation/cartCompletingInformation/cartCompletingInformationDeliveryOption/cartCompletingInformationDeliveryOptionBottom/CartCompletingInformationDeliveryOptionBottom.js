@@ -9,58 +9,42 @@ const CartCompletingInformationDeliveryOptionBottom = ({
   return (
     <div className="cart_completing_information_delivery_bottom_container">
       <div className="cart_completing_information_delivery_bottom_wrapper">
-        <input
-          type="radio"
-          name="content"
-          value="Delivery"
-          checked={content === "Delivery"}
-          onChange={onOptionChange}
-          className="cart_completing_information_delivery_bottom_button"
-        />
         <div>
+          <input
+            type="radio"
+            name="content"
+            value="Delivery"
+            checked={content === "Delivery"}
+            onChange={onOptionChange}
+            className="cart_completing_information_delivery_bottom_button"
+          />
           <label
             htmlFor=""
-            className="cart_completing_information_delivery_label cart_completing_information_delivery_bottom_button"
+            className="cart_completing_information_delivery_label"
             onClick={() => setContent("Delivery")}
           >
             ارسال توسط پیک
           </label>
-          <span className="cart_completing_information_delivery_details">
-            توسط پیک رستوران ارسال شود.
-          </span>
         </div>
-        <img
-          src="assets/images/icons/truck_fast.png"
-          alt=""
-          className="cart_completing_information_icons"
-        />
       </div>
       <div className="cart_completing_information_delivery_bottom_wrapper">
-        <input
-          type="radio"
-          name="content"
-          value="InPerson"
-          checked={content === "InPerson"}
-          onChange={onOptionChange}
-          className="cart_completing_information_delivery_bottom_button"
-        />
         <div>
+          <input
+            type="radio"
+            name="content"
+            value="InPerson"
+            checked={content === "InPerson"}
+            onChange={onOptionChange}
+            className="cart_completing_information_delivery_bottom_button"
+          />
           <label
             htmlFor=""
-            className="cart_completing_information_delivery_label cart_completing_information_delivery_bottom_button"
+            className="cart_completing_information_delivery_label"
             onClick={() => setContent("InPerson")}
           >
             تحویل حضوری
           </label>
-          <span className="cart_completing_information_delivery_details">
-            دریافت حضوری در رستوران.
-          </span>
         </div>
-        <img
-          src="assets/images/icons/shopping_bag.png"
-          alt=""
-          className="cart_completing_information_icons"
-        />
       </div>
     </div>
   );

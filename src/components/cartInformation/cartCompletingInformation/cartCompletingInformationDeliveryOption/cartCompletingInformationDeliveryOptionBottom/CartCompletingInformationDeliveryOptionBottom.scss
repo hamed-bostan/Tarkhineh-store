@@ -27,16 +27,24 @@
   }
 }
 
-.cart_completing_information_delivery_bottom_button {
-  &:focus {
-    outline: none;
-  }
-  @include query(1100px) {
-    cursor: pointer;
-  }
-}
+// .cart_completing_information_delivery_bottom_button {
+//   display: none;
 
+//   &:focus {
+//     outline: none;
+//   }
+//   @include query(1100px) {
+//     cursor: pointer;
+//   }
+// }
+// ****************
+.cart_completing_information_delivery_bottom_button {
+  display: none;
+}
+//*****************
 .cart_completing_information_delivery_label {
+  position: relative;
+  display: block;
   padding-right: 0.25rem;
   // Fonts
   @include fontInformationDesktopSenary;
@@ -47,6 +55,15 @@
     @include fontInformationDesktopSecondary;
     font-weight: 400;
   }
+}
+
+.cart_completing_information_delivery_label::before {
+  position: absolute;
+  content: "";
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px red;
 }
 
 .cart_completing_information_delivery_details {
