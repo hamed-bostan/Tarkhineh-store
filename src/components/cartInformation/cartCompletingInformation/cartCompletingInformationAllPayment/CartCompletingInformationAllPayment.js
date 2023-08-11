@@ -2,8 +2,8 @@ import React from "react";
 import "./CartCompletingInformationAllPayment.scss";
 import CartCompletingInformationPaymentHeader from "./cartCompletingInformationPaymentHeader/CartCompletingInformationPaymentHeader";
 import CartCompletingInformationPaymentCard from "./cartCompletingInformationPaymentCard/CartCompletingInformationPaymentCard";
-import CartCompletingInformationPayment from "./cartCompletingInformationPayment/CartCompletingInformationPayment";
 import { useSelector } from "react-redux";
+import CartCompletingInformationPayment from "./CartCompletingInformationPayment/CartCompletingInformationPayment";
 
 const CartCompletingInformationAllPayment = () => {
   const state = useSelector((state) => state.cartState);

@@ -1,7 +1,7 @@
 import React from "react";
 import "./CartPaymentPageHowToPayBottom.scss";
-import CartDeliveryOptionBottomIconFilled from "../../../cartCompletingInformation/cartCompletingInformationDeliveryOption/cartCompletingInformationDeliveryOptionBottom/cartCompletingInformationDeliveryOptionBottomIcon/CartDeliveryOptionBottomIconFilled";
-import CartDeliveryOptionBottomIconVoid from "../../../cartCompletingInformation/cartCompletingInformationDeliveryOption/cartCompletingInformationDeliveryOptionBottom/cartCompletingInformationDeliveryOptionBottomIcon/CartDeliveryOptionBottomIconVoid";
+import CartDeliveryOptionBottomIconFilled from "../../../cartCompletingInformation/cartCompletingInformationDeliveryOption/cartCompletingInformationDeliveryOptionBottom/cartDeliveryOptionBottomIcon/CartDeliveryOptionBottomIconFilled";
+import CartDeliveryOptionBottomIconVoid from "../../../cartCompletingInformation/cartCompletingInformationDeliveryOption/cartCompletingInformationDeliveryOptionBottom/cartDeliveryOptionBottomIcon/CartDeliveryOptionBottomIconVoid";
 
 const CartPaymentPageHowToPayBottom = ({
   content,

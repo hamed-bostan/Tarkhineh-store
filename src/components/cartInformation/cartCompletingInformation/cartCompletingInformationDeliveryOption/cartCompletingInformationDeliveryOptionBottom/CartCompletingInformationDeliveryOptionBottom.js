@@ -1,7 +1,7 @@
 import React from "react";
 import "./CartCompletingInformationDeliveryOptionBottom.scss";
-import CartDeliveryOptionBottomIconFilled from "./cartCompletingInformationDeliveryOptionBottomIcon/CartDeliveryOptionBottomIconFilled";
-import CartDeliveryOptionBottomIconVoid from "./cartCompletingInformationDeliveryOptionBottomIcon/CartDeliveryOptionBottomIconVoid";
+import CartDeliveryOptionBottomIconFilled from "./cartDeliveryOptionBottomIcon/CartDeliveryOptionBottomIconFilled";
+import CartDeliveryOptionBottomIconVoid from "./cartDeliveryOptionBottomIcon/CartDeliveryOptionBottomIconVoid";
 
 const CartCompletingInformationDeliveryOptionBottom = ({
   content,

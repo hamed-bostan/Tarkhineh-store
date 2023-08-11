@@ -11,7 +11,7 @@ const OrderTrackingStatusImagesCard = ({ item }) => {
           className="order_tracking_status_images_card_image"
         />
         <span className="order_tracking_status_images_card_quantity">
-          x {item.quantity}
+          x{item.quantity}
         </span>
       </div>
       <div className="order_tracking_status_images_card_information_container">
