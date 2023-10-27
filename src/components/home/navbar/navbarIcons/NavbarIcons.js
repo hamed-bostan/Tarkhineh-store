@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import "./NavbarIcons.scss";
 import { NavLink } from "react-router-dom";
 import { useSelector } from "react-redux";
 import NavbarCartIcon from "./navbarCartIcon/NavbarCartIcon";
+import ProfileLink from "../../ProfileLinks/ProfileLink";
+import ProfileLinkIcon from "./ProfileLinkIcon/ProfileLinkIcon";
 
 const NavbarIcons = () => {
   const state = useSelector((state) => state.cartState);
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div className="navbar_icons_container">
@@ -31,13 +34,19 @@ const NavbarIcons = () => {
         </NavLink>
         <span className="navbar_badge">{state.itemsCounter}</span>
       </div>
-      <div className="navbar_green_background">
-        <img
+      <div className="navbar_green_background"
+      onClick={() => setIsOpen(!isOpen)}
+      >
+        {/* <img
           className="navbar_icons_left_side"
           src="assets/images/icons/user.png"
           alt=""
-        />
+        /> */}
+          <span className="navbar_cart_icon">
+            <ProfileLinkIcon />
+          </span>
       </div>
+      { isOpen && <ProfileLink /> }
     </div>
   );
 };

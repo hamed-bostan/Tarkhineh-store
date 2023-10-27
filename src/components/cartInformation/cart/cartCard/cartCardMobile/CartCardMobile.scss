@@ -4,11 +4,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0 0.5rem;
 
   @include query(1100px) {
     display: none;
   }
 }
+
+
 
 .cart_card_mobile_top_container {
   display: flex;

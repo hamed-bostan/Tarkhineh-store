@@ -1001,3 +1001,36 @@ export const foodCategoryInformation = [
     foodCategory: "نوشیدنی",
   },
 ];
+
+export const profileLinks=[
+  {
+    id: 1,
+    image:"assets/images/icons/user_03.png",
+    path: "/dashboard",
+    text: "پروفایل",
+  },
+  {
+    id: 2,
+    image:"assets/images/icons/wallet_black.png",
+    path: "/dashboard",
+    text: "پیگیری سفارش",
+  },
+  {
+    id: 3,
+    image:"assets/images/icons/heart_black.png",
+    path: "/dashboard",
+    text: "علاقه مندی ها",
+  },
+  {
+    id: 4,
+    image:"assets/images/icons/location.png",
+    path: "/dashboard",
+    text: "آدرس ها من",
+  },
+  {
+    id: 5,
+    image:"assets/images/icons/logout-black.png",
+    path: "/dashboard",
+    text: "خروج از حساب",
+  },
+]

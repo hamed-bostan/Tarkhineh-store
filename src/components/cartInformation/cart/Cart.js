@@ -18,7 +18,7 @@ const Cart = () => {
           <div className="cart_wrapper">
             {state.selectedItems.map((item) => {
               return (
-                <div key={item.id}>
+                <div key={item.id} className="zebra_style">
                   <CartCardMobile item={item} />
                   <CartCardDesktop item={item} />
                 </div>

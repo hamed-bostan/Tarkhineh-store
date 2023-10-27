@@ -27,7 +27,7 @@
   width: 100%;
   background: $greyColorTertiary;
   overflow-y: scroll;
-  padding: 0 0.5rem;
+  // padding: 0 0.5rem;
   padding-top: 0.5rem;
 
   @include query(1100px) {
@@ -50,4 +50,9 @@
 
 .cart_all_data_main_container {
   padding: 1.5rem;
+}
+
+.zebra_style:nth-child(even){
+  background: $greyColor;
+  width: 100%;
 }
