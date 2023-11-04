@@ -24,7 +24,7 @@
 
   @include query(1100px) {
     column-gap: 0.5rem;
-    cursor: pointer;
+    // cursor: pointer;
   }
 }
 
@@ -32,12 +32,14 @@
 // ****************
 .cart_completing_information_delivery_bottom_button {
   display: none;
+  cursor: pointer;
 }
 
 .cart_completing_information_delivery_label {
   position: relative;
   display: block;
   padding-right: 0.25rem;
+  cursor: pointer;
   // Fonts
   @include fontInformationDesktopSenary;
   color: $greyColorDark;

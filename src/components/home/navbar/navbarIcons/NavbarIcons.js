@@ -29,7 +29,7 @@ const NavbarIcons = () => {
           }
         >
           <span className="navbar_cart_icon">
-            <NavbarCartIcon />
+          <NavbarCartIcon />
           </span>
         </NavLink>
         <span className="navbar_badge">{state.itemsCounter}</span>

@@ -11,7 +11,7 @@ const CartPaymentPageHowToPayBottom = ({
   return (
     <div className="cart_completing_information_delivery_bottom_container">
       <div
-        onClick={() => setContent("PayingOnline")}
+        // onClick={() => setContent("PayingOnline")}
         className="cart_completing_information_delivery_bottom_wrapper"
       >
         <input
@@ -29,6 +29,7 @@ const CartPaymentPageHowToPayBottom = ({
         )}
         <div>
           <label
+            onClick={() => setContent("PayingOnline")}
             htmlFor=""
             className="cart_completing_information_delivery_label cart_completing_information_delivery_bottom_button"
           >
@@ -45,7 +46,7 @@ const CartPaymentPageHowToPayBottom = ({
         />
       </div>
       <div
-        onClick={() => setContent("PayingInMyLocation")}
+        // onClick={() => setContent("PayingInMyLocation")}
         className="cart_completing_information_delivery_bottom_wrapper"
       >
         <input
@@ -62,6 +63,7 @@ const CartPaymentPageHowToPayBottom = ({
         )}
         <div>
           <label
+            onClick={() => setContent("PayingInMyLocation")}
             htmlFor=""
             className="cart_completing_information_delivery_label cart_completing_information_delivery_bottom_button"
           >

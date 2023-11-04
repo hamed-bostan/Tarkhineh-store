@@ -1034,3 +1034,12 @@ export const profileLinks=[
     text: "خروج از حساب",
   },
 ]
+
+export const navbarLogoLinks=[
+  {
+    id: 1,
+    image:"assets/images/icons/user_03.png",
+    path: "/dashboard",
+    text: "پروفایل",
+  },
+]

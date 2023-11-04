@@ -11,10 +11,11 @@ const CartCompletingInformationDeliveryOptionBottom = ({
   return (
     <div className="cart_completing_information_delivery_bottom_container">
       <div
-        onClick={() => setContent("Delivery")}
+        // onClick={() => setContent("Delivery")}
         className="cart_completing_information_delivery_bottom_wrapper"
       >
         <input
+          // onClick={() => setContent("Delivery")}
           type="radio"
           name="content"
           value="Delivery"
@@ -31,6 +32,7 @@ const CartCompletingInformationDeliveryOptionBottom = ({
           <label
             htmlFor=""
             className="cart_completing_information_delivery_label"
+            onClick={() => setContent("Delivery")}
           >
             ارسال توسط پیک
           </label>
@@ -45,7 +47,7 @@ const CartCompletingInformationDeliveryOptionBottom = ({
         />
       </div>
       <div
-        onClick={() => setContent("InPerson")}
+        // onClick={() => setContent("InPerson")}
         className="cart_completing_information_delivery_bottom_wrapper"
       >
         <input
@@ -63,6 +65,7 @@ const CartCompletingInformationDeliveryOptionBottom = ({
         )}
         <div>
           <label
+            onClick={() => setContent("InPerson")}
             htmlFor=""
             className="cart_completing_information_delivery_label"
           >
