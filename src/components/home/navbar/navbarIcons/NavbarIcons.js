@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./NavbarIcons.scss";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { useSelector } from "react-redux";
 import NavbarCartIcon from "./navbarCartIcon/NavbarCartIcon";
 import ProfileLink from "../../ProfileLinks/ProfileLink";
@@ -9,6 +9,9 @@ import ProfileLinkIcon from "./ProfileLinkIcon/ProfileLinkIcon";
 const NavbarIcons = () => {
   const state = useSelector((state) => state.cartState);
   const [isOpen, setIsOpen] = useState(false);
+  // const [isOpenMoible, setIsOpenMoible] = useState(false);
+  const [content, setContent] = useState("");
+
 
   return (
     <div className="navbar_icons_container">
@@ -37,16 +40,14 @@ const NavbarIcons = () => {
       <div className="navbar_green_background"
       onClick={() => setIsOpen(!isOpen)}
       >
-        {/* <img
-          className="navbar_icons_left_side"
-          src="assets/images/icons/user.png"
-          alt=""
-        /> */}
-          <span className="navbar_cart_icon">
+        <span className="navbar_cart_icon">
             <ProfileLinkIcon />
           </span>
       </div>
+      {/* {content === "Mobile" && <CartCompletingInformationAddress />}
+      {content === "Desktop" && <CartCompletingInformationInPerson />} */}
       { isOpen && <ProfileLink /> }
+      {/* { isOpenMoible && <ProfileLink /> } */}
     </div>
   );
 };
